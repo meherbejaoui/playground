@@ -212,7 +212,8 @@ M7 is optional (see PLAN.md §9 item 4).
   `defaults.run.working-directory: gridlock` (this repo hosts a sister
   project; keep workflows per-project so a future repo split is trivial):
   set up Python 3.11 + Node 18/20, `pip install -e ".[dev]"`, run `pytest`
-  and `node --test tests/player/`.
+  and `node --test tests/player/*.test.mjs` (the explicit glob, not a bare
+  directory — see the PLAN.md 7 note on this).
 
 ### M7.2 Daily Pages deploy (repo root: `.github/workflows/gridlock-daily.yml`)
 - Cron `10 0 * * *` + manual dispatch: checkout, generate today's puzzle

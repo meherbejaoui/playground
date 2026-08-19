@@ -316,7 +316,10 @@ gridlock/
 ├── tests/
 │   ├── test_wordlist.py  test_patterns.py  test_fill.py
 │   ├── test_puzzle.py    test_generate.py  test_build.py
-│   └── player/core.test.mjs  # run with: node --test tests/player/
+│   └── player/core.test.mjs  # run with: node --test tests/player/*.test.mjs
+│                             #   (some Node builds don't recurse into a bare
+│                             #   directory argument; the explicit glob works
+│                             #   everywhere and is what CI should use, too)
 ├── puzzles/                  # generated (gitignored)
 └── site/                     # generated (gitignored)
 ```
