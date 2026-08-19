@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -239,3 +240,49 @@ class TestWithClues:
         )
         assert across_one.clue == "Feline"
         assert updated.entries[1].clue == puzzle.entries[1].clue
+
+
+class TestRendering:
+    """Snapshot tests for render.py, driven by the on-disk sample fixture.
+
+    tests/fixtures/sample-5.json is a real generated puzzle (not hand-typed),
+    committed once the fill engine existed so the fixture is a genuine
+    interlocked grid rather than something invented by hand (see TASKS M1.3).
+    """
+
+    @pytest.fixture
+    def fixture_puzzle(self):
+        text = (Path(__file__).parent / "fixtures" / "sample-5.json").read_text(
+            encoding="utf-8"
+        )
+        return from_json(text)
+
+    def test_show_prints_grid_and_clues(self, fixture_puzzle):
+        from gridlock.render import render_puzzle
+
+        output = render_puzzle(fixture_puzzle)
+        assert "sample-fixture-5" in output
+        assert "┌" in output and "┘" in output
+        assert "C" in output and "H" in output and "E" in output and "F" in output
+        assert "ACROSS" in output
+        assert "DOWN" in output
+        assert "1. Kitchen boss" in output
+        assert "8. Brewery product" in output
+
+    def test_unsolved_grid_hides_letters(self, fixture_puzzle):
+        from gridlock.render import render_grid
+
+        solved = render_grid(fixture_puzzle, solved=True)
+        blank = render_grid(fixture_puzzle, solved=False)
+        assert "C" in solved and "H" in solved
+        assert "C" not in blank and "H" not in blank
+        # Numbers and block glyphs still appear either way.
+        assert "1" in blank
+        assert "█" in blank
+
+    def test_render_answers_decodes_base64_for_debugging(self, fixture_puzzle):
+        from gridlock.render import render_answers
+
+        output = render_answers(fixture_puzzle)
+        assert "CHEF — Kitchen boss" in output
+        assert "BEER — Brewery product" in output

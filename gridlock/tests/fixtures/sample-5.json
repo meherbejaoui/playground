@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "sample-fixture-5",
+  "size": 5,
+  "seed": "sample-fixture",
+  "pattern": "diagonal-2",
+  "generatedAt": "2026-01-01T00:00:00Z",
+  "grid": [
+    "#CHEF",
+    "CLONE",
+    "ROUTE",
+    "ASSET",
+    "BEER#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "Q0hFRg==",
+      "clue": "Kitchen boss"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "Q0xPU0U=",
+      "clue": "Nearby"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "SE9VU0U=",
+      "clue": "Family dwelling"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "RU5URVI=",
+      "clue": "Go inside"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "RkVFVA==",
+      "clue": "Ankle attachments"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "Q0xPTkU=",
+      "clue": "Exact copy"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "Q1JBQg==",
+      "clue": "Sideways scuttler"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "Uk9VVEU=",
+      "clue": "Path from A to B"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "QVNTRVQ=",
+      "clue": "Valuable holding"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 4,
+      "answer": "QkVFUg==",
+      "clue": "Brewery product"
+    }
+  ]
+}

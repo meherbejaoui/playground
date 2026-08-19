@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -46,8 +47,60 @@ def main(argv: list[str] | None = None) -> int:
 
         return validate_words(args.words)
 
+    if args.command == "generate":
+        return _run_generate(args)
+
+    if args.command == "show":
+        return _run_show(args)
+
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
+
+
+def _run_generate(args: argparse.Namespace) -> int:
+    from .generate import GenerationError, SUPPORTED_SIZES, generate_and_write
+    from .render import render_puzzle
+
+    if args.size not in SUPPORTED_SIZES:
+        print(
+            f"error: --size {args.size} is not supported in v1 (only "
+            f"{SUPPORTED_SIZES[0]} is available; larger sizes are a stretch "
+            f"goal — see PLAN.md 9)",
+            file=sys.stderr,
+        )
+        return 1
+
+    try:
+        puzzle, path = generate_and_write(
+            seed=args.seed, size=args.size, out_dir=args.out, force=args.force
+        )
+    except FileExistsError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    except GenerationError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+    if not args.quiet:
+        print(render_puzzle(puzzle))
+        print()
+    print(f"Wrote {path}")
+    return 0
+
+
+def _run_show(args: argparse.Namespace) -> int:
+    from .puzzle import PuzzleError, from_json
+    from .render import render_puzzle
+
+    try:
+        text = Path(args.puzzle).read_text(encoding="utf-8")
+        puzzle = from_json(text)
+    except (OSError, PuzzleError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+
+    print(render_puzzle(puzzle))
+    return 0
 
 
 if __name__ == "__main__":
