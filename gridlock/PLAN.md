@@ -107,10 +107,20 @@ test, not by trust):
 3. All white cells form a single connected region (4-connectivity).
 4. At most 8 blocks on a 5×5.
 
-Ship **6 patterns** for size 5, including the fully open one (hardest to
-fill — the filler falls back to the next pattern if it can't fill in budget,
-see §4.4). Choosing which 6: implementer's discretion within the rules above;
-variety of slot-length mixes is the goal.
+Ship **6 patterns** for size 5. Choosing which 6: implementer's discretion
+within the rules above; variety of slot-length mixes is the goal.
+
+> **Revised during implementation.** This section originally required
+> shipping the fully open (blockless) grid, on the assumption that the
+> fallback chain would absorb its occasional failure. Measured against the
+> shipped wordlist it filled **0 times in 8 seeds** at any budget up to 1M
+> backtracks: a blockless 5×5 needs ten mutually interlocking five-letter
+> words (a "double word square"), which requires a dictionary an order of
+> magnitude larger than a curated list. Because every attempt cost ~2.9s and
+> two slow patterns in a row would breach the 5s-per-puzzle budget in §8, it
+> was replaced with `wedge-6-alt` (the mirrored `wedge-6`). All six shipped
+> patterns now fill; a test asserts none is blockless so the decision can't
+> silently regress.
 
 ### 3.3 Puzzle JSON — `puzzles/<id>.json`
 

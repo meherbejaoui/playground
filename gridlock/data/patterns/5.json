@@ -2,8 +2,8 @@
   "size": 5,
   "patterns": [
     {
-      "name": "open",
-      "blocks": []
+      "name": "wedge-6-alt",
+      "blocks": [[0, 3], [0, 4], [1, 4], [3, 0], [4, 0], [4, 1]]
     },
     {
       "name": "diagonal-2",

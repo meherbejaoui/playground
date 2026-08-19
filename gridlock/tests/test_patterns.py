@@ -28,13 +28,16 @@ class TestBundledPatterns:
         for pattern in patterns:
             validate_pattern(pattern)  # must not raise
 
-    def test_bundled_names_are_unique_and_include_the_open_grid(self):
-        patterns = load_patterns(5)
-        names = [p.name for p in patterns]
+    def test_bundled_names_are_unique(self):
+        names = [p.name for p in load_patterns(5)]
         assert len(names) == len(set(names))
-        assert "open" in names
-        open_pattern = next(p for p in patterns if p.name == "open")
-        assert open_pattern.blocks == frozenset()
+
+    def test_no_bundled_pattern_is_the_fully_open_grid(self):
+        # PLAN.md 3.2 originally shipped the blockless grid. Measurement
+        # showed it never fills from a curated wordlist (a 5x5 double word
+        # square needs a far larger dictionary), so it was replaced rather
+        # than left to burn the fallback chain's time budget on every run.
+        assert all(p.blocks for p in load_patterns(5))
 
     def test_bundled_patterns_offer_a_variety_of_slot_length_mixes(self):
         signatures = {
