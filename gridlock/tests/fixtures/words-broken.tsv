@@ -1,0 +1,14 @@
+# Every error type the parser reports, for the linter tests. Line numbers
+# are asserted in tests/test_wordlist.py, so do not reorder this file.
+CAT	90	Purring pet
+cat	80	Lowercase is not allowed
+CA7	80	Digits are not letters
+AB	80	Too short for a slot
+ABCDEFGH	80	Longer than any supported slot
+OPAL	high	Score is not a number
+RUBY	0	Score below the range
+JADE	101	Score above the range
+IRIS	60
+LILY	60	A LILY by any other name
+CAT	70	Repeat of the entry above
+SAGE	60	

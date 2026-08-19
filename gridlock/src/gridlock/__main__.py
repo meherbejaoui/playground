@@ -40,6 +40,12 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+
+    if args.command == "validate-words":
+        from .wordlist import validate_words
+
+        return validate_words(args.words)
+
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
 

@@ -1,0 +1,2567 @@
+# Gridlock wordlist — WORD<TAB>score<TAB>clue|clue|...
+# See PLAN.md 3.1. Lint with: python -m gridlock validate-words
+
+ACE	90	Tennis serve winner|Top pilot
+ACT	88	Part of a play|Behave
+ADD	86	Sum up
+ADO	70	Fuss
+AGE	88	Years lived
+AGO	80	In the past
+AID	82	Help
+AIM	84	Goal|Point a weapon
+AIR	88	What we breathe
+ALE	80	Pub brew
+ALL	85	Every bit
+AMP	70	Guitar's loud friend
+AND	80	Plus
+ANT	85	Picnic pest
+APE	82	Zoo primate|Mimic
+APT	72	Fitting
+ARC	80	Curved path
+ARE	75	Exist, plurally
+ARK	74	Noah's boat
+ARM	86	Shoulder to hand
+ART	86	Museum display
+ASH	80	Fire's leftovers
+ASK	86	Pose a question
+ATE	78	Had dinner
+AWE	78	Wonder
+AXE	76	Chopping tool
+AYE	72	Yes, at sea
+BAD	86	Not good
+BAG	86	Grocery carrier
+BAN	80	Forbid
+BAR	84	Where drinks are poured
+BAT	86	Baseball club|Cave flier
+BAY	78	Coastal inlet
+BED	88	Place to sleep
+BEE	84	Honey maker
+BEG	78	Plead
+BET	82	Wager
+BID	78	Auction offer
+BIG	86	Large
+BIN	80	Storage box
+BIT	82	Small piece
+BOA	70	Constricting snake|Feathery scarf
+BOG	70	Marshy ground
+BOO	74	Ghost's greeting
+BOW	80	Archery weapon|Take a curtain call
+BOX	84	Cardboard container
+BOY	82	Young lad
+BUD	78	Flower to be
+BUG	82	Insect|Software flaw
+BUN	78	Burger holder|Hair knot
+BUS	86	School ride
+BUY	84	Purchase
+BYE	76	Farewell
+CAB	80	Yellow ride
+CAN	86	Soda container|Be able to
+CAP	82	Baseball hat
+CAR	88	Driveway occupant
+CAT	88	Purring pet
+COB	68	Corn core
+COD	74	Fish and chips fish
+COG	72	Gear tooth
+CON	70	Swindle
+COO	66	Dove sound
+COP	76	Officer on the beat
+COT	74	Folding bed
+COW	84	Dairy animal
+COY	68	Playfully shy
+CRY	84	Weep
+CUB	76	Young bear
+CUE	74	Pool stick|Signal to start
+CUP	86	Coffee vessel
+CUT	86	Slice
+DAD	86	Father
+DAM	76	River blocker
+DAY	88	Sunrise to sunset
+DEN	76	Cozy room|Lion's home
+DEW	74	Morning moisture
+DIG	82	Excavate
+DIM	76	Not bright
+DIN	66	Loud racket
+DIP	76	Chip's companion|Brief swim
+DOE	74	Female deer
+DOG	88	Loyal pet
+DOT	80	Small round mark
+DRY	82	Not wet
+DUE	76	Owed
+DUG	72	Excavated
+DUO	74	Pair
+DYE	76	Fabric color changer
+EAR	86	Sound catcher|Corn unit
+EAT	86	Have a meal
+EBB	66	Tide's retreat
+EEL	76	Slippery swimmer
+EGG	84	Breakfast staple
+EGO	76	Sense of self
+ELF	76	Santa's helper
+ELK	72	Large antlered animal
+ELM	74	Shade tree
+EMU	72	Flightless bird
+END	86	Finish
+EON	70	Very long time
+ERA	80	Historical stretch
+EVE	72	Night before
+EWE	70	Female sheep
+EYE	86	Needle's hole|It may be keen
+FAD	74	Passing craze
+FAN	84	Cooling device|Team supporter
+FAR	82	Distant
+FAT	80	Not lean
+FAX	70	Office relic
+FED	72	Nourished
+FEE	80	Charge for service
+FEW	80	Not many
+FIB	74	Little lie
+FIG	74	Newton's fruit
+FIN	74	Shark's feature
+FIR	70	Evergreen tree
+FIT	82	In good shape
+FIX	82	Repair
+FLU	76	Winter bug
+FLY	84	Travel by air|Buzzing pest
+FOE	74	Enemy
+FOG	80	Low cloud
+FOX	80	Sly woodland animal
+FRY	76	Cook in oil
+FUN	84	Good times
+FUR	78	Animal coat
+GAP	80	Space between
+GAS	84	Fuel at the pump
+GEL	74	Hair styling goo
+GEM	80	Precious stone
+GET	84	Obtain
+GIG	74	Musician's job
+GNU	66	African antelope
+GOO	70	Sticky stuff
+GOT	78	Received
+GUM	78	Chew in a pack
+GUN	74	Firearm
+GUT	72	Belly
+GUY	80	Fellow
+GYM	82	Workout spot
+HAM	78	Deli meat|Overactor
+HAS	76	Owns
+HAT	86	Head topper
+HAY	76	Barn bale
+HEM	72	Skirt edge
+HEN	80	Egg layer
+HER	78	Belonging to a woman
+HEX	70	Curse
+HID	72	Concealed
+HIP	78	Trendy|Joint above the leg
+HIS	78	Belonging to a man
+HIT	84	Chart topper|Strike
+HOE	74	Garden tool
+HOG	76	Farm animal|Take it all
+HOP	78	Bunny move
+HOT	86	Very warm
+HOW	82	In what way
+HUB	76	Wheel center
+HUE	74	Shade of color
+HUG	82	Warm embrace
+HUM	76	Wordless tune
+HUT	76	Simple shelter
+ICE	86	Frozen water
+ICY	78	Slick in winter
+ILL	78	Under the weather
+IMP	72	Little mischief maker
+INK	80	Pen filler
+INN	78	Roadside lodging
+ION	72	Charged particle
+IRE	70	Anger
+IRK	70	Annoy
+IVY	76	Climbing vine
+JAB	74	Quick punch
+JAM	80	Toast topper|Traffic snarl
+JAR	80	Pickle holder
+JAW	76	Chin's neighbor
+JAY	72	Blue bird
+JET	80	Fast plane
+JIG	70	Lively dance
+JOB	84	Daily work
+JOG	78	Easy run
+JOT	72	Write quickly
+JOY	82	Great happiness
+JUG	74	Milk container
+KEG	72	Party barrel
+KEY	86	Lock opener|Piano part
+KID	82	Youngster
+KIN	72	Relatives
+KIT	78	Set of tools
+LAB	80	Science room
+LAD	72	Young fellow
+LAG	74	Fall behind
+LAP	78	Track circuit|Seated space
+LAW	82	Rule of the land
+LAY	76	Put down
+LED	78	Guided
+LEG	84	Limb for walking
+LET	80	Allow
+LID	78	Jar topper
+LIE	80	Untruth
+LIP	78	Mouth edge
+LIT	76	Illuminated
+LOB	72	High toss
+LOG	80	Firewood piece|Record of events
+LOT	78	Parking space|Great deal
+LOW	82	Not high
+LUG	70	Haul
+MAD	80	Angry
+MAN	82	Grown male
+MAP	84	Road guide
+MAT	78	Door greeter
+MAY	78	Spring month
+MEN	78	Grown males
+MET	76	Encountered
+MID	72	Halfway point
+MIX	82	Stir together
+MOB	74	Angry crowd
+MOP	78	Floor cleaner
+MOW	74	Cut the lawn
+MUD	80	Wet dirt
+MUG	80	Coffee cup
+NAB	72	Catch in the act
+NAG	74	Pester
+NAP	80	Short sleep
+NET	82	Tennis divider|Clear profit
+NEW	86	Just out
+NIB	64	Fountain pen point
+NIL	68	Zero, in soccer
+NIP	70	Small bite
+NOD	78	Head bob
+NOR	70	Neither's partner
+NOT	80	Negative word
+NOW	84	At this moment
+NUN	72	Convent resident
+NUT	80	Squirrel's snack
+OAK	82	Acorn tree
+OAR	78	Rowboat mover
+OAT	76	Cereal grain
+ODD	80	Not even
+ODE	76	Poem of praise
+OFF	80	Not on
+OFT	62	Frequently, in verse
+OHM	66	Resistance unit
+OIL	84	Salad dressing base
+OLD	84	Aged
+ONE	84	Single unit
+OPT	76	Choose
+ORB	70	Sphere
+ORE	78	Mined rock
+OUR	76	Belonging to us
+OUT	84	Not in
+OWE	76	Be in debt
+OWL	82	Nighttime hooter
+OWN	80	Possess
+PAD	76	Cushion
+PAL	80	Buddy
+PAN	82	Frying vessel
+PAR	78	Golf standard
+PAT	76	Gentle tap
+PAW	80	Kitten's foot
+PAY	84	Wages
+PEA	80	Pod vegetable
+PEG	74	Wooden pin
+PEN	84	Writing tool
+PEP	72	Energy
+PER	70	For each
+PET	84	Household animal
+PEW	70	Church bench
+PIE	84	Baked dessert
+PIG	82	Barnyard oinker
+PIN	80	Bowling target
+PIT	78	Peach center
+PLY	66	Layer of wood
+POD	74	Pea case
+POP	80	Soda, in some regions|Burst
+POT	80	Cooking vessel
+PRO	78	Expert
+PRY	72	Snoop
+PUB	78	Tavern
+PUG	70	Flat-faced dog
+PUN	74	Play on words
+PUP	74	Young dog
+PUT	82	Place down
+RAG	76	Cleaning cloth
+RAM	74	Male sheep|Butt heads
+RAN	78	Sprinted
+RAP	76	Rhythmic music genre
+RAT	78	Rodent
+RAW	78	Uncooked
+RAY	80	Beam of light
+RED	86	Fire truck color
+REF	74	Whistle blower
+RIB	76	Chest bone
+RID	74	Free of
+RIG	72	Oil platform
+RIM	76	Wheel edge
+RIP	78	Tear apart
+ROB	74	Steal from
+ROD	74	Fishing pole
+ROE	64	Fish eggs
+ROT	74	Decay
+ROW	80	Line of seats
+RUB	78	Massage
+RUG	80	Floor covering
+RUM	74	Pirate's drink
+RUN	84	Move fast on foot
+RUT	70	Deep groove
+RYE	74	Deli bread
+SAD	84	Blue in mood
+SAG	74	Droop
+SAP	72	Tree juice
+SAT	76	Was seated
+SAW	78	Cutting blade
+SAY	82	Utter
+SEA	84	Ocean expanse
+SEE	84	View
+SET	82	Group of items
+SEW	76	Stitch
+SHE	78	Female pronoun
+SHY	80	Bashful
+SIN	74	Moral wrong
+SIP	78	Small drink
+SIR	76	Polite address for a man
+SIT	82	Take a seat
+SIX	82	Half a dozen
+SKI	80	Slope slider
+SKY	86	Where clouds float
+SLY	76	Cunning
+SOB	74	Cry hard
+SOD	70	Lawn patch
+SON	80	Male offspring
+SOW	72	Plant seeds
+SOY	76	Bean in tofu
+SPA	80	Massage retreat
+SPY	80	Secret agent
+SUB	78	Sandwich on a long roll|Underwater craft
+SUE	74	Take to court
+SUM	80	Total
+SUN	86	Daytime star
+TAB	76	Bar bill
+TAG	80	Price marker|Playground chase
+TAN	78	Beach color
+TAP	80	Faucet
+TAR	72	Road goo
+TAX	80	April payment
+TEA	84	Steeped drink
+TEE	76	Golf peg
+TEN	82	Digits on two hands
+THE	76	Common article
+TIC	70	Nervous twitch
+TIE	80	Neck accessory|Equal score
+TIN	76	Metal can
+TIP	80	Waiter's extra
+TOE	80	Foot digit
+TON	76	Heavy weight
+TOP	84	Highest point
+TOT	72	Little kid
+TOW	76	Haul away
+TOY	82	Kid's plaything
+TRY	82	Attempt
+TUB	78	Bathing basin
+TUG	76	Firm pull
+TWO	82	Pair count
+URN	72	Coffee dispenser
+USE	82	Put to work
+VAN	80	Delivery vehicle
+VAT	70	Big industrial tub
+VET	76	Animal doctor
+VIA	74	By way of
+VIE	68	Compete
+VOW	78	Wedding promise
+WAD	70	Bunch of bills
+WAG	72	Tail motion
+WAR	78	Armed conflict
+WAS	76	Existed
+WAX	76	Candle material
+WAY	82	Method
+WEB	82	Spider's home
+WED	74	Marry
+WEE	72	Tiny
+WET	82	Soaked
+WHO	80	Question word for a person
+WHY	82	Reason question
+WIG	76	Fake hair
+WIN	84	Take first place
+WIT	78	Clever humor
+WOE	72	Deep sorrow
+WOK	74	Stir-fry pan
+WON	80	Came in first
+WOO	70	Court romantically
+YAK	72	Tibetan ox|Chatter away
+YAM	76	Sweet tuber
+YAP	70	Small dog's bark
+YEA	66	Vote of support
+YES	84	Affirmative
+YET	78	So far
+YEW	66	Churchyard evergreen
+YOU	82	The reader
+ZAP	74	Zing with a laser
+ZEN	74	Calm state of mind
+ZIP	78	Fasten a jacket
+ZOO	84	Animal park
+ABLE	82	Up to the task
+ACHE	80	Dull pain
+ACID	76	Lemon juice quality
+ACRE	78	Land measure
+AIDE	74	Helper to a boss
+AJAR	72	Slightly open
+AKIN	70	Similar
+ALSO	80	In addition
+ALTO	74	Choir voice
+AMEN	76	Prayer's end
+AMID	72	Surrounded by
+ANEW	70	Once more
+ANTE	72	Poker starter
+APEX	76	Peak
+AQUA	74	Blue-green shade
+ARCH	78	Curved doorway
+AREA	82	Region
+ARIA	74	Opera solo
+ARMY	82	Land forces
+ATOM	80	Tiny particle
+AUNT	82	Mom's sister
+AUTO	78	Car, formally
+AVID	72	Very keen
+AWAY	80	Not here
+AXIS	74	Rotation line
+AXLE	74	Wheel rod
+BABY	84	Newborn
+BACK	84	Spine side
+BAIT	78	Hook lure
+BAKE	82	Use the oven
+BALD	76	Hairless
+BALL	84	Round toy
+BAND	82	Music group
+BANK	84	Money keeper
+BARE	78	Uncovered
+BARK	80	Dog's sound|Tree covering
+BARN	80	Farm building
+BASE	80	Foundation
+BATH	82	Tub soak
+BEAD	76	Necklace bit
+BEAM	78	Ray of light
+BEAN	80	Coffee bit
+BEAR	82	Woods bruin
+BEAT	80	Rhythm
+BEEF	78	Burger meat
+BEER	78	Brewery product
+BELL	82	Ringer
+BELT	80	Waist strap
+BEND	80	Curve
+BENT	76	Not straight
+BEST	84	Top rated
+BIKE	82	Two-wheeler
+BILL	80	Restaurant tab|Duck's beak
+BIND	74	Tie together
+BIRD	84	Feathered flier
+BITE	80	Chomp
+BLEW	74	Puffed away
+BLOB	72	Shapeless mass
+BLOT	70	Ink spot
+BLOW	78	Gust
+BLUE	84	Sky shade
+BLUR	74	Fuzzy image
+BOAT	84	Water craft
+BODY	82	Physical form
+BOIL	78	Bubble on the stove
+BOLD	80	Daring
+BOLT	78	Nut's partner|Dash away
+BOND	76	Strong link
+BONE	80	Skeleton piece
+BOOK	84	Reading material
+BOOM	76	Loud blast
+BOOT	80	Winter footwear
+BORE	72	Dull person
+BORN	78	Newly arrived
+BOSS	80	The one in charge
+BOTH	80	The pair
+BOWL	80	Cereal dish
+BRAG	76	Show off
+BRAN	70	Cereal fiber
+BRAT	72	Spoiled kid
+BREW	76	Make coffee
+BRIM	72	Hat edge
+BROW	74	Forehead
+BUCK	74	Male deer
+BULB	76	Light fixture part
+BULK	74	Large mass
+BULL	76	Rodeo beast
+BUMP	78	Road jolt
+BUNK	74	Stacked bed
+BURN	78	Scorch
+BURY	76	Put underground
+BUSH	78	Small shrub
+BUSY	82	Not free
+BUZZ	78	Bee's sound
+CAFE	80	Coffee shop
+CAGE	78	Zoo enclosure
+CAKE	84	Birthday dessert
+CALF	76	Young cow|Lower leg
+CALL	82	Phone someone
+CALM	82	Peaceful
+CAME	78	Arrived
+CAMP	80	Tent trip
+CANE	74	Walking stick
+CAPE	76	Superhero's garment
+CARD	82	Deck member
+CARE	82	Look after
+CART	78	Shopping wheeler
+CASE	80	Legal matter
+CASH	82	Paper money
+CAST	78	Play's actors|Broken arm wrap
+CAVE	80	Underground hollow
+CELL	80	Body's building block
+CENT	76	Penny value
+CHAT	80	Casual talk
+CHEF	82	Kitchen boss
+CHEW	78	Work the jaws
+CHIN	78	Below the mouth
+CHIP	80	Snack crisp
+CHOP	78	Cut with an axe
+CITE	72	Quote a source
+CITY	84	Urban center
+CLAM	76	Beach shellfish
+CLAP	78	Applaud
+CLAW	78	Cat's nail
+CLAY	78	Potter's material
+CLIP	76	Paper fastener
+CLOG	72	Block a drain
+CLUB	80	Social group
+CLUE	82	Puzzle hint
+COAL	78	Mine output
+COAT	82	Winter wear
+CODE	80	Secret writing
+COIL	74	Spiral
+COIN	80	Pocket change
+COLD	84	Wintry
+COLT	72	Young horse
+COMB	78	Hair tool
+COME	80	Approach
+COOK	82	Prepare a meal
+COOL	82	Chilly|Very hip
+COPE	74	Manage stress
+COPY	80	Duplicate
+CORD	76	Electric wire
+CORE	78	Apple center
+CORK	76	Bottle stopper
+CORN	80	Cob crop
+COST	82	Price
+COVE	72	Small bay
+CRAB	78	Sideways scuttler
+CRAM	72	Study frantically
+CRIB	76	Baby's bed
+CROP	78	Farm harvest
+CROW	78	Black bird
+CUBE	78	Six-sided shape
+CUFF	72	Sleeve end
+CULT	70	Fringe following
+CURB	74	Street edge
+CURE	80	Remedy
+CURL	76	Hair twist
+CUTE	80	Adorable
+DAME	68	Titled British woman
+DAMP	76	Slightly wet
+DARE	80	Challenge
+DARK	82	Without light
+DARN	70	Mend a sock
+DART	76	Pub board missile
+DASH	76	Quick sprint|Pinch of salt
+DATA	80	Facts and figures
+DATE	82	Calendar day|Romantic outing
+DAWN	80	Break of day
+DEAF	72	Unable to hear
+DEAL	80	Bargain
+DEAN	70	College official
+DEAR	78	Beloved
+DEBT	78	Money owed
+DECK	78	Cards set|Patio floor
+DEED	74	Act|Property paper
+DEEM	68	Consider to be
+DEEP	82	Not shallow
+DEER	82	Forest grazer
+DELI	76	Sandwich counter
+DENT	76	Fender ding
+DENY	76	Refuse to admit
+DESK	82	Office table
+DIAL	76	Phone face
+DICE	78	Rolling cubes
+DIET	80	Eating plan
+DIME	78	Ten cents
+DINE	76	Eat formally
+DIRE	72	Very serious
+DIRT	80	Garden soil
+DISH	80	Plate|Prepared food
+DISK	74	Round flat object
+DIVE	78	Head into the pool
+DOCK	74	Boat landing
+DOLL	76	Toy figure
+DOME	76	Rounded roof
+DONE	80	Finished
+DOOM	72	Grim fate
+DOOR	84	Entryway
+DOSE	76	Medicine amount
+DOVE	76	Peace bird
+DOWN	82	Not up
+DOZE	72	Nap lightly
+DRAB	70	Dull and dreary
+DRAG	76	Pull along
+DRAW	80	Sketch|Tied game
+DREW	74	Sketched
+DRIP	74	Faucet sound
+DROP	80	Let fall
+DRUM	80	Kit percussion
+DUAL	72	Twofold
+DUCK	80	Pond bird|Dodge quickly
+DUEL	72	Pistols at dawn
+DUET	74	Song for two
+DUKE	72	Noble rank
+DULL	76	Not sharp|Boring
+DUMP	74	Trash site
+DUNE	74	Sand hill
+DUSK	76	Twilight
+DUST	80	Shelf film
+DUTY	78	Obligation
+EACH	80	Every one
+EARL	70	British noble
+EARN	80	Work for wages
+EASE	76	Comfort
+EAST	82	Sunrise direction
+EASY	84	Simple
+ECHO	80	Canyon repeat
+EDGE	80	Border
+EDIT	78	Revise
+ELSE	74	Otherwise
+EMIT	70	Give off
+EPIC	76	Grand in scale
+EVEN	80	Not odd
+EVER	76	At any time
+EVIL	76	Wicked
+EXAM	80	Big test
+EXIT	82	Way out
+FACE	84	Front of the head
+FACT	82	True statement
+FADE	78	Grow dim
+FAIL	80	Not succeed
+FAIR	80	Just|Carnival with rides
+FAKE	80	Not genuine
+FALL	82	Autumn|Take a tumble
+FAME	78	Renown
+FANG	72	Snake's tooth
+FARE	74	Bus charge
+FARM	82	Crops and barns
+FAST	82	Speedy
+FATE	76	Destiny
+FAWN	70	Baby deer
+FEAR	80	Fright
+FEAT	74	Impressive act
+FEED	78	Give a meal to
+FEEL	82	Sense by touch
+FEET	80	Ankle attachments
+FELL	76	Toppled
+FELT	78	Craft fabric|Sensed
+FERN	76	Shady green plant
+FEUD	72	Long quarrel
+FILE	80	Computer document
+FILL	80	Make full
+FILM	82	Movie
+FIND	82	Locate
+FINE	80	Very good|Traffic penalty
+FIRE	84	Blaze
+FIRM	76	Solid|Business
+FISH	84	Angler's catch
+FIST	76	Clenched hand
+FIVE	82	Fingers on a hand
+FLAG	80	Pole flier
+FLAP	74	Wing motion
+FLAT	80	Level
+FLAW	76	Small defect
+FLEA	74	Dog's pest
+FLED	72	Ran off
+FLEE	74	Run away
+FLEW	76	Went by air
+FLEX	72	Show off muscles
+FLIP	76	Turn over
+FLOW	78	Stream along
+FOAM	76	Bubbly froth
+FOIL	74	Kitchen wrap
+FOLD	78	Bend over
+FOLK	74	Ordinary people
+FOND	74	Affectionate
+FONT	72	Typeface
+FOOD	84	Meal makings
+FOOL	76	Silly sort
+FOOT	82	Twelve inches
+FORK	80	Table utensil
+FORM	80	Shape|Paper to fill in
+FORT	76	Walled stronghold
+FOUL	74	Basketball penalty
+FOUR	82	Quartet count
+FOWL	70	Barnyard birds
+FREE	84	At no cost
+FROG	80	Lily pad hopper
+FUEL	80	Tank filler
+FULL	82	Not empty
+FUME	70	Angry vapor
+FUND	76	Money pool
+FURY	74	Rage
+FUSE	74	Circuit protector
+FUSS	74	Needless bother
+GAIN	78	Get more of
+GALE	74	Strong wind
+GAME	84	Match to win
+GANG	74	Street group
+GATE	80	Fence opening
+GAVE	78	Handed over
+GAZE	76	Steady look
+GEAR	78	Equipment
+GENE	76	Heredity unit
+GIFT	82	Present
+GIRL	82	Young lass
+GIVE	82	Hand over
+GLAD	80	Happy
+GLEE	74	Delight
+GLOW	78	Soft light
+GLUE	80	Sticky bonder
+GOAL	82	Aim|Score in soccer
+GOAT	78	Bearded climber
+GOLD	84	Olympic medal metal
+GOLF	80	Course sport
+GONE	78	No longer here
+GOOD	84	Fine
+GOWN	74	Formal dress
+GRAB	78	Snatch
+GRAM	74	Metric weight
+GRAY	78	Ash color
+GREW	76	Got bigger
+GRID	74	Crossing lines
+GRIM	74	Bleak
+GRIN	78	Wide smile
+GRIP	78	Firm hold
+GROW	82	Get bigger
+GULF	72	Large bay
+GULL	72	Seaside bird
+GUST	74	Wind burst
+HAIL	74	Icy pellets
+HAIR	84	Head growth
+HALF	82	Fifty percent
+HALL	80	Corridor
+HALT	76	Stop short
+HAND	84	Five fingers
+HANG	78	Suspend
+HARD	82	Difficult
+HARE	74	Fast hopper
+HARM	76	Damage
+HARP	74	Angel's instrument
+HASH	72	Diner potatoes
+HATE	80	Loathe
+HAUL	76	Drag a load
+HAVE	80	Possess
+HAWK	76	Sharp-eyed raptor
+HAZE	74	Light mist
+HEAD	84	Top of the body
+HEAL	78	Get better
+HEAP	74	Big pile
+HEAR	82	Listen to
+HEAT	82	Warmth
+HEED	70	Pay attention to
+HEEL	76	Shoe part
+HEIR	74	One who inherits
+HELD	78	Grasped
+HELM	70	Ship's wheel
+HELP	84	Assist
+HERB	76	Basil or thyme
+HERD	76	Cattle group
+HERE	80	At this spot
+HERO	82	Brave figure
+HIDE	80	Conceal
+HIGH	82	Lofty
+HIKE	80	Trail walk
+HILL	80	Small rise
+HINT	80	Little clue
+HIRE	78	Take on staff
+HISS	74	Snake sound
+HIVE	74	Bee home
+HOLD	82	Grasp
+HOLE	82	Doughnut center
+HOLY	76	Sacred
+HOME	84	Where you live
+HOOD	74	Jacket top|Car front cover
+HOOF	72	Horse's foot
+HOOK	78	Fishing bend
+HOOP	74	Basketball ring
+HOPE	82	Wish for
+HORN	78	Brass instrument
+HOSE	76	Garden waterer
+HOST	78	Party giver
+HOUR	82	Sixty minutes
+HOWL	74	Wolf's cry
+HUGE	82	Enormous
+HULL	70	Ship's body
+HUNT	78	Search for
+HURL	72	Throw hard
+HURT	80	Cause pain
+HUSH	74	Quiet down
+HYMN	72	Church song
+ICON	76	Desktop symbol
+IDEA	84	Bright thought
+IDLE	74	Doing nothing
+IDOL	74	Object of adoration
+INCH	80	Twelfth of a foot
+INTO	76	Toward the inside
+IRIS	74	Colored eye part|Spring flower
+IRON	82	Press clothes|Golf club
+ISLE	74	Small island
+ITCH	76	Scratchy feeling
+ITEM	80	Single thing
+JADE	74	Green gemstone
+JAIL	78	Lockup
+JAZZ	80	Improvised music
+JEEP	72	Rugged vehicle
+JEST	70	Playful remark
+JOIN	80	Become a member
+JOKE	82	Punch line lead-up
+JOLT	74	Sudden shock
+JUMP	82	Leap up
+JUNK	76	Useless stuff
+JURY	78	Twelve deciders
+JUST	80	Merely|Fair
+KEEN	74	Eager
+KEEP	82	Hold on to
+KEPT	76	Held on to
+KICK	80	Boot hard
+KILN	68	Pottery oven
+KIND	82	Nice|Sort
+KING	82	Crown wearer|Chess piece
+KISS	80	Peck on the cheek
+KITE	78	String flier
+KNEE	80	Leg joint
+KNEW	76	Was aware of
+KNIT	76	Work with yarn
+KNOB	74	Door handle
+KNOT	78	Rope tie
+KNOW	82	Be aware of
+LACE	78	Shoe string|Delicate fabric
+LACK	76	Be without
+LADY	80	Woman
+LAID	74	Put down
+LAIR	72	Beast's den
+LAKE	84	Inland water
+LAMB	78	Young sheep
+LAME	72	Weak, as an excuse
+LAMP	82	Table light
+LAND	82	Solid ground
+LANE	78	Bowling path
+LARK	70	Songbird|Bit of fun
+LASH	72	Whip stroke|Eye fringe
+LAST	82	Final
+LATE	82	Not on time
+LAVA	78	Volcano flow
+LAWN	80	Mowed grass
+LAZY	80	Not eager to work
+LEAD	80	Go first|Pencil filler
+LEAF	82	Tree greenery
+LEAK	78	Drip through a crack
+LEAN	78	Tilt|Not fatty
+LEAP	78	Big jump
+LEFT	82	Not right
+LEND	76	Loan out
+LENS	78	Camera glass
+LESS	80	Not as much
+LIAR	76	Untruthful sort
+LICK	74	Tongue swipe
+LIFE	84	Existence
+LIFT	80	Raise
+LIKE	82	Enjoy|Social media tap
+LIMB	76	Tree branch
+LIME	78	Green citrus
+LIMP	72	Uneven walk
+LINE	82	Straight mark
+LINK	80	Chain part|Web address
+LION	82	Savanna roarer
+LIST	80	Items in order
+LIVE	80	Not recorded
+LOAD	78	Cargo
+LOAF	74	Bread unit
+LOAN	78	Borrowed money
+LOCK	80	Key's partner
+LOFT	72	Attic space
+LOGO	78	Brand symbol
+LONE	74	By itself
+LONG	82	Not short
+LOOK	82	Glance
+LOOM	72	Weaving frame
+LOOP	78	Circle around
+LOOT	72	Stolen goods
+LORD	74	Noble title
+LOSE	80	Fail to win
+LOSS	78	Defeat
+LOST	80	Unable to find the way
+LOUD	80	Noisy
+LOVE	84	Deep affection
+LUCK	80	Fortune
+LUMP	74	Bump in the batter
+LUNG	76	Breathing organ
+LURE	74	Tempt
+LUSH	72	Green and thick
+MADE	80	Created
+MAIL	82	Postal delivery
+MAIN	80	Chief
+MAKE	82	Create
+MALE	78	Bull or rooster
+MALL	80	Shopping center
+MANE	74	Lion's hair
+MARK	80	Grade|Visible spot
+MASK	80	Face cover
+MAST	72	Sail pole
+MATE	76	Partner
+MATH	80	Numbers class
+MAZE	78	Hedge puzzle
+MEAL	82	Breakfast or dinner
+MEAN	80	Unkind|Signify
+MEAT	80	Butcher's offering
+MEEK	72	Timid
+MEET	82	Get together
+MELT	78	Turn to liquid
+MEMO	76	Office note
+MEND	74	Repair a tear
+MENU	82	List of dishes
+MERE	72	Nothing more than
+MESH	72	Net fabric
+MESS	78	Untidy state
+MICE	76	Cheese nibblers
+MILD	78	Not spicy
+MILE	80	5,280 feet
+MILK	84	Dairy drink
+MILL	74	Grain grinder
+MIME	72	Silent performer
+MIND	82	Brain's work
+MINE	78	Belonging to me|Coal source
+MINT	78	Cool herb|Coin factory
+MISS	78	Fail to hit
+MIST	76	Fine spray
+MOAN	72	Low groan
+MOAT	74	Castle's water ring
+MOCK	72	Make fun of
+MODE	74	Way of operating
+MOLD	74	Bread fuzz|Shape a form
+MOLE	72	Burrowing digger
+MONK	72	Monastery dweller
+MOOD	80	Frame of mind
+MOON	84	Night orb
+MOSS	74	Damp green growth
+MOST	80	The greatest number
+MOTH	78	Flame circler
+MOVE	82	Change position
+MUCH	78	A lot
+MULE	72	Stubborn hybrid
+MUSE	72	Inspiring figure
+MUST	78	Have to
+MUTE	76	Silence the sound
+MYTH	78	Old legend
+NAIL	80	Hammer target|Fingertip cover
+NAME	84	What you are called
+NAVY	78	Sea forces
+NEAR	82	Close by
+NEAT	80	Tidy
+NECK	80	Head's support
+NEED	82	Require
+NEON	76	Bright sign gas
+NEST	80	Bird's home
+NEWS	82	Headlines
+NEXT	80	Following
+NICE	82	Pleasant
+NINE	80	Baseball team count
+NODE	70	Network point
+NONE	76	Not any
+NOON	80	Midday
+NOSE	82	Smelling organ
+NOTE	80	Brief message|Musical sound
+NOUN	76	Person, place or thing
+NUMB	74	Without feeling
+OATH	74	Solemn promise
+OBEY	76	Follow orders
+ODDS	74	Betting chances
+OKAY	78	All right
+OMEN	74	Sign of things to come
+OMIT	72	Leave out
+ONCE	80	One time
+ONLY	80	Just one
+ONTO	74	Aware of|Atop
+OOZE	70	Seep slowly
+OPAL	74	Iridescent gem
+OPEN	84	Not shut
+ORAL	74	Spoken
+ORCA	74	Killer whale
+OVAL	78	Egg shape
+OVEN	82	Baking box
+OVER	80	Finished|Above
+PACE	78	Walking speed
+PACK	78	Wolf group|Bundle for a trip
+PACT	74	Formal agreement
+PAGE	82	Book sheet
+PAID	78	Settled the bill
+PAIL	72	Sand bucket
+PAIN	80	Ache
+PAIR	80	Two of a kind
+PALE	78	Washed out
+PALM	78	Tropical tree|Hand's center
+PANE	72	Window glass
+PANT	72	Breathe hard
+PARK	82	Green space
+PART	80	Piece
+PASS	80	Go by
+PAST	80	Days gone by
+PATH	82	Trail
+PAVE	72	Lay asphalt
+PAWN	72	Chess foot soldier
+PEAK	80	Mountain top
+PEAR	78	Bell-shaped fruit
+PECK	72	Bird's bite
+PEEK	76	Quick look
+PEEL	78	Banana skin
+PEER	74	Equal|Look closely
+PERK	74	Job benefit
+PEST	76	Annoying insect
+PICK	80	Choose
+PIER	74	Fishing platform
+PILE	78	Heap
+PILL	76	Tablet to swallow
+PINE	78	Needle tree
+PINK	80	Pale red
+PINT	74	Half a quart
+PIPE	78	Plumbing tube
+PITY	74	Feel sorry for
+PLAN	82	Scheme
+PLAY	84	Have fun|Stage work
+PLEA	74	Earnest request
+PLOT	78	Story line|Small patch of land
+PLOW	72	Snow mover
+PLUG	76	Outlet insert
+PLUM	76	Purple fruit
+PLUS	78	Added to
+POEM	80	Verse work
+POET	78	Verse writer
+POKE	76	Jab a finger
+POLE	78	Tall post
+POLL	76	Opinion survey
+POND	78	Small lake
+PONY	78	Small horse
+POOL	80	Swimming spot
+POOR	78	Not wealthy
+PORK	76	Pig meat
+PORT	78	Harbor
+POSE	76	Model's stance
+POST	78	Mail out|Fence upright
+POUR	78	Fill a glass
+PRAY	76	Say grace
+PREY	72	Hunted animal
+PROP	74	Stage object
+PUFF	74	Little breath
+PULL	80	Tug toward you
+PULP	70	Juice's bits
+PUMP	76	Tire filler
+PURE	78	Unmixed
+PUSH	80	Shove
+QUIT	78	Give up
+QUIZ	80	Short test
+RACE	82	Sprint contest
+RACK	74	Storage shelf
+RAFT	76	Floating platform
+RAGE	76	Fury
+RAID	74	Sudden attack
+RAIL	76	Train track
+RAIN	84	Wet weather
+RAKE	76	Leaf gatherer
+RAMP	74	Sloped path
+RANG	74	Sounded, as a bell
+RANK	74	Position in order
+RANT	72	Angry speech
+RARE	80	Uncommon
+RASH	72	Skin outbreak|Reckless
+RATE	78	Charge per unit
+RAVE	72	Gush with praise
+READ	82	Take in a book
+REAL	82	Genuine
+REAP	72	Harvest
+REAR	76	Back part
+REED	70	Marsh plant
+REEF	76	Coral ridge
+REEL	74	Fishing spool
+RELY	74	Depend
+RENT	78	Monthly payment
+REST	82	Take a break
+RICE	80	Grain in sushi
+RICH	82	Wealthy
+RIDE	82	Trip on a bike
+RIFT	70	Deep split
+RIND	72	Melon's skin
+RING	82	Finger jewelry|Phone sound
+RINK	74	Skating surface
+RIOT	72	Unruly crowd
+RIPE	76	Ready to eat
+RISE	80	Go up
+RISK	80	Chance of loss
+ROAD	84	Paved way
+ROAM	74	Wander
+ROAR	78	Lion's sound
+ROBE	76	Bath wrap
+ROCK	82	Stone|Music genre
+RODE	74	Sat on a horse
+ROLE	80	Actor's part
+ROLL	78	Dinner bread|Tumble along
+ROOF	80	House top
+ROOM	82	Space in a house
+ROOT	80	Underground plant part
+ROPE	80	Thick cord
+ROSE	82	Thorny flower
+ROSY	74	Cheerfully pink
+RUDE	78	Impolite
+RUIN	76	Wreck
+RULE	80	Regulation
+RUNG	72	Ladder step
+RUSH	80	Hurry
+RUST	76	Old metal's problem
+SACK	74	Burlap bag
+SAFE	82	Out of danger|Vault
+SAGA	74	Long story
+SAGE	74	Wise elder|Stuffing herb
+SAID	78	Uttered
+SAIL	80	Boat's canvas
+SAKE	72	For the ___ of argument
+SALE	80	Discount event
+SALT	82	Pepper's partner
+SAME	80	Not different
+SAND	82	Beach grains
+SANE	74	Of sound mind
+SANG	74	Carried a tune
+SANK	74	Went under
+SAVE	82	Rescue|Keep for later
+SCAN	76	Look over quickly
+SCAR	74	Healed wound mark
+SEAL	78	Arctic swimmer|Close tightly
+SEAM	72	Stitched joint
+SEAT	80	Chair
+SEED	80	Planting start
+SEEK	78	Look for
+SEEM	76	Appear to be
+SEEN	78	Viewed
+SELF	78	One's own person
+SELL	80	Trade for money
+SEND	80	Dispatch
+SENT	78	Dispatched
+SHED	76	Backyard structure
+SHIP	82	Ocean vessel
+SHOE	82	Foot cover
+SHOP	82	Store
+SHOT	78	Basketball attempt
+SHOW	82	Display|TV program
+SHUT	80	Close firmly
+SICK	80	Unwell
+SIDE	82	Flank
+SIGH	76	Weary breath
+SIGN	82	Road marker
+SILK	78	Smooth fabric
+SILO	72	Grain tower
+SING	82	Carry a tune
+SINK	80	Kitchen basin|Go under
+SITE	78	Web location
+SIZE	80	How big it is
+SKID	72	Slide on ice
+SKIM	74	Read quickly
+SKIN	80	Body's cover
+SKIP	78	Hop along|Leave out
+SLAB	72	Thick slice
+SLAM	76	Shut hard
+SLAP	74	Open-handed hit
+SLED	76	Snow rider
+SLIM	76	Thin
+SLIP	76	Lose footing
+SLOT	76	Coin opening
+SLOW	80	Not fast
+SLUG	70	Garden crawler
+SNAP	78	Quick break|Photo
+SNIP	72	Small cut
+SNOW	84	Winter fall
+SOAK	76	Steep in water
+SOAP	80	Bath bar
+SOAR	76	Fly high
+SOCK	78	Foot cover
+SODA	80	Fizzy drink
+SOFA	80	Living room seat
+SOFT	82	Not hard
+SOIL	78	Garden dirt
+SOLD	78	Traded for money
+SOLE	74	Only|Shoe bottom
+SOLO	78	On one's own
+SOME	78	A few
+SONG	84	Tune with words
+SOON	80	Before long
+SORE	76	Aching
+SORT	78	Arrange by type
+SOUL	78	Inner spirit
+SOUP	82	Bowl of broth
+SOUR	78	Like a lemon
+SPAN	74	Bridge stretch
+SPIN	78	Whirl
+SPOT	80	Small mark|Notice
+SPUR	72	Rider's prod
+STAR	84	Night twinkler|Celebrity
+STAY	80	Remain
+STEM	76	Flower stalk
+STEP	80	Stair unit
+STEW	76	Simmered dish
+STIR	78	Mix with a spoon
+STOP	84	Halt
+STUB	70	Ticket remnant
+STUN	72	Shock badly
+SUCH	76	Of this kind
+SUIT	80	Formal outfit|Deck group
+SURE	80	Certain
+SURF	76	Ride the waves
+SWAN	76	Graceful water bird
+SWAP	76	Trade
+SWAY	74	Rock side to side
+SWIM	82	Do laps
+TACK	72	Small nail
+TACO	80	Folded shell meal
+TAIL	80	Dog's wagger
+TAKE	82	Grab hold of
+TALE	78	Story
+TALK	82	Speak
+TALL	82	Not short
+TAME	74	Domesticated
+TANK	78	Water holder|Armored vehicle
+TAPE	78	Sticky roll
+TART	74	Sharp to taste|Small pie
+TASK	80	Job to do
+TEAK	70	Hard tropical wood
+TEAL	74	Blue-green shade
+TEAM	84	Group of players
+TEAR	78	Rip|Eye drop
+TEEN	78	Adolescent
+TELL	82	Let know
+TEND	74	Look after
+TENT	80	Camper's shelter
+TERM	78	Semester|Word or phrase
+TEST	82	Quiz
+TEXT	80	Phone message
+THAN	76	Comparison word
+THAT	76	Not this
+THAW	74	Melt out of the freezer
+THEM	76	Those people
+THEN	78	At that time
+THEY	78	Those folks
+THIN	80	Slender
+THIS	76	Not that
+THUD	70	Dull thump
+THUS	72	Therefore
+TICK	74	Clock sound|Woodland biter
+TIDE	78	Ocean's rise and fall
+TIDY	78	Neat
+TIER	72	Cake level
+TILE	78	Bathroom square
+TILT	74	Lean over
+TIME	84	Clock reading
+TINT	72	Slight color
+TINY	82	Very small
+TIRE	78	Wheel rubber|Grow weary
+TOAD	76	Warty hopper
+TOIL	72	Hard work
+TOLD	78	Let know, in the past
+TOLL	74	Bridge fee
+TOMB	74	Burial chamber
+TONE	76	Sound quality
+TOOK	78	Grabbed
+TOOL	80	Hammer or wrench
+TORE	72	Ripped
+TORN	74	Ripped apart
+TOSS	78	Light throw
+TOUR	78	Sightseeing trip
+TOWN	82	Small city
+TRAM	72	Streetcar
+TRAP	76	Snare
+TRAY	78	Serving board
+TREE	84	Trunk and branches
+TREK	74	Long journey
+TRIM	74	Cut back
+TRIO	76	Group of three
+TRIP	80	Journey|Stumble
+TROT	72	Horse's gait
+TRUE	82	Not false
+TUBA	74	Deep brass horn
+TUBE	78	Hollow cylinder
+TUCK	74	Fold under
+TUNA	80	Sandwich fish
+TUNE	80	Melody
+TURF	72	Grass patch
+TURN	82	Rotate|Your go
+TWIG	76	Small branch
+TWIN	78	Identical sibling
+TYPE	80	Keyboard away|Category
+UGLY	76	Not pretty
+UNDO	74	Reverse an action
+UNIT	76	Single measure
+UPON	72	On top of
+URGE	76	Strong desire
+USED	76	Second hand
+USER	76	App customer
+VAIN	72	Conceited
+VANE	68	Weather pointer
+VASE	78	Flower holder
+VAST	78	Huge in extent
+VEAL	70	Young calf meat
+VEIL	74	Bridal cover
+VEIN	74	Blood channel
+VENT	74	Air outlet
+VERB	76	Action word
+VERY	80	Extremely
+VEST	76	Sleeveless top
+VETO	74	Presidential no
+VIBE	74	Atmosphere
+VICE	72	Bad habit
+VIEW	80	Scenic outlook
+VINE	78	Grape climber
+VISA	74	Travel document
+VOID	72	Empty space
+VOLT	72	Electrical unit
+VOTE	82	Ballot choice
+WADE	74	Walk in shallow water
+WAGE	76	Weekly pay
+WAIT	82	Bide time
+WAKE	78	Stop sleeping
+WALK	84	Stroll
+WALL	82	Room divider
+WAND	74	Magician's stick
+WANT	80	Desire
+WARD	70	Hospital section
+WARM	82	Pleasantly hot
+WARN	78	Alert to danger
+WARP	70	Bend out of shape
+WASH	80	Clean with water
+WASP	74	Stinging insect
+WAVE	82	Ocean swell|Greet with a hand
+WAVY	72	Not straight, as hair
+WEAK	78	Not strong
+WEAR	80	Have on
+WEED	76	Garden invader
+WEEK	82	Seven days
+WEEP	74	Shed tears
+WELD	70	Fuse metal
+WELL	80	Water source|In good health
+WENT	78	Departed
+WEPT	72	Cried
+WERE	74	Existed, plurally
+WEST	82	Sunset direction
+WHAT	78	Question word
+WHEN	78	At what time
+WHIM	72	Passing fancy
+WHIP	72	Beat the cream
+WHOM	70	Formal object pronoun
+WIDE	80	Broad
+WIFE	80	Married woman
+WILD	80	Untamed
+WILL	80	Determination|Legal document
+WILT	72	Droop, as a flower
+WIND	80	Moving air
+WINE	80	Vineyard product
+WING	80	Bird's flier
+WINK	76	Quick eye signal
+WIRE	78	Metal strand
+WISE	80	Full of good judgment
+WISH	82	Birthday candle thought
+WITH	76	Alongside
+WOKE	74	Stopped sleeping
+WOLF	80	Pack howler
+WOOD	80	Lumber
+WOOL	78	Sheep's coat
+WORD	82	Unit of speech
+WORE	74	Had on
+WORK	84	Daily labor
+WORM	76	Garden wriggler
+WORN	74	Used a lot
+WRAP	76	Cover in paper
+WREN	70	Small songbird
+YARD	80	Lawn area
+YARN	78	Knitting thread|Long story
+YEAR	84	365 days
+YELL	80	Shout
+YOGA	80	Mat exercise
+YOLK	74	Egg's yellow
+YOUR	76	Belonging to you
+ZEAL	72	Great enthusiasm
+ZERO	82	Nothing
+ZONE	78	Area with a purpose
+ZOOM	78	Move very fast
+ABIDE	70	Put up with
+ABOUT	80	Concerning
+ABOVE	80	Overhead
+ACORN	80	Oak's seed
+ACTOR	84	Stage performer
+ACUTE	74	Sharp, as an angle
+ADAPT	76	Adjust to change
+ADEPT	72	Highly skilled
+ADMIT	78	Confess
+ADOBE	74	Sun-dried brick
+ADOPT	78	Take in as one's own
+ADORE	78	Love deeply
+ADULT	80	Grown-up
+AFTER	82	Following
+AGAIN	82	One more time
+AGENT	80	Spy
+AGREE	82	Say yes
+AHEAD	80	In front
+AISLE	78	Supermarket lane
+ALARM	80	Morning ringer
+ALBUM	82	Photo book|Set of songs
+ALERT	80	Watchful
+ALIEN	78	Visitor from space
+ALIGN	74	Line up
+ALIKE	76	The same
+ALIVE	80	Living
+ALLEY	78	Narrow lane
+ALLOW	80	Permit
+ALLOY	72	Metal blend
+ALOFT	70	High in the air
+ALONE	82	By oneself
+ALONG	78	Beside
+ALOUD	74	Not silently
+ALTAR	74	Church front
+ALTER	76	Change
+AMBER	76	Traffic light color
+AMPLE	74	More than enough
+AMUSE	76	Entertain
+ANGEL	80	Winged helper
+ANGER	80	Rage
+ANGLE	80	Corner measure
+ANGRY	82	Very mad
+ANKLE	80	Foot's joint
+ANNOY	78	Bother
+APART	78	Separated
+APPLE	84	Orchard fruit
+APPLY	80	Put in a request
+APRON	78	Cook's cover
+ARENA	80	Sports venue
+ARGUE	80	Quarrel
+ARISE	74	Get up
+ARMOR	76	Knight's suit
+AROMA	78	Kitchen scent
+ARRAY	74	Ordered display
+ARROW	80	Bow's partner
+ASIDE	74	Off to one side
+ASSET	76	Valuable holding
+ATLAS	76	Book of maps
+ATTIC	80	Space under the roof
+AUDIO	78	Sound part
+AUDIT	72	Books review
+AVOID	80	Stay away from
+AWAIT	74	Wait for
+AWAKE	78	Not sleeping
+AWARD	80	Trophy
+AWARE	78	Conscious of
+AWFUL	78	Terrible
+BACON	82	Breakfast strips
+BADGE	78	Officer's shield
+BADLY	76	Poorly
+BAGEL	80	Ring-shaped bread
+BAKER	78	Bread maker
+BALMY	70	Pleasantly mild
+BANJO	76	Bluegrass strings
+BARGE	72	Canal boat
+BASIC	80	Fundamental
+BASIL	76	Pesto herb
+BASIN	72	Wash bowl
+BASIS	74	Underlying support
+BATCH	76	Group made at once
+BATON	74	Conductor's stick
+BEACH	84	Sandy shore
+BEARD	80	Chin growth
+BEAST	78	Wild creature
+BEGAN	78	Started
+BEGIN	80	Start
+BEING	76	Living creature
+BELLY	78	Stomach
+BELOW	80	Underneath
+BENCH	80	Park seat
+BERRY	80	Small juicy fruit
+BIRCH	74	White-barked tree
+BIRTH	78	Arrival of a baby
+BLADE	78	Knife's edge
+BLAME	78	Point the finger at
+BLAND	74	Lacking flavor
+BLANK	78	Empty space
+BLAST	76	Explosion
+BLAZE	76	Roaring fire
+BLEAK	72	Dreary
+BLEND	80	Mix smoothly
+BLESS	74	Give a benediction
+BLIND	78	Unable to see
+BLINK	78	Eye flutter
+BLISS	74	Perfect joy
+BLOCK	80	City square|Stop from passing
+BLOND	72	Fair haired
+BLOOD	80	Vein fluid
+BLOOM	78	Flower opening
+BLOWN	72	Puffed away
+BLUFF	72	Fake confidence
+BLUNT	74	Not sharp
+BLUSH	76	Turn red
+BOARD	80	Plank|Get on a plane
+BOAST	74	Brag
+BOOST	76	Give a lift to
+BOOTH	76	Diner seat
+BORED	78	Restless from dullness
+BOUND	74	Tied|Leap
+BOXER	76	Ring fighter
+BRACE	72	Support beam
+BRAID	76	Woven hair
+BRAIN	82	Thinking organ
+BRAKE	78	Pedal to stop
+BRAND	80	Product name
+BRASS	74	Trumpet metal
+BRAVE	82	Courageous
+BREAD	84	Loaf
+BREAK	82	Snap in two|Short rest
+BREED	74	Raise animals
+BRIBE	72	Illicit payment
+BRICK	80	Wall unit
+BRIDE	80	Wedding star
+BRIEF	78	Short
+BRING	80	Carry along
+BRINK	72	Very edge
+BRISK	74	Quick and lively
+BROAD	76	Wide
+BROIL	72	Cook under high heat
+BROKE	76	Out of money
+BROOK	74	Small stream
+BROOM	80	Sweeping tool
+BROTH	76	Clear soup
+BROWN	82	Chocolate color
+BRUSH	80	Painter's tool
+BUGGY	70	Baby carriage
+BUILD	80	Construct
+BUILT	78	Constructed
+BULKY	72	Big and awkward
+BUNCH	78	Grapes group
+BUNNY	78	Easter hopper
+BURST	76	Pop open
+BUYER	76	Purchaser
+CABIN	80	Log dwelling
+CABLE	78	Thick wire
+CADET	72	Military trainee
+CAMEL	80	Desert humper
+CANAL	76	Waterway
+CANDY	82	Sweet treat
+CANOE	80	Paddled boat
+CARGO	76	Ship's freight
+CAROL	76	Holiday song
+CARRY	80	Tote along
+CARVE	76	Cut a turkey
+CATCH	82	Grab in the air
+CATER	72	Provide the food
+CAUSE	80	Reason
+CEASE	74	Stop
+CEDAR	74	Fragrant wood
+CELLO	76	Large string instrument
+CHAIN	80	Linked metal
+CHAIR	82	Seat with a back
+CHALK	78	Blackboard stick
+CHAMP	74	Title holder
+CHANT	74	Repeated call
+CHAOS	78	Total disorder
+CHARM	78	Bracelet dangle|Win over
+CHART	78	Data picture
+CHASE	80	Run after
+CHEAP	78	Low in price
+CHEAT	76	Break the rules
+CHECK	80	Look over|Restaurant bill
+CHEEK	78	Face side
+CHEER	80	Crowd's shout
+CHESS	80	Board game with rooks
+CHEST	80	Ribcage area|Treasure box
+CHICK	76	Baby bird
+CHIEF	78	Top boss
+CHILD	82	Youngster
+CHILI	78	Spicy stew
+CHILL	78	Cool down
+CHIME	74	Bell's ring
+CHIRP	74	Cricket's sound
+CHOIR	78	Singing group
+CHOKE	74	Gasp for air
+CHORD	74	Guitar strum
+CHORE	78	Household task
+CHOSE	76	Picked
+CHUNK	74	Thick piece
+CIDER	78	Fall apple drink
+CIGAR	72	Rolled smoke
+CIVIL	74	Polite
+CLAIM	78	Assert
+CLAMP	72	Holding tool
+CLASH	74	Conflict
+CLASS	82	School group
+CLEAN	82	Free of dirt
+CLEAR	82	Easy to see through
+CLERK	76	Store worker
+CLICK	78	Mouse action
+CLIFF	78	Steep rock face
+CLIMB	80	Go up
+CLING	74	Hold tight
+CLOAK	72	Long cape
+CLOCK	82	Wall timepiece
+CLONE	74	Exact copy
+CLOSE	82	Shut|Nearby
+CLOTH	78	Fabric piece
+CLOUD	82	Sky puff
+CLOWN	78	Circus jester
+COACH	80	Team leader
+COAST	80	Shoreline
+COBRA	76	Hooded snake
+COCOA	78	Hot chocolate
+COLON	70	Punctuation pair of dots
+COLOR	82	Red or blue
+COMET	76	Tailed space rock
+COMIC	78	Funny book
+CORAL	76	Reef builder
+COUCH	80	Living room seat
+COUGH	76	Cold symptom
+COUNT	80	Tally up
+COURT	80	Tennis surface|Legal room
+COVER	80	Put a lid on
+CRACK	78	Thin split
+CRAFT	78	Handmade art
+CRANE	76	Tall bird|Construction lifter
+CRASH	78	Collision
+CRATE	74	Wooden box
+CRAVE	74	Long for
+CRAWL	78	Move on all fours
+CRAZY	78	Wild
+CREAM	80	Dairy topping
+CREEK	76	Small stream
+CREEP	72	Move slowly and quietly
+CREST	72	Wave's top
+CRIME	80	Law breaking
+CRISP	78	Crunchy
+CROWD	80	Big gathering
+CROWN	80	Royal headwear
+CRUDE	72	Rough|Unrefined oil
+CRUEL	76	Deliberately unkind
+CRUMB	74	Bread bit
+CRUSH	78	Squash|Big infatuation
+CRUST	78	Pizza edge
+CURVE	78	Bend in the road
+CYCLE	76	Repeating series
+DAILY	80	Every day
+DAIRY	78	Milk section
+DAISY	80	White petaled flower
+DANCE	82	Move to music
+DEALT	74	Handed out cards
+DEBUT	74	First appearance
+DECAY	74	Rot away
+DECOR	74	Room styling
+DECOY	72	Duck hunter's fake
+DELAY	78	Hold up
+DELTA	74	River mouth
+DENIM	78	Jeans fabric
+DENSE	74	Packed tight
+DEPTH	76	How deep it goes
+DEVIL	74	Horned villain
+DIARY	78	Private journal
+DIGIT	74	Number symbol|Finger
+DINER	78	Roadside eatery
+DIRTY	80	Needing a wash
+DITCH	74	Roadside trench
+DIVER	76	One who goes deep
+DIZZY	78	Head spinning
+DODGE	76	Duck out of the way
+DOING	74	Carrying out
+DONOR	74	One who gives
+DOUBT	78	Uncertainty
+DOUGH	78	Baker's mixture
+DOZEN	80	Twelve
+DRAFT	76	Rough version|Cold breeze
+DRAIN	78	Sink opening
+DRAMA	80	Theater genre
+DRANK	74	Had a beverage
+DRAWN	74	Sketched
+DREAD	74	Fear greatly
+DREAM	82	Sleep vision
+DRESS	80	Frock
+DRIED	74	No longer wet
+DRIFT	74	Float along
+DRILL	78	Boring tool
+DRINK	82	Beverage
+DRIVE	82	Take the wheel
+DROVE	74	Took the wheel, in the past
+DROWN	72	Go under for good
+DUSTY	76	Needing a wipe
+DWARF	72	Fairy tale little one
+DWELL	72	Reside
+EAGER	80	Keen to start
+EAGLE	82	Bald national bird
+EARLY	82	Before the hour
+EARTH	84	Our planet
+EASEL	76	Painter's stand
+EATEN	76	Consumed
+EBONY	72	Dark wood
+EIGHT	82	Spider's leg count
+EJECT	72	Force out
+ELBOW	80	Arm joint
+ELDER	74	Senior
+ELECT	76	Vote in
+ELITE	74	Top tier
+ELOPE	70	Run off to marry
+EMPTY	80	Nothing inside
+ENACT	70	Make into law
+ENEMY	80	Foe
+ENJOY	82	Take pleasure in
+ENTER	80	Go inside
+ENTRY	76	Way in
+EQUAL	80	The same as
+EQUIP	72	Outfit with gear
+ERASE	78	Rub out
+ERROR	80	Mistake
+ESSAY	78	School composition
+EVENT	80	Happening
+EVERY	80	Each one
+EXACT	78	Precise
+EXCEL	74	Do very well
+EXILE	72	Forced departure
+EXIST	76	Be real
+EXTRA	80	Additional
+FABLE	76	Moral story
+FAINT	76	Pass out|Barely there
+FAIRY	78	Tooth collector of lore
+FAITH	78	Firm belief
+FALSE	78	Untrue
+FANCY	78	Elaborate
+FATAL	72	Deadly
+FAULT	76	Blame|Earthquake line
+FAVOR	78	Kind act
+FEAST	78	Big meal
+FENCE	80	Yard barrier
+FERRY	76	Harbor shuttle
+FETCH	76	Go get
+FEVER	78	High temperature
+FEWER	74	Not as many
+FIBER	76	Dietary roughage
+FIELD	82	Open land
+FIERY	74	Blazing
+FIFTH	76	After fourth
+FIFTY	78	Half a century
+FIGHT	80	Brawl
+FINAL	80	Last
+FINCH	72	Small seed eater
+FIRST	82	Number one
+FIXED	76	Repaired
+FLAIR	72	Natural talent
+FLAKE	74	Snow bit
+FLAME	80	Candle's tip
+FLANK	70	Side of the body
+FLARE	74	Signal light
+FLASH	78	Quick burst of light
+FLASK	72	Lab bottle
+FLEET	74	Group of ships
+FLESH	72	Body tissue
+FLICK	74	Quick snap
+FLING	72	Toss hard
+FLINT	70	Fire starting stone
+FLOAT	78	Stay on the surface
+FLOCK	76	Sheep group
+FLOOD	78	Overflow of water
+FLOOR	80	Room's bottom
+FLOUR	80	Baking powder base
+FLUID	74	Liquid
+FLUSH	74	Toilet action
+FLUTE	78	Silver woodwind
+FOCUS	80	Sharpen attention
+FOGGY	76	Hard to see through
+FORCE	80	Push hard
+FORGE	72	Blacksmith's shop
+FORTH	72	Onward
+FORTY	78	Two score
+FORUM	74	Discussion board
+FOUND	80	Located
+FOYER	72	Entry hall
+FRAME	78	Picture border
+FRANK	74	Blunt and honest
+FRAUD	74	Scam
+FRESH	82	Just picked
+FRIED	78	Cooked in oil
+FRONT	80	Ahead part
+FROST	78	Window ice
+FROTH	72	Foam on a latte
+FROWN	78	Opposite of a smile
+FROZE	74	Turned to ice
+FRUIT	82	Apple or plum
+FUDGE	76	Chocolate treat
+FULLY	76	Completely
+FUNNY	82	Amusing
+FUSSY	74	Hard to please
+GAUGE	72	Measuring dial
+GAVEL	74	Judge's hammer
+GECKO	74	Wall-climbing lizard
+GEESE	76	Honking flock
+GENIE	76	Lamp dweller
+GENRE	74	Category of art
+GHOST	80	Haunting spirit
+GIANT	80	Very large
+GIVEN	76	Handed over
+GLAND	70	Hormone maker
+GLARE	74	Harsh light|Angry look
+GLASS	82	Window pane material
+GLAZE	74	Doughnut coating
+GLEAM	74	Soft shine
+GLIDE	76	Move smoothly
+GLOBE	80	World model
+GLOOM	72	Deep sadness
+GLORY	76	Great honor
+GLOSS	72	Shiny finish
+GLOVE	80	Hand cover
+GOING	76	On the way
+GOOSE	78	Honking bird
+GORGE	72	Deep ravine
+GRACE	78	Elegance
+GRADE	80	Test score
+GRAIN	78	Wheat kernel
+GRAND	78	Magnificent
+GRANT	76	Funding award
+GRAPE	80	Vine fruit
+GRAPH	78	Data chart
+GRASP	74	Take hold of
+GRASS	82	Lawn cover
+GRATE	72	Metal grid
+GRAVE	74	Very serious|Burial spot
+GRAVY	78	Meat sauce
+GRAZE	72	Nibble in a pasture
+GREAT	82	Excellent
+GREED	74	Hunger for more
+GREEN	84	Grass color
+GREET	78	Say hello to
+GRIEF	74	Deep sorrow
+GRILL	78	Backyard cooker
+GRIND	74	Crush to powder
+GROAN	74	Low moan
+GROOM	76	Wedding partner|Brush a horse
+GROVE	72	Small orchard
+GROWL	76	Angry rumble
+GUARD	78	Protector
+GUESS	80	Rough estimate
+GUEST	80	Visitor
+GUIDE	80	Tour leader
+GUILT	76	Feeling of wrongdoing
+HABIT	78	Regular practice
+HAIRY	74	Very furry
+HANDY	78	Useful
+HAPPY	84	Cheerful
+HARSH	76	Severe
+HASTE	72	Great hurry
+HASTY	72	Done too quickly
+HATCH	74	Break out of a shell
+HAUNT	74	Spook a house
+HAVEN	74	Safe place
+HAZEL	72	Light brown eye shade
+HEARD	78	Listened to
+HEART	84	Valentine symbol
+HEAVY	82	Weighing a lot
+HEDGE	76	Trimmed shrub row
+HEFTY	72	Quite weighty
+HELLO	82	Greeting
+HENCE	70	Therefore
+HERON	72	Long-legged wader
+HINGE	74	Door pivot
+HIPPO	76	River giant
+HOBBY	80	Spare time pursuit
+HOIST	72	Lift with a rope
+HOLLY	74	Christmas greenery
+HONEY	82	Bee's product
+HONOR	78	Great respect
+HORSE	84	Stable dweller
+HOTEL	82	Traveler's lodging
+HOUND	74	Hunting dog
+HOUSE	84	Family dwelling
+HOVER	74	Float in place
+HUMID	76	Muggy
+HUMOR	78	Comic sense
+HUNCH	74	Gut feeling
+HURRY	80	Move fast
+HUSKY	74	Sled dog|Hoarse
+HYENA	74	Laughing scavenger
+ICING	78	Cake topping
+IDEAL	78	Perfect
+IDIOM	72	Figure of speech
+IGLOO	76	Ice dome
+IMAGE	80	Picture
+IMPLY	74	Hint at
+INDEX	76	Book's back list
+INLET	72	Narrow bay
+INNER	76	On the inside
+INPUT	76	Data fed in
+INTRO	74	Opening section
+IRATE	72	Furious
+IRONY	76	Opposite of what is meant
+ISSUE	78	Magazine number|Problem
+IVORY	74	Piano key material
+JELLY	80	Toast spread
+JEWEL	78	Precious stone
+JOINT	76	Where bones meet
+JOKER	76	Wild card
+JOLLY	76	Merry
+JUDGE	80	Court official
+JUICE	82	Orange drink
+JUICY	78	Full of liquid
+JUMBO	76	Extra large
+JUMPY	72	Nervous
+KAYAK	78	Paddled craft
+KNACK	72	Special talent
+KNEAD	72	Work the dough
+KNEEL	74	Go down on a knee
+KNIFE	80	Cutting utensil
+KNOCK	78	Rap on a door
+KNOWN	76	Familiar
+KOALA	78	Eucalyptus muncher
+LABEL	78	Jar sticker
+LABOR	76	Hard work
+LADLE	74	Soup server
+LAGER	74	Light beer
+LANCE	70	Knight's spear
+LAPSE	72	Slip in attention
+LARGE	82	Big
+LASER	80	Focused beam
+LASSO	74	Cowboy's rope
+LATCH	74	Gate fastener
+LATER	80	Afterward
+LATTE	78	Coffee with milk
+LAUGH	82	React to a joke
+LAYER	78	Cake tier
+LEAFY	74	Full of greenery
+LEARN	82	Take in knowledge
+LEASE	74	Rental contract
+LEASH	76	Dog walker's strap
+LEAST	78	Smallest amount
+LEAVE	80	Depart
+LEDGE	74	Narrow shelf
+LEGAL	78	Within the law
+LEMON	82	Sour citrus
+LEVEL	80	Flat and even
+LEVER	74	Pry bar
+LIGHT	84	Not heavy|Lamp glow
+LILAC	76	Purple blossom
+LIMIT	78	Boundary
+LINEN	74	Bed fabric
+LIVER	74	Body's filter
+LLAMA	76	Andean pack animal
+LOBBY	76	Hotel entrance
+LOCAL	78	Nearby
+LODGE	74	Ski cabin
+LOFTY	72	High up
+LOGIC	78	Reasoning
+LOOSE	78	Not tight
+LOSER	74	One who did not win
+LOTUS	72	Water lily
+LOVER	74	Sweetheart
+LOWER	78	Bring down
+LOYAL	80	Faithful
+LUCKY	82	Fortunate
+LUNAR	76	Of the moon
+LUNCH	82	Midday meal
+LYRIC	74	Song's words
+MAGIC	82	Wand work
+MAGMA	74	Molten rock
+MAJOR	78	Very important
+MAKER	76	Creator
+MANGO	78	Tropical fruit
+MANIA	70	Wild craze
+MANOR	72	Country estate
+MAPLE	80	Syrup tree
+MARCH	80	Parade step|Spring month
+MARSH	74	Boggy ground
+MASON	72	Bricklayer
+MATCH	80	Equal pair|Fire stick
+MAYBE	80	Perhaps
+MAYOR	78	City leader
+MEDAL	78	Winner's award
+MEDIA	76	Press
+MELON	80	Cantaloupe or honeydew
+MERCY	74	Compassion
+MERGE	76	Join together
+MERIT	74	Worthiness
+MERRY	76	Full of cheer
+METAL	80	Iron or tin
+METER	76	Parking timer
+MIDST	70	In the middle of
+MIGHT	78	Power|Perhaps will
+MIMIC	74	Copy the actions of
+MINCE	70	Chop finely
+MINER	74	Underground worker
+MINOR	76	Not major
+MINUS	78	Take away
+MIXER	74	Kitchen whirrer
+MODEL	80	Fashion poser|Small replica
+MOIST	74	Slightly damp
+MOLAR	72	Back tooth
+MONEY	84	Cash and coins
+MONTH	82	Calendar unit
+MOODY	74	Given to sulking
+MORAL	76	Story's lesson
+MOTEL	76	Roadside inn
+MOTIF	70	Recurring theme
+MOTOR	78	Engine
+MOTTO	74	Guiding saying
+MOUND	74	Pitcher's hill
+MOUNT	74	Climb up
+MOUSE	82	Computer clicker|Cheese nibbler
+MOUTH	82	Where food goes in
+MOVIE	84	Film
+MOWER	74	Lawn cutter
+MUDDY	76	Covered in muck
+MUNCH	74	Snack away
+MURAL	74	Wall painting
+MUSIC	84	Melodies and songs
+NAIVE	72	Innocently trusting
+NAKED	72	Bare
+NASTY	76	Very unpleasant
+NAVAL	70	Of the fleet
+NERVE	76	Body's signal wire|Boldness
+NEVER	80	Not once
+NEWLY	74	Just recently
+NICHE	72	Small nook
+NIECE	78	Brother's daughter
+NIGHT	84	After dusk
+NINJA	76	Stealthy warrior
+NINTH	74	After eighth
+NOBLE	76	High minded
+NOISE	80	Loud sound
+NOISY	78	Full of racket
+NOMAD	72	Wanderer
+NORTH	82	Compass point
+NOTCH	72	Small cut
+NOVEL	78	Long story|Brand new
+NURSE	80	Hospital carer
+NUTTY	74	Full of almonds
+NYLON	74	Synthetic fabric
+OASIS	76	Desert refuge
+OCCUR	74	Take place
+OCEAN	84	Vast blue expanse
+ODDLY	72	Strangely
+OFFER	80	Propose
+OFTEN	80	Frequently
+OLIVE	80	Martini garnish
+ONION	80	Layered bulb
+ONSET	72	Beginning
+OPERA	78	Sung drama
+ORBIT	78	Path around a planet
+ORDER	80	Restaurant request
+ORGAN	78	Church instrument|Heart or liver
+OTHER	78	The remaining one
+OTTER	78	Playful river swimmer
+OUNCE	74	Sixteenth of a pound
+OUTER	76	On the outside
+OWNER	78	One who holds the deed
+OZONE	72	Protective layer
+PAINT	82	Wall coating
+PANEL	76	Discussion group
+PANIC	78	Sudden fright
+PAPER	82	Newsprint
+PARKA	74	Hooded coat
+PARTY	82	Celebration
+PASTA	82	Noodles
+PASTE	76	Glue
+PATCH	76	Cloth repair
+PATIO	78	Backyard paving
+PAUSE	78	Brief stop
+PEACE	82	Calm and quiet
+PEACH	82	Fuzzy fruit
+PEARL	80	Oyster gem
+PEDAL	76	Bike pusher
+PENNY	80	Copper coin
+PERCH	74	Bird's rest
+PERIL	72	Grave danger
+PETAL	78	Flower part
+PETTY	74	Small minded
+PHASE	76	Stage of the moon
+PHONE	82	Pocket caller
+PHOTO	82	Snapshot
+PIANO	84	Eighty-eight keys
+PIECE	80	Portion
+PILOT	80	Cockpit boss
+PINCH	76	Squeeze between fingers
+PITCH	78	Throw|Sales talk
+PIVOT	72	Turn on a point
+PIXEL	76	Screen dot
+PIZZA	84	Pie with toppings
+PLACE	82	Location
+PLAID	74	Tartan pattern
+PLAIN	78	Simple|Flat grassland
+PLANE	82	Jet
+PLANK	72	Long board
+PLANT	82	Green grower
+PLATE	80	Dinner dish
+PLAZA	74	Public square
+PLEAD	74	Beg
+PLUCK	72	Pull out|Courage
+PLUMP	74	Nicely rounded
+PLUSH	74	Soft and rich
+POINT	82	Sharp end|Score unit
+POLAR	76	Of the frozen ends
+POLKA	72	Lively dance|Dot pattern
+PORCH	78	Front step cover
+POUCH	74	Small bag
+POUND	78	Sixteen ounces
+POWER	82	Strength
+PRANK	76	Practical joke
+PRESS	78	Push down|The papers
+PRICE	82	Cost
+PRIDE	78	Lion group|Self respect
+PRIME	76	Best quality
+PRINT	78	Put on paper
+PRIOR	72	Earlier
+PRISM	74	Light splitter
+PRIZE	80	Award
+PROBE	72	Investigate
+PRONE	70	Likely to
+PROOF	76	Evidence
+PROSE	72	Ordinary writing
+PROUD	80	Pleased with oneself
+PROVE	78	Show to be true
+PRUNE	74	Dried plum|Trim a shrub
+PULSE	76	Heartbeat
+PUNCH	76	Fist blow|Party drink
+PUPIL	76	Student|Eye opening
+PUPPY	82	Young dog
+PURSE	78	Handbag
+QUACK	74	Duck's call
+QUAIL	72	Small game bird
+QUAKE	74	Ground tremble
+QUART	72	Two pints
+QUEEN	82	Royal woman
+QUERY	74	Question
+QUEST	76	Long search
+QUEUE	74	Waiting line
+QUICK	82	Fast
+QUIET	82	Making no sound
+QUILT	78	Patchwork blanket
+QUIRK	74	Odd habit
+QUITE	76	Rather
+QUOTE	78	Cite words
+RADAR	78	Blip detector
+RADIO	82	Airwave receiver
+RAINY	78	Wet, as weather
+RALLY	74	Gather support
+RANCH	78	Cattle spread
+RANGE	76	Spread from low to high
+RAPID	76	Very fast
+RATIO	74	Proportion
+RAVEN	76	Black bird of poetry
+REACH	80	Stretch toward
+REACT	76	Respond
+READY	82	All set
+REALM	72	Kingdom
+REBEL	74	One who resists
+RECAP	72	Quick summary
+REGAL	72	Fit for a king
+REIGN	72	Rule as monarch
+RELAX	82	Unwind
+RELAY	74	Team race
+RENEW	74	Extend a subscription
+REPAY	74	Pay back
+REPLY	80	Answer
+RESET	74	Start over
+RHINO	76	Horned heavyweight
+RHYME	78	Poet's chime
+RIDER	74	One on horseback
+RIDGE	74	Mountain crest
+RIFLE	72	Long gun
+RIGHT	82	Correct|Not left
+RIGID	74	Stiff
+RINSE	76	Wash out
+RISKY	76	Not safe
+RIVAL	76	Competitor
+RIVER	84	Flowing water
+ROAST	78	Oven cook
+ROBIN	78	Red-breasted bird
+ROBOT	82	Mechanical worker
+ROCKY	76	Full of stones
+RODEO	76	Bull riding show
+ROGUE	72	Scoundrel
+ROOST	72	Hen's perch
+ROTOR	70	Helicopter blade
+ROUGH	78	Not smooth
+ROUND	80	Circular
+ROUTE	80	Path from A to B
+ROYAL	80	Fit for a crown
+RUGBY	74	Scrum sport
+RULER	78	Measuring stick|Monarch
+RUMOR	76	Unverified talk
+RURAL	76	Of the countryside
+RUSTY	74	Corroded|Out of practice
+SALAD	82	Bowl of greens
+SALON	74	Hair studio
+SALSA	78	Chip dip|Latin dance
+SALTY	76	Like the sea
+SANDY	76	Full of grit
+SATIN	74	Glossy fabric
+SAUCE	80	Pasta topping
+SAUNA	76	Steam room
+SAVOR	72	Enjoy slowly
+SCALE	78	Weight measurer|Fish covering
+SCARE	78	Give a fright
+SCARF	78	Neck warmer
+SCENE	78	Movie segment
+SCENT	78	Perfume smell
+SCOLD	72	Tell off
+SCONE	74	Tea time bake
+SCOOP	76	Ice cream serving
+SCOPE	74	Extent
+SCORE	80	Game tally
+SCOUT	76	Advance explorer
+SCRAP	76	Small leftover bit
+SCREW	76	Threaded fastener
+SCRUB	76	Clean hard
+SEDAN	74	Four-door car
+SEIZE	72	Grab suddenly
+SENSE	78	Sight or smell
+SERVE	80	Bring food to
+SEVEN	82	Lucky number
+SHACK	72	Rough hut
+SHADE	80	Out of the sun
+SHADY	74	Full of shadow
+SHAFT	72	Mine passage
+SHAKE	80	Wobble|Thick drink
+SHAKY	74	Unsteady
+SHAME	76	Deep embarrassment
+SHAPE	80	Circle or square
+SHARE	82	Divide among
+SHARK	80	Ocean predator
+SHARP	80	Keen edged
+SHAVE	76	Use a razor
+SHAWL	72	Shoulder wrap
+SHEEP	80	Wool provider
+SHEER	72	Very thin, as fabric
+SHEET	80	Bed linen|Paper piece
+SHELF	78	Wall board
+SHELL	80	Beach find
+SHIFT	76	Work stretch|Move over
+SHINE	80	Gleam
+SHINY	80	Bright and glossy
+SHIRT	82	Buttoned top
+SHOCK	78	Sudden jolt
+SHOOT	76	Fire away|Plant sprout
+SHORE	78	Water's edge
+SHORT	82	Not tall
+SHOUT	80	Yell out
+SHOVE	74	Push roughly
+SHRUB	76	Small bush
+SHRUG	74	Shoulder gesture
+SIGHT	80	Vision
+SILKY	74	Smooth to the touch
+SILLY	80	Goofy
+SINCE	76	From then on
+SIREN	76	Wailing alarm
+SIXTH	74	After fifth
+SIXTY	76	Minutes in an hour
+SKATE	80	Roll on wheels or blades
+SKILL	80	Learned ability
+SKIRT	78	Below-the-waist wear
+SKULL	76	Head bones
+SKUNK	76	Striped stinker
+SLACK	72	Not taut
+SLANT	72	Diagonal lean
+SLATE	74	Roofing rock
+SLEEK	74	Smooth and glossy
+SLEEP	84	Nightly rest
+SLEET	72	Icy rain
+SLICE	80	Cut a piece
+SLICK	74	Slippery
+SLIDE	80	Playground chute
+SLIME	72	Gooey mess
+SLOPE	78	Hillside
+SLOTH	76	Slow tree hanger
+SMALL	82	Little
+SMART	82	Clever
+SMASH	76	Break to bits
+SMELL	80	Detect by nose
+SMILE	84	Happy expression
+SMIRK	72	Smug grin
+SMOKE	80	Chimney output
+SNACK	82	Bite between meals
+SNAIL	80	Shelled crawler
+SNAKE	82	Slithering reptile
+SNARE	72	Trap|Drum type
+SNEAK	76	Move quietly
+SNIFF	74	Take a whiff
+SNORE	76	Sleeper's sound
+SNOUT	72	Pig's nose
+SNOWY	76	Blanketed in white
+SOBER	74	Not tipsy
+SOGGY	74	Waterlogged
+SOLAR	80	Of the sun
+SOLID	80	Not liquid
+SOLVE	80	Find the answer
+SOUND	80	What we hear
+SOUTH	82	Compass point
+SPACE	84	Final frontier
+SPADE	74	Digging tool|Card suit
+SPARE	76	Extra|Bowling feat
+SPARK	78	Tiny flash
+SPEAK	80	Talk
+SPEAR	74	Thrown weapon
+SPEED	82	Rate of travel
+SPELL	78	Write the letters of
+SPEND	80	Lay out money
+SPICE	80	Cinnamon or clove
+SPICY	80	Hot to the tongue
+SPIKE	74	Sharp point
+SPILL	78	Knock over a drink
+SPINE	76	Backbone
+SPIRE	72	Church top
+SPLIT	78	Divide
+SPOIL	74	Go bad
+SPOKE	76	Wheel rod|Talked
+SPOOL	72	Thread holder
+SPOON	80	Soup utensil
+SPORT	82	Athletic game
+SPRAY	78	Fine mist
+SQUAD	76	Small team
+STACK	76	Neat pile
+STAFF	76	Employees
+STAGE	80	Theater platform
+STAIN	76	Spilled mark
+STAIR	78	Step up
+STAKE	72	Ground spike
+STALE	74	No longer fresh
+STALK	72	Plant stem|Follow closely
+STAMP	78	Envelope sticker
+STAND	80	Get on your feet
+STARE	78	Look fixedly
+START	82	Begin
+STATE	80	Nation's part
+STEAK	80	Grilled cut
+STEAL	78	Take unlawfully
+STEAM	80	Kettle vapor
+STEEL	78	Strong alloy
+STEEP	76	Very sloped
+STEER	74	Guide a car
+STERN	72	Strict|Boat's back
+STICK	80	Twig
+STIFF	74	Not bending
+STILL	78	Motionless
+STING	76	Bee's jab
+STOCK	76	Shares|Broth
+STONE	80	Rock
+STOOD	76	Was upright
+STOOL	76	Backless seat
+STORE	82	Shop
+STORK	74	Long-legged deliverer of lore
+STORM	82	Thunder and rain
+STORY	82	Tale
+STOUT	72	Sturdy|Dark brew
+STOVE	80	Kitchen range
+STRAP	76	Binding band
+STRAW	78	Sipping tube
+STRAY	74	Wandering pet
+STRIP	74	Long narrow piece
+STUCK	78	Unable to move
+STUDY	82	Hit the books
+STUFF	78	Things
+STUMP	72	Tree remnant
+STUNT	74	Daring feat
+STYLE	80	Fashion sense
+SUGAR	82	Sweetener
+SUITE	74	Hotel rooms set
+SUNNY	82	Cloudless
+SUPER	80	Excellent
+SURGE	74	Sudden rush
+SUSHI	78	Rolled rice dish
+SWAMP	76	Boggy wetland
+SWARM	74	Bee cloud
+SWEAT	78	Workout moisture
+SWEEP	76	Use a broom
+SWEET	82	Sugary
+SWEPT	74	Cleaned the floor
+SWIFT	76	Very quick
+SWING	80	Playground seat
+SWIRL	74	Spiral motion
+SWORD	78	Knight's blade
+SYRUP	78	Pancake topping
+TABLE	84	Dining furniture
+TACKY	72	In poor taste|Sticky
+TALLY	74	Running count
+TALON	72	Eagle's claw
+TANGO	76	Ballroom dance
+TASTE	80	Flavor sense
+TASTY	80	Delicious
+TAUNT	72	Mock aloud
+TEACH	82	Instruct
+TEASE	76	Kid around with
+TEETH	80	Dentist's concern
+TEMPO	74	Music's pace
+TENSE	76	Strung tight
+TENTH	74	After ninth
+THANK	80	Express gratitude
+THEFT	74	Stealing
+THEIR	76	Belonging to them
+THEME	78	Central idea
+THERE	78	At that place
+THICK	80	Not thin
+THIEF	76	One who steals
+THIGH	76	Upper leg
+THING	78	Object
+THINK	82	Use your head
+THIRD	78	After second
+THORN	76	Rose's prickle
+THREE	82	Trio count
+THREW	76	Tossed
+THROW	80	Toss
+THUMB	80	Hand's stubby digit
+TIGER	82	Striped big cat
+TIGHT	80	Snug
+TIMER	76	Countdown device
+TIMID	74	Shy
+TIRED	80	Sleepy
+TITLE	80	Book's name
+TOAST	80	Browned bread|Raise a glass
+TODAY	82	This very day
+TOKEN	74	Arcade coin
+TONIC	72	Gin's partner
+TOOTH	80	Molar or incisor
+TOPIC	78	Subject
+TORCH	76	Handheld flame
+TORSO	72	Body's trunk
+TOTAL	80	Sum
+TOUCH	80	Feel with fingers
+TOUGH	80	Hard to chew
+TOWEL	80	Bath drier
+TOWER	80	Tall structure
+TOXIC	76	Poisonous
+TRACE	74	Follow the outline of
+TRACK	80	Runner's oval
+TRADE	80	Swap
+TRAIL	78	Hiking path
+TRAIN	82	Rail transport
+TRAIT	74	Character feature
+TRASH	78	Garbage
+TREAT	80	Something special
+TREND	76	Current fashion
+TRIAL	76	Court case|Test run
+TRIBE	74	Related group
+TRICK	78	Sly move
+TRIED	76	Attempted
+TROOP	72	Scout group
+TROUT	76	Stream fish
+TRUCK	82	Big rig
+TRULY	78	Sincerely
+TRUNK	78	Elephant's nose|Car storage
+TRUST	80	Rely on
+TRUTH	80	What is real
+TULIP	80	Dutch bloom
+TUNIC	70	Long loose top
+TUTOR	76	Private teacher
+TWEET	76	Bird's chirp
+TWICE	78	Two times
+TWIST	78	Turn sharply
+ULCER	70	Stomach sore
+ULTRA	72	Beyond the usual
+UNCLE	80	Aunt's spouse
+UNDER	80	Below
+UNFIT	72	Not in shape
+UNION	76	Workers' group
+UNITE	76	Bring together
+UNITY	74	Oneness
+UNTIE	74	Loosen a knot
+UNTIL	78	Up to the time of
+UPPER	76	Higher
+UPSET	78	Distressed|Surprise win
+URBAN	76	Of the city
+USAGE	72	How it is used
+USHER	74	Theater guide
+USUAL	78	Customary
+UTTER	72	Complete|Say aloud
+VAGUE	74	Not clear
+VALID	76	Legally sound
+VALUE	80	Worth
+VALVE	72	Flow controller
+VAPOR	74	Mist
+VAULT	74	Bank room|Leap over
+VEGAN	76	Plant-only eater
+VENOM	74	Snake's poison
+VENUE	74	Event location
+VERSE	76	Poetry stanza
+VIDEO	80	Moving pictures
+VIGOR	72	Great energy
+VILLA	72	Vacation house
+VINYL	76	Record material
+VIOLA	72	Violin's larger cousin
+VIPER	74	Venomous snake
+VIRUS	76	Tiny infector
+VISIT	80	Drop in on
+VISOR	74	Cap's shade
+VISTA	74	Sweeping view
+VITAL	76	Essential
+VIVID	76	Bright and clear
+VOCAL	74	Of the voice
+VOICE	82	Speaking sound
+VOTER	76	Ballot caster
+VOWEL	76	A, E, I, O or U
+WACKY	74	Zany
+WAFER	72	Thin cookie
+WAGER	74	Bet
+WAGON	78	Pulled cart
+WAIST	76	Belt line
+WALTZ	76	Ballroom three-step
+WASTE	78	Squander
+WATCH	82	Wrist timepiece|Observe
+WATER	84	What fills a lake
+WEARY	76	Very tired
+WEAVE	74	Work a loom
+WEDGE	74	Doorstop shape
+WEIGH	76	Put on a scale
+WEIRD	78	Strange
+WHALE	82	Ocean giant
+WHARF	70	Dock
+WHEAT	78	Bread grain
+WHEEL	82	Round roller
+WHERE	78	In what place
+WHICH	76	What one
+WHILE	76	During
+WHINE	72	Complain in a high voice
+WHIRL	72	Spin around
+WHISK	74	Egg beater
+WHITE	84	Snow color
+WHOLE	80	Entire
+WHOSE	74	Belonging to whom
+WIDEN	72	Make broader
+WIDOW	72	One who lost a spouse
+WIDTH	76	How wide it is
+WINCE	72	Flinch in pain
+WINDY	78	Blustery
+WITCH	78	Halloween flier
+WITTY	76	Cleverly funny
+WOMAN	82	Grown female
+WOMEN	78	Grown females
+WOODY	72	Full of trees
+WORDY	72	Too long-winded
+WORLD	84	The whole globe
+WORRY	80	Fret
+WORSE	78	Less good
+WORST	78	Least good
+WORTH	78	Value
+WOULD	76	Might, in the past
+WOUND	74	Injury
+WOVEN	72	Made on a loom
+WRECK	74	Crashed remains
+WRIST	78	Hand's hinge
+WRITE	82	Put down on paper
+WRONG	80	Incorrect
+WROTE	76	Put on paper
+YACHT	78	Luxury boat
+YEARN	72	Long for
+YEAST	74	Bread riser
+YIELD	76	Give way
+YOUNG	82	Not old
+YOUTH	78	Early years
+ZEBRA	80	Striped grazer
+ZESTY	74	Full of tang
