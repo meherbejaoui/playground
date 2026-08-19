@@ -273,8 +273,13 @@ Interaction spec (this is the acceptance contract for M5):
 
 ## 7. Folder structure
 
+All paths relative to the `gridlock/` project directory (self-contained — no
+imports from or references to anything outside it; the sibling `cellblock/`
+project deliberately shares no code, only design philosophy, so either can be
+moved to its own repository at any time).
+
 ```
-.
+gridlock/
 ├── README.md / PLAN.md / TASKS.md
 ├── pyproject.toml            # project meta; [dev] extra = pytest
 ├── .gitignore                # site/, puzzles/, __pycache__, .pytest_cache

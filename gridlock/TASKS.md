@@ -2,7 +2,10 @@
 
 Execute top to bottom. Every task is self-contained: files to touch and
 acceptance criteria are stated so no clarifying questions should be needed —
-where detail is missing here, PLAN.md §-references are authoritative. Commit
+where detail is missing here, PLAN.md §-references are authoritative.
+**All paths are relative to the `gridlock/` project directory** (run pip,
+pytest, and `python -m gridlock` from inside it), except `.github/workflows/`
+in M7, which lives at the repo root. Commit
 at least once per completed task with a message like `M2.3: wordlist
 validator`. Run the whole test suite before every commit.
 
@@ -204,11 +207,14 @@ M7 is optional (see PLAN.md §9 item 4).
 
 ## M7 — OPTIONAL stretch: daily automation (see PLAN §9 item 4 before starting)
 
-### M7.1 CI workflow (`.github/workflows/ci.yml`)
-- On push/PR: set up Python 3.11 + Node 18/20, `pip install -e ".[dev]"`,
-  run `pytest` and `node --test tests/player/`.
+### M7.1 CI workflow (repo root: `.github/workflows/gridlock-ci.yml`)
+- On push/PR **filtered to `paths: ["gridlock/**"]`**, with
+  `defaults.run.working-directory: gridlock` (this repo hosts a sister
+  project; keep workflows per-project so a future repo split is trivial):
+  set up Python 3.11 + Node 18/20, `pip install -e ".[dev]"`, run `pytest`
+  and `node --test tests/player/`.
 
-### M7.2 Daily Pages deploy (`.github/workflows/daily.yml`)
+### M7.2 Daily Pages deploy (repo root: `.github/workflows/gridlock-daily.yml`)
 - Cron `10 0 * * *` + manual dispatch: checkout, generate today's puzzle
   (commit `puzzles/<id>.json` back to the default branch — remove `puzzles/`
   from `.gitignore` as part of this task so the archive accumulates), build,
@@ -217,6 +223,11 @@ M7 is optional (see PLAN.md §9 item 4).
 - **Accept**: workflow files lint clean (`actionlint` if available, else
   careful review); README gains a short "enable Pages" section documenting
   the one manual step (Settings → Pages → GitHub Actions source).
+- **Monorepo caveat**: GitHub serves ONE Pages site per repo. If the sister
+  project's deploy workflow is also enabled here, do not write two competing
+  deploys — build a combined artifact instead (root `index.html` linking to
+  `gridlock/` and `cellblock/` subdirectories, each project's `site/` copied
+  under its name). If only this project enables M7, deploy `site/` directly.
 
 ---
 

@@ -1,93 +1,44 @@
-# Gridlock — a daily mini-crossword factory
+# Puzzle Factories — Gridlock & Cellblock
 
-Gridlock is a self-contained crossword machine. One command generates a fresh,
-solvable 5×5 mini crossword (NYT-Mini style); another command builds a static
-website where you — or anyone you send the link to — can solve it in the
-browser with full keyboard navigation, check/reveal, a timer, and saved
-progress. No server, no accounts, no APIs, no build step for the frontend.
+Two sister projects that each turn one command into a daily browser puzzle,
+with zero servers, zero accounts, and zero paid APIs. Same design philosophy,
+completely independent codebases.
+
+| | [`gridlock/`](gridlock/) | [`cellblock/`](cellblock/) |
+|---|---|---|
+| Puzzle | Mini crossword (5×5, NYT-Mini style) | Nonogram / picross (10×10 daily + pixel-art gallery) |
+| The hard problem | *Filling* the grid: constraint-satisfaction backtracking over a curated wordlist | *Certifying* the grid: a line-solver proves every puzzle is solvable by pure logic, no guessing |
+| Curated data | ~1,500-word clued wordlist (TSV) | ~12 hand-drawn ASCII pixel arts |
+| Status | Planned — see `gridlock/TASKS.md` | Planned — see `cellblock/TASKS.md` |
+
+Shared architecture, implemented twice on purpose:
 
 ```
-$ python -m gridlock generate --seed 2026-08-19
-Filled pattern "pinwheel-4" in 0.31s (2,141 backtracks)
-
-  S C R A P
-  H O A X #
-  A L B U M
-  # O N C E
-  M A G M A
-
-Wrote puzzles/2026-08-19-5.json
-
-$ python -m gridlock build
-Wrote site/ (1 puzzle, index + player)
+curated plain-text data → Python-stdlib generator (deterministic, seeded by
+today's date) → puzzle JSON → static site builder → vanilla-JS player page
 ```
 
-Open `site/index.html` and play.
+Each project directory is fully self-contained (own `pyproject.toml`, `src/`,
+`data/`, `web/`, `tests/`; **no shared code, no cross-directory imports**) and
+carries its own `README.md` (pitch), `PLAN.md` (architecture, data model,
+algorithms, flagged assumptions & open questions), and `TASKS.md` (ordered
+milestones with acceptance criteria for the implementing agent).
 
-## Why this is worth building
+## Monorepo notes
 
-- **Daily puzzles are one of the most-loved genres of software** (Wordle, the
-  NYT Mini, Connections), yet almost nobody self-hosts one, because the hard
-  part — generating a *good, solvable, fully-interlocked* grid — is
-  algorithmically non-trivial. Gridlock packages that hard part into a small,
-  legible codebase.
-- **Deterministic by date.** The seed defaults to today's date, so everyone
-  running the same version gets the same "today's puzzle" — a shared daily
-  ritual you can host on GitHub Pages for your team, family, or group chat,
-  for free, forever.
-- **The core is a real algorithm, not glue code.** Grid filling is constraint
-  satisfaction with backtracking, a most-constrained-first heuristic, and a
-  precomputed letter-position index. It's the kind of engine that's satisfying
-  to build, test, and tune.
-- **Everything is inspectable plain text.** Puzzles are JSON, the wordlist is
-  a TSV you can edit with any editor, and the player is one HTML file with
-  vanilla JS. Want a themed puzzle for a birthday? Add ten themed words to the
-  wordlist and generate with a custom seed.
+- **Splitting later is a first-class option.** Moving either project to its
+  own repository is a single `git mv` (plus relocating its workflow files if
+  the optional M7 automation milestone was built). Nothing else references
+  across the boundary.
+- **Workflows** (optional M7 in each project) live at the repo root under
+  `.github/workflows/<project>-*.yml`, path-filtered per project.
+- **One GitHub Pages site per repo**: if both projects' daily-deploy
+  milestones are enabled while they still share this repo, they must publish
+  a single combined artifact (root index linking `gridlock/` and
+  `cellblock/` subdirectories) — both TASKS files spell this out in M7.
 
-## Who it's for
+## Suggested build order
 
-- People who want a private daily crossword for a small group (Slack channel,
-  family, classroom) without depending on a puzzle site.
-- Anyone who wants to hand-craft themed puzzles (weddings, onboarding docs,
-  newsletters) without learning professional construction software.
-- Developers who want a clean reference implementation of crossword filling.
-
-## What v1 delivers
-
-- `gridlock generate` — deterministic 5×5 puzzle generation from a bundled,
-  curated wordlist and a set of symmetric block patterns; outputs puzzle JSON
-  and a terminal preview.
-- `gridlock build` — assembles a static site: an archive index plus one
-  self-contained player page per puzzle.
-- A polished browser player: click/arrow/tab navigation, across–down toggle,
-  check letter/word/puzzle, reveal, timer, progress saved in `localStorage`,
-  mobile-friendly layout, dark mode.
-- `gridlock validate-words` — lints the wordlist so contributions stay clean.
-- A test suite proving generation is solvable, deterministic, and fast.
-
-Out of scope for v1 (deliberately): multiplayer, accounts, puzzle difficulty
-ratings, sizes beyond 5×5 (7×7 is a flagged stretch goal), and any
-LLM-generated clues — clues live in the curated wordlist.
-
-## Directions considered and rejected
-
-An RSS-to-"daily front page" generator (useful but mostly plumbing), a git
-history time-lapse visualizer (pretty but low utility), and a typing trainer
-fed by your own diffs (fun, thin core). The crossword factory won because it
-combines a meaty algorithm, a genuinely delightful artifact, and a scope that
-lands in a few focused sessions.
-
-## Repo map
-
-- `PLAN.md` — architecture, data model, algorithm design, stack rationale,
-  folder structure, and **assumptions & open questions** (flagged at the end).
-- `TASKS.md` — ordered, self-sufficient task breakdown for the implementing
-  agent: 7 milestones, each task with files-to-touch and acceptance criteria.
-
-## Tech stack (details in PLAN.md)
-
-- Generator/CLI: **Python 3.11+, stdlib only** (pytest as the sole dev
-  dependency).
-- Player: **vanilla HTML/CSS/JS (ES modules)** — no framework, no bundler.
-- Hosting: any static host; an optional GitHub Actions + Pages workflow ships
-  as the final stretch milestone.
+Either project stands alone. If building both: **Gridlock first** (its plan
+predates and calibrated the shared conventions), then Cellblock — by then the
+generator/builder/player rhythm is familiar and only the solver is new.
