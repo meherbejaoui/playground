@@ -10,10 +10,14 @@
 </head>
 <body>
 <div id="gridlock-root"></div>
+<script type="application/json" id="gridlock-puzzle-data">
+%%PUZZLE_JSON%%
+</script>
 <script type="module">
 %%CORE_JS%%
 %%UI_JS%%
-mountPlayer(document.getElementById("gridlock-root"), %%PUZZLE_JSON%%);
+const puzzleData = JSON.parse(document.getElementById("gridlock-puzzle-data").textContent);
+mountPlayer(document.getElementById("gridlock-root"), puzzleData);
 </script>
 </body>
 </html>
