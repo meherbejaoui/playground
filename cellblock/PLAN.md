@@ -358,10 +358,12 @@ Defaults apply if you say nothing.
 5. **OPEN — 15×15 dailies** are supported by the flag but the default stays
    10×10; 15×15 procedural blobs are solvable but visually noisy. Revisit
    with a better texture generator post-v1.
-6. **OPEN — M7 automation** mirrors the sister project's, with the same
-   one-Pages-site-per-repo caveat: if both projects deploy from this repo, a
-   combined artifact with per-project subdirectories is required (see
-   TASKS M7).
+6. **RESOLVED — M7 automation.** Both projects deploy from this repo, so
+   the one-Pages-site-per-repo caveat is live, not hypothetical: a single
+   `.github/workflows/daily-deploy.yml` at the repo root builds, commits,
+   and combines both projects' output under one artifact (root landing page
+   + a subdirectory per project) — see TASKS M7.2 for the exact shape.
 7. **ASSUMPTION — monorepo layout is temporary-friendly**: no shared code,
-   no cross-directory imports, per-project workflows, so a future split is
-   one `git mv` plus moving a workflow file.
+   no cross-directory imports, per-project *CI* workflows (the deploy
+   workflow is the one deliberate exception — see item 6), so a future
+   split is one `git mv` plus recreating a standalone deploy workflow.

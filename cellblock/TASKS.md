@@ -169,18 +169,31 @@ Definition of done for v1 = M0–M6 complete and green. M7 is optional.
 ### M7.1 CI (repo root: `.github/workflows/cellblock-ci.yml`)
 - On push/PR filtered to `paths: ["cellblock/**"]`, with
   `defaults.run.working-directory: cellblock`: Python 3.11 + Node 18/20,
-  `pip install -e ".[dev]"`, `pytest`, `node --test tests/player/`.
+  `pip install -e ".[dev]"`, `pytest`, `node --test tests/player/*.test.mjs`
+  (the explicit glob, not a bare directory — see PLAN.md 7's note on this,
+  same quirk as the sister project).
 
-### M7.2 Daily Pages deploy (repo root: `.github/workflows/cellblock-daily.yml`)
-- Cron + manual dispatch: generate today's puzzle, commit `puzzles/<id>.json`
-  back (un-gitignore `puzzles/` in this task), build, deploy.
-- **Monorepo caveat (binding)**: GitHub serves ONE Pages site per repo. If
-  the sister project's deploy also exists here, implement the combined
-  artifact instead — a root `index.html` linking to `gridlock/` and
-  `cellblock/` subdirectories, each project's built `site/` copied under its
-  name — in a single shared deploy workflow rather than two competing ones.
-- **Accept**: workflows lint clean; README documents the one manual step
-  (enable Pages: Settings → Pages → GitHub Actions source).
+### M7.2 Daily Pages deploy
+- **Resolved (binding)**: implemented as the combined artifact this section
+  anticipated, not a standalone `cellblock-daily.yml` — GitHub serves ONE
+  Pages site per repo, and the sister project's deploy exists here too,
+  so both are generated, committed, and built in one workflow:
+  `.github/workflows/daily-deploy.yml` (repo root). It generates today's
+  Cellblock puzzle (skipped if `puzzles/<seed>-10x10.json` already exists),
+  re-imports the gallery only when `data/gallery/` has grown since the last
+  import (checked by counting `.txt` files vs. already-imported
+  `gallery-*.json` files — importing unconditionally would regenerate
+  every gallery puzzle's `generatedAt` daily and commit a spurious diff for
+  all 12 files even though nothing changed), builds `cellblock/site/`, then
+  joins it with Gridlock's build under one combined artifact: root
+  `index.html` landing page, each project's site copied under its own
+  subdirectory. `puzzles/` was un-gitignored so the archive accumulates.
+  Never split this back into two independent deploy jobs.
+- **Accept**: workflow lints clean (`actionlint`); root README documents the
+  one manual step (enable Pages: Settings → Pages → GitHub Actions source).
+  Verified end-to-end with Playwright against a real combined build: landing
+  page → Cellblock card → a daily puzzle and a gallery puzzle both load and
+  play; zero console errors.
 
 ---
 

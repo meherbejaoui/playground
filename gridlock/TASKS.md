@@ -215,20 +215,32 @@ M7 is optional (see PLAN.md §9 item 4).
   and `node --test tests/player/*.test.mjs` (the explicit glob, not a bare
   directory — see the PLAN.md 7 note on this).
 
-### M7.2 Daily Pages deploy (repo root: `.github/workflows/gridlock-daily.yml`)
-- Cron `10 0 * * *` + manual dispatch: checkout, generate today's puzzle
-  (commit `puzzles/<id>.json` back to the default branch — remove `puzzles/`
-  from `.gitignore` as part of this task so the archive accumulates), build,
-  deploy `site/` with `actions/deploy-pages` (+ `actions/upload-pages-artifact`).
-  Guard the commit step against no-op days (`--force` never used).
-- **Accept**: workflow files lint clean (`actionlint` if available, else
-  careful review); README gains a short "enable Pages" section documenting
-  the one manual step (Settings → Pages → GitHub Actions source).
-- **Monorepo caveat**: GitHub serves ONE Pages site per repo. If the sister
-  project's deploy workflow is also enabled here, do not write two competing
-  deploys — build a combined artifact instead (root `index.html` linking to
-  `gridlock/` and `cellblock/` subdirectories, each project's `site/` copied
-  under its name). If only this project enables M7, deploy `site/` directly.
+### M7.2 Daily Pages deploy
+- **Resolved (binding), superseding the "deploy `site/` directly" option
+  below**: this repo hosts both sister projects, and GitHub serves ONE Pages
+  site per repo, so there is exactly one deploy workflow for both:
+  `.github/workflows/daily-deploy.yml` (repo root, not `gridlock-daily.yml`
+  — that per-project name was retired once Cellblock's M7 landed).
+  It generates *and commits* both projects' daily puzzles in the same run
+  (`gridlock/puzzles/<id>.json` and `cellblock/puzzles/<id>.json` — both
+  gitignore entries were removed so the archives accumulate), builds both
+  `site/` directories, then assembles ONE combined artifact: the root
+  `index.html` landing page plus each project's `site/` copied under
+  `gridlock/` and `cellblock/`. Never split this back into two independent
+  deploy jobs — they would silently clobber each other's Pages deployment.
+  Cron `10 0 * * *` + manual dispatch; the commit step is guarded against
+  no-op days (`--force` never used; Cellblock's gallery import is also
+  guarded — see `cellblock/TASKS.md` M7.2 — so it doesn't churn out a
+  spurious commit every day from nothing but a changed timestamp).
+- **Accept**: workflow files lint clean (`actionlint`); root README gains a
+  short "enable Pages" section documenting the one manual step (Settings →
+  Pages → GitHub Actions source). Verified end-to-end with Playwright:
+  landing page → Gridlock card → puzzle loads; landing page → Cellblock
+  card → puzzle loads; zero console errors.
+- *(Original plan, if this project ever splits out of the monorepo:*
+  *a standalone `gridlock-daily.yml` deploying `site/` directly with*
+  *`actions/deploy-pages` — straightforward to recreate from this file's*
+  *git history if needed.)*
 
 ---
 

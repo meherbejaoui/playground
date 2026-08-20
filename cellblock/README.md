@@ -81,3 +81,24 @@ deduction (see PLAN.md §9 — this bounds difficulty *by design*).
 
 Like its sister, this directory is fully self-contained and can be split into
 its own repository with a single `git mv`.
+
+## Daily automation (optional, M7)
+
+- **`.github/workflows/cellblock-ci.yml`** (repo root) — runs `pytest` and
+  the player-core `node --test` suite on every push/PR touching
+  `cellblock/`.
+- **`.github/workflows/daily-deploy.yml`** (repo root, shared with the
+  sister project) — on a daily cron (and via manual dispatch), generates
+  today's Cellblock puzzle if it doesn't already exist, re-imports the
+  gallery only when `data/gallery/` has grown (avoids a spurious daily
+  commit from nothing but a changed timestamp), commits both to
+  `cellblock/puzzles/` (not gitignored — the archive accumulates), does the
+  same for Gridlock, rebuilds both sites, and deploys them together under
+  one GitHub Pages site: a root landing page linking to `/gridlock/` and
+  `/cellblock/`. It's shared rather than per-project because **GitHub only
+  serves one Pages site per repo** — see the root README's "Monorepo notes".
+
+**The one manual step this repo can't do for you:** GitHub Pages needs to be
+enabled once, from the web UI — `Settings → Pages → Build and deployment →
+Source: GitHub Actions`. Skip `cellblock-ci.yml` if you don't want CI; the
+deploy workflow lives at the repo level since it also covers Gridlock.

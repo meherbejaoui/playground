@@ -1,0 +1,113 @@
+name: Daily puzzle deploy
+
+on:
+  schedule:
+    # 00:10 UTC, so it lands just after the new day's seed (today's UTC
+    # date) has actually rolled over.
+    - cron: "10 0 * * *"
+  workflow_dispatch: {}
+
+# Both Gridlock and Cellblock live in this repo, and GitHub serves exactly
+# one Pages site per repo — so this single workflow builds and commits
+# puzzles for both projects, then assembles ONE combined artifact: the root
+# landing page (index.html) plus each project's site under its own
+# subdirectory. Never split this back into two independent deploy jobs;
+# they would silently clobber each other's Pages deployment.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install gridlock
+        working-directory: gridlock
+        run: pip install -e ".[dev]"
+
+      - name: Install cellblock
+        working-directory: cellblock
+        run: pip install -e ".[dev]"
+
+      - name: Generate today's Gridlock puzzle if it doesn't exist yet
+        working-directory: gridlock
+        run: |
+          seed="$(date -u +%Y-%m-%d)"
+          if [ -f "puzzles/${seed}-5.json" ]; then
+            echo "Gridlock puzzle for ${seed} already exists; skipping."
+          else
+            python -m gridlock generate --quiet
+          fi
+
+      - name: Generate today's Cellblock puzzle if it doesn't exist yet
+        working-directory: cellblock
+        run: |
+          seed="$(date -u +%Y-%m-%d)"
+          if [ -f "puzzles/${seed}-10x10.json" ]; then
+            echo "Cellblock puzzle for ${seed} already exists; skipping."
+          else
+            python -m cellblock generate --quiet
+          fi
+
+      - name: Import the Cellblock gallery if any images are missing
+        working-directory: cellblock
+        run: |
+          # Re-importing regenerates generatedAt on every file, which would
+          # otherwise churn out a spurious commit each day even though
+          # nothing changed. Only import when the gallery has grown.
+          available=$(ls data/gallery/*.txt 2>/dev/null | wc -l)
+          imported=$(ls puzzles/gallery-*.json 2>/dev/null | wc -l)
+          if [ "$imported" -lt "$available" ]; then
+            python -m cellblock import-gallery
+          else
+            echo "Gallery already imported ($imported/$available); skipping."
+          fi
+
+      - name: Commit new puzzles, if any
+        run: |
+          git config user.name "puzzle-factory-bot"
+          git config user.email "puzzle-factory-bot@users.noreply.github.com"
+          git add gridlock/puzzles/ cellblock/puzzles/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Add daily puzzles for $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Build the Gridlock site
+        working-directory: gridlock
+        run: python -m gridlock build --title "Gridlock"
+
+      - name: Build the Cellblock site
+        working-directory: cellblock
+        run: python -m cellblock build --title "Cellblock"
+
+      - name: Assemble the combined artifact
+        run: |
+          mkdir -p combined
+          cp index.html combined/index.html
+          cp -r gridlock/site combined/gridlock
+          cp -r cellblock/site combined/cellblock
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: combined
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -100,19 +100,21 @@ from outside it — so it can be split into its own repository with a single
 
 ## Daily automation (optional, M7)
 
-Two workflows live at the repo root under `.github/workflows/`:
-
-- **`gridlock-ci.yml`** — runs `pytest` and the player-core `node --test`
-  suite on every push/PR touching `gridlock/`.
-- **`gridlock-daily.yml`** — on a daily cron (and via manual dispatch),
-  generates today's puzzle if it doesn't already exist, commits it to
+- **`.github/workflows/gridlock-ci.yml`** (repo root) — runs `pytest` and
+  the player-core `node --test` suite on every push/PR touching `gridlock/`.
+- **`.github/workflows/daily-deploy.yml`** (repo root, shared with the
+  sister project) — on a daily cron (and via manual dispatch), generates
+  today's Gridlock puzzle if it doesn't already exist, commits it to
   `gridlock/puzzles/` (which is *not* gitignored — the archive is meant to
-  accumulate in the repo), rebuilds the site, and deploys it to GitHub
-  Pages.
+  accumulate in the repo), does the same for Cellblock, rebuilds both
+  sites, and deploys them together under one GitHub Pages site: a root
+  landing page linking to `/gridlock/` and `/cellblock/`. It's shared
+  rather than per-project because **GitHub only serves one Pages site per
+  repo** — see the root README's "Monorepo notes" for why.
 
 **The one manual step this repo can't do for you:** GitHub Pages needs to be
 enabled once, from the web UI — `Settings → Pages → Build and deployment →
 Source: GitHub Actions`. Nothing else is required; the workflow handles
 generation, the git commit, the build, and the deploy on its own from then
-on. Skip both workflow files entirely (or just `gridlock-daily.yml`) if you
-don't want the repo to self-update.
+on. Skip `gridlock-ci.yml` if you don't want CI; the deploy workflow lives
+at the repo level since it also covers Cellblock (see `cellblock/README.md`).
