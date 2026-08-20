@@ -10,6 +10,7 @@ from cellblock.gallery import (
     GalleryError,
     check_fairness,
     import_gallery,
+    load_gallery_files,
     parse_gallery_file,
     slug_for,
     state_grid_to_bools,
@@ -167,3 +168,27 @@ class TestImportGallery:
         with pytest.raises(GalleryError, match="ambiguous"):
             import_gallery(gallery_dir, out_dir, generated_at="x")
         assert not out_dir.exists() or list(out_dir.iterdir()) == []
+
+
+class TestShippedGallery:
+    """Keeps the curated starter set honest forever (TASKS M3.3)."""
+
+    def test_has_at_least_ten_files(self):
+        assert len(load_gallery_files()) >= 10
+
+    def test_every_shipped_file_is_fair(self):
+        results = validate_gallery()
+        failures = [r for r in results if not r.ok]
+        assert not failures, "\n".join(f"{r.slug}: {r.message}" for r in failures)
+
+    def test_every_shipped_file_is_within_the_size_bounds(self):
+        for path in load_gallery_files():
+            entry = parse_gallery_file(path.read_text(encoding="utf-8"), slug_for(path))
+            rows, cols = len(entry.bitmap), len(entry.bitmap[0])
+            assert 5 <= rows <= 15
+            assert 5 <= cols <= 15
+
+    def test_every_shipped_file_has_a_title(self):
+        for path in load_gallery_files():
+            entry = parse_gallery_file(path.read_text(encoding="utf-8"), slug_for(path))
+            assert entry.title
