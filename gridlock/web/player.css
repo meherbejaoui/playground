@@ -1,0 +1,343 @@
+/* Gridlock player styles (PLAN.md 6.6): mobile-first, dark-mode aware,
+   system fonts only, no external requests. */
+
+:root {
+  --gl-bg: #f4f3ee;
+  --gl-surface: #ffffff;
+  --gl-border: #c9c5ba;
+  --gl-text: #1c1b18;
+  --gl-text-muted: #6b675e;
+  --gl-cell-bg: #ffffff;
+  --gl-cell-block: #2a2924;
+  --gl-cell-selected: #ffe08a;
+  --gl-cell-slot: #fff3cf;
+  --gl-cell-wrong: #f6b8b0;
+  --gl-cell-revealed: #cfe3ff;
+  --gl-accent: #2f6f4f;
+  --gl-accent-contrast: #ffffff;
+  --gl-focus: #2f6f4f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gl-bg: #17181a;
+    --gl-surface: #201f22;
+    --gl-border: #3a3934;
+    --gl-text: #ecebe6;
+    --gl-text-muted: #a7a39a;
+    --gl-cell-bg: #242327;
+    --gl-cell-block: #0d0d0c;
+    --gl-cell-selected: #7a5c00;
+    --gl-cell-slot: #4a3c12;
+    --gl-cell-wrong: #5c2a24;
+    --gl-cell-revealed: #1f3a5c;
+    --gl-accent: #6fbf94;
+    --gl-accent-contrast: #0d1f16;
+    --gl-focus: #6fbf94;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--gl-bg);
+  color: var(--gl-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.gridlock-player {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.75rem;
+}
+
+.gl-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.gl-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.gl-timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.1rem;
+  color: var(--gl-text-muted);
+}
+
+.gl-current-clue {
+  background: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.gl-current-clue-num {
+  font-weight: 700;
+  margin-right: 0.4em;
+}
+
+.gl-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gl-grid-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gl-grid {
+  --size: 5;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
+  width: min(100%, 420px);
+  aspect-ratio: 1 / 1;
+  gap: 2px;
+  background: var(--gl-border);
+  border: 2px solid var(--gl-border);
+  touch-action: manipulation;
+}
+
+.gl-cell {
+  position: relative;
+  background: var(--gl-cell-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gl-cell--block {
+  background: var(--gl-cell-block);
+  cursor: default;
+}
+
+.gl-cell--slot {
+  background: var(--gl-cell-slot);
+}
+
+.gl-cell--selected {
+  background: var(--gl-cell-selected);
+  outline: 2px solid var(--gl-focus);
+  outline-offset: -2px;
+}
+
+.gl-cell--wrong {
+  background: var(--gl-cell-wrong);
+}
+
+.gl-cell--wrong::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    transparent calc(50% - 1px),
+    #b3261e calc(50% - 1px),
+    #b3261e calc(50% + 1px),
+    transparent calc(50% + 1px)
+  );
+}
+
+.gl-cell--revealed {
+  background: var(--gl-cell-revealed);
+}
+
+.gl-cell--selected.gl-cell--wrong,
+.gl-cell--selected.gl-cell--revealed {
+  outline-color: var(--gl-focus);
+}
+
+.gl-cell-number {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--gl-text-muted);
+}
+
+.gl-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gl-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.gl-menu {
+  position: relative;
+}
+
+.gl-menu > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--gl-border);
+  background: var(--gl-surface);
+  color: var(--gl-text);
+  font-size: 0.9rem;
+}
+
+.gl-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.gl-menu[open] > summary {
+  border-color: var(--gl-accent);
+}
+
+.gl-menu-body {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  background: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.gl-menu-body button,
+.gl-btn {
+  border: none;
+  background: none;
+  color: var(--gl-text);
+  padding: 0.5rem 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.gl-menu-body button:hover {
+  background: var(--gl-bg);
+}
+
+.gl-btn {
+  border: 1px solid var(--gl-border);
+  border-radius: 0.4rem;
+  background: var(--gl-surface);
+  text-align: center;
+}
+
+.gl-clues {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gl-clue-list h2 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gl-text-muted);
+  margin: 0 0 0.35rem;
+}
+
+.gl-clue-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gl-clue-list li {
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+}
+
+.gl-clue-list li:hover {
+  background: var(--gl-surface);
+}
+
+.gl-clue-list li.gl-clue--active {
+  background: var(--gl-cell-slot);
+  font-weight: 600;
+}
+
+.gl-clue-number {
+  color: var(--gl-text-muted);
+  min-width: 1.4em;
+}
+
+.gl-completion {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--gl-accent);
+  color: var(--gl-accent-contrast);
+  text-align: center;
+  font-weight: 600;
+}
+
+.gl-completion[hidden] {
+  display: none;
+}
+
+@keyframes gl-wave {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gridlock-player.gl-solved .gl-cell:not(.gl-cell--block) {
+  animation: gl-wave 0.4s ease;
+  animation-delay: calc(var(--cell-index, 0) * 18ms);
+}
+
+@media (min-width: 700px) {
+  .gl-body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .gl-grid-wrap {
+    flex: 0 0 auto;
+  }
+
+  .gl-clues {
+    flex: 1 1 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -101,7 +101,7 @@ export function decodePuzzle(raw) {
     });
   });
 
-  return { id: puzzle.id, size, blockMask, solution, cellSlots, entries };
+  return { id: puzzle.id, size, blockMask, numbers: puzzle.numbers, solution, cellSlots, entries };
 }
 
 function isBlock(puzzle, row, col) {
@@ -362,6 +362,14 @@ export function revealWord(state) {
 /** Fill in the entire solution and mark every cell revealed. */
 export function revealAll(state) {
   return revealCells(state, allWhiteCells(state.puzzle));
+}
+
+/** Erase every entered letter and its wrong/revealed marks; keeps the timer running. */
+export function clearAll(state) {
+  const cells = state.puzzle.blockMask.map((row) =>
+    row.map((blocked) => (blocked ? "#" : ".")).join("")
+  );
+  return withCompletion({ ...state, cells, wrong: new Set(), revealed: new Set() });
 }
 
 export { isComplete };

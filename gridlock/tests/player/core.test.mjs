@@ -16,6 +16,7 @@ import {
   revealCell,
   revealWord,
   revealAll,
+  clearAll,
   isComplete,
   solvedWithoutHelp,
   serializeSave,
@@ -30,6 +31,11 @@ function makeToyPuzzle() {
     id: "toy-3",
     size: 3,
     grid: ["...", "...", "..."],
+    numbers: [
+      [1, 2, 3],
+      [4, 0, 0],
+      [5, 0, 0],
+    ],
     entries: [
       { number: 1, direction: "across", row: 0, col: 0, length: 3, answer: btoa("BAT"), clue: "Club" },
       { number: 1, direction: "down", row: 0, col: 0, length: 3, answer: btoa("BOW"), clue: "Bend" },
@@ -69,6 +75,13 @@ function makeBlockedPuzzle() {
     id: "sample-fixture-5",
     size: 5,
     grid: ["#....", ".....", ".....", ".....", "....#"],
+    numbers: [
+      [-1, 1, 2, 3, 4],
+      [5, 0, 0, 0, 0],
+      [6, 0, 0, 0, 0],
+      [7, 0, 0, 0, 0],
+      [8, 0, 0, 0, -1],
+    ],
     entries: [
       entry(1, "across", 0, 1, 4, "CHEF"),
       entry(1, "down", 0, 1, 5, "CLOSE"),
@@ -108,6 +121,13 @@ describe("decodePuzzle", () => {
     assert.equal(puzzle.blockMask[0][0], true);
     assert.equal(puzzle.blockMask[4][4], true);
     assert.equal(puzzle.blockMask[0][1], false);
+  });
+
+  test("carries the numbers grid through for the UI to render clue numbers", () => {
+    const puzzle = decodePuzzle(makeBlockedPuzzle());
+    assert.equal(puzzle.numbers[0][0], -1); // block
+    assert.equal(puzzle.numbers[0][1], 1); // 1-across/1-down start
+    assert.equal(puzzle.numbers[1][0], 5); // 5-across start
   });
 
   test("every white cell resolves both directions via cellSlots", () => {
@@ -368,6 +388,29 @@ describe("reveal", () => {
     assert.ok(state.wrong.has("0,0"));
     state = revealCell(state);
     assert.ok(!state.wrong.has("0,0"));
+  });
+});
+
+describe("clearAll", () => {
+  test("erases every letter and mark but keeps elapsed time", () => {
+    let state = createInitialState(decodePuzzle(makeToyPuzzle()));
+    state = typeWord(state, "ZAT");
+    state = checkWord(state);
+    state = { ...state, elapsedSeconds: 99 };
+    state = clearAll(state);
+    assert.equal(state.cells.join(""), ".........");
+    assert.equal(state.wrong.size, 0);
+    assert.equal(state.revealed.size, 0);
+    assert.equal(state.elapsedSeconds, 99);
+    assert.equal(state.completed, false);
+  });
+
+  test("clearing after a full reveal un-completes the puzzle", () => {
+    let state = createInitialState(decodePuzzle(makeToyPuzzle()));
+    state = revealAll(state);
+    assert.equal(state.completed, true);
+    state = clearAll(state);
+    assert.equal(state.completed, false);
   });
 });
 
