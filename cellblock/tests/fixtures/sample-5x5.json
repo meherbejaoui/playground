@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "id": "sample-5x5",
+  "kind": "daily",
+  "title": null,
+  "rows": 5,
+  "cols": 5,
+  "rowClues": [
+    [
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3
+    ]
+  ],
+  "colClues": [
+    [
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3
+    ]
+  ],
+  "solution": "cIioiHA=",
+  "difficulty": {
+    "passes": 6,
+    "grade": "easy"
+  },
+  "seed": "sample",
+  "generatedAt": "2026-01-01T00:00:00Z",
+  "slug": null
+}

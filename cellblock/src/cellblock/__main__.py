@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -44,8 +45,27 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+
+    if args.command == "show":
+        return _run_show(args)
+
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
+
+
+def _run_show(args: argparse.Namespace) -> int:
+    from .model import PuzzleError, from_json
+    from .render import render_puzzle
+
+    try:
+        text = Path(args.puzzle).read_text(encoding="utf-8")
+        puzzle = from_json(text)
+    except (OSError, PuzzleError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+
+    print(render_puzzle(puzzle))
+    return 0
 
 
 if __name__ == "__main__":
