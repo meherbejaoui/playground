@@ -35,21 +35,32 @@ function shellHtml(puzzle) {
     <details class="cb-help" open>
       <summary>How to play</summary>
       <div class="cb-help-body">
-        <p>This is a nonogram (picross): the numbers beside each row and
-        above each column tell you the length of every filled block in that
-        line, in order, left-to-right or top-to-bottom, with at least one
-        empty cell between blocks. Figure out which cells must be filled
-        and which must be empty &mdash; fill them all in correctly and a
-        picture appears.</p>
+        <p>Fill in cells to reveal a hidden picture. The numbers next to
+        each row, and above each column, tell you how the filled-in cells
+        in that row or column are grouped.</p>
+        <p>Each number is one unbroken block of filled cells, listed in
+        the order the blocks appear along the line, with at least one
+        empty cell between one block and the next. For example, a row
+        labeled <strong>3&nbsp;1</strong> means: somewhere in that row
+        there's a block of 3 filled cells in a row, then &mdash; later,
+        with a gap after it &mdash; a single filled cell. You work out
+        exactly where they land. A row labeled just <strong>5</strong>
+        means one block of 5 filled cells in a row with no gaps in it. A
+        row labeled <strong>0</strong> is entirely empty.</p>
+        <p>Use the numbers on every row and column together to work out
+        which cells must be filled and which must stay empty. When
+        they're all correct, the picture appears.</p>
         <ul>
-          <li><strong>Fill</strong> a cell: click it (or tap it on
-          mobile). Click again to clear it.</li>
-          <li><strong>Mark</strong> a cell you're sure is empty: switch to
-          the &#10007; tool and click, or right-click any cell. Marks are
-          just notes to yourself &mdash; they're never checked.</li>
-          <li>Click-and-drag (or swipe) to fill or mark a whole run of
-          cells at once.</li>
-          <li>Keyboard: arrow keys move the cursor, Space fills, X marks.</li>
+          <li>Click or tap a cell to fill it in. Click/tap again to erase
+          it.</li>
+          <li>If you're sure a cell should stay empty, mark it with an
+          &#10007; so you don't forget: switch to the &#10007; tool and
+          click the cell, or just right-click it. Marks are only a note
+          to yourself &mdash; they're never checked for correctness.</li>
+          <li>Click (or tap) and drag across several cells to fill or
+          mark all of them in one go.</li>
+          <li>Keyboard: arrow keys move the selected cell, Space fills
+          it, X marks it.</li>
         </ul>
       </div>
     </details>
