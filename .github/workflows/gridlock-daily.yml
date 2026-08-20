@@ -1,0 +1,77 @@
+name: Gridlock daily puzzle
+
+on:
+  schedule:
+    # 00:10 UTC, so it lands just after the new day's seed (today's UTC
+    # date) has actually rolled over.
+    - cron: "10 0 * * *"
+  workflow_dispatch: {}
+
+defaults:
+  run:
+    working-directory: gridlock
+
+# Monorepo note: GitHub serves exactly one Pages site per repo. This
+# workflow deploys gridlock/site/ directly. If Cellblock ever gets its own
+# M7 deploy workflow while both projects still live in this repo, the two
+# must be merged into one combined-artifact deploy (root index linking
+# gridlock/ and cellblock/ subdirectories) instead of running side by side
+# — see PLAN.md 9 and TASKS.md M7 in both projects.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      site-path: gridlock/site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install gridlock
+        run: pip install -e ".[dev]"
+
+      - name: Generate today's puzzle if it doesn't exist yet
+        run: |
+          seed="$(date -u +%Y-%m-%d)"
+          if [ -f "puzzles/${seed}-5.json" ]; then
+            echo "Puzzle for ${seed} already exists; skipping generation."
+          else
+            python -m gridlock generate --quiet
+          fi
+
+      - name: Commit the new puzzle, if any
+        run: |
+          git config user.name "gridlock-bot"
+          git config user.email "gridlock-bot@users.noreply.github.com"
+          git add puzzles/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Add daily puzzle for $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Build the site
+        run: python -m gridlock build --title "Gridlock"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: gridlock/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -97,3 +97,22 @@ from outside it — so it can be split into its own repository with a single
 - Player: **vanilla HTML/CSS/JS (ES modules)** — no framework, no bundler.
 - Hosting: any static host; an optional GitHub Actions + Pages workflow ships
   as the final stretch milestone.
+
+## Daily automation (optional, M7)
+
+Two workflows live at the repo root under `.github/workflows/`:
+
+- **`gridlock-ci.yml`** — runs `pytest` and the player-core `node --test`
+  suite on every push/PR touching `gridlock/`.
+- **`gridlock-daily.yml`** — on a daily cron (and via manual dispatch),
+  generates today's puzzle if it doesn't already exist, commits it to
+  `gridlock/puzzles/` (which is *not* gitignored — the archive is meant to
+  accumulate in the repo), rebuilds the site, and deploys it to GitHub
+  Pages.
+
+**The one manual step this repo can't do for you:** GitHub Pages needs to be
+enabled once, from the web UI — `Settings → Pages → Build and deployment →
+Source: GitHub Actions`. Nothing else is required; the workflow handles
+generation, the git commit, the build, and the deploy on its own from then
+on. Skip both workflow files entirely (or just `gridlock-daily.yml`) if you
+don't want the repo to self-update.
