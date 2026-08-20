@@ -46,6 +46,9 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
 
+    if args.command == "generate":
+        return _run_generate(args)
+
     if args.command == "show":
         return _run_show(args)
 
@@ -57,6 +60,28 @@ def main(argv: list[str] | None = None) -> int:
 
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
+
+
+def _run_generate(args: argparse.Namespace) -> int:
+    from .generate import GenerationError, generate_and_write
+    from .render import render_puzzle
+
+    try:
+        puzzle, path = generate_and_write(
+            seed=args.seed, size=args.size, out_dir=args.out, force=args.force
+        )
+    except FileExistsError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    except GenerationError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+    if not args.quiet:
+        print(render_puzzle(puzzle))
+        print()
+    print(f"Wrote {path}")
+    return 0
 
 
 def _run_validate_gallery(args: argparse.Namespace) -> int:
