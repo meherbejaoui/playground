@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "id": "gallery-key",
+  "kind": "gallery",
+  "title": "Key",
+  "rows": 6,
+  "cols": 12,
+  "rowClues": [
+    [
+      4
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      1
+    ],
+    []
+  ],
+  "colClues": [
+    [
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4
+    ],
+    [
+      2
+    ],
+    [
+      2
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [],
+    []
+  ],
+  "solution": "8ACfwJ/A8UAAQAAA",
+  "difficulty": {
+    "passes": 23,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "key"
+}

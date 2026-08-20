@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "id": "gallery-cat",
+  "kind": "gallery",
+  "title": "Cat Face",
+  "rows": 10,
+  "cols": 10,
+  "rowClues": [
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6
+    ],
+    [
+      8
+    ],
+    [
+      8
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      8
+    ],
+    [
+      6
+    ],
+    []
+  ],
+  "colClues": [
+    [
+      1
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      8
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      7
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      8
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1
+    ]
+  ],
+  "solution": "QIDhwD8Af4B/gG2Ad4B/gD8AAAA=",
+  "difficulty": {
+    "passes": 32,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "cat"
+}

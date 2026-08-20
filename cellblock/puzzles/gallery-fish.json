@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "id": "gallery-fish",
+  "kind": "gallery",
+  "title": "Fish",
+  "rows": 10,
+  "cols": 12,
+  "rowClues": [
+    [],
+    [],
+    [
+      4
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      10
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      4
+    ],
+    [],
+    []
+  ],
+  "colClues": [
+    [],
+    [
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      2
+    ],
+    []
+  ],
+  "solution": "AAAAAB4AP0Bf4H/gP0AeAAAAAAA=",
+  "difficulty": {
+    "passes": 26,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "fish"
+}

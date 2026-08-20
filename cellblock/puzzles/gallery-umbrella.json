@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "id": "gallery-umbrella",
+  "kind": "gallery",
+  "title": "Umbrella",
+  "rows": 9,
+  "cols": 9,
+  "rowClues": [
+    [
+      3
+    ],
+    [
+      7
+    ],
+    [
+      9
+    ],
+    [
+      9
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "colClues": [
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      9
+    ],
+    [
+      4
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ]
+  ],
+  "solution": "HAB/AP+A/4AIAAgACAAIABgA",
+  "difficulty": {
+    "passes": 18,
+    "grade": "easy"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "umbrella"
+}

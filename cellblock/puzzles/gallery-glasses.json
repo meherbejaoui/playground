@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "id": "gallery-glasses",
+  "kind": "gallery",
+  "title": "Glasses",
+  "rows": 5,
+  "cols": 13,
+  "rowClues": [
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      7,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    []
+  ],
+  "colClues": [
+    [
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4
+    ]
+  ],
+  "solution": "8HifyJBI8HgAAA==",
+  "difficulty": {
+    "passes": 15,
+    "grade": "easy"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "glasses"
+}

@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-20-5",
+  "size": 5,
+  "seed": "2026-08-20",
+  "pattern": "diagonal-2",
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "grid": [
+    "#PART",
+    "MINER",
+    "EAGLE",
+    "SNEAK",
+    "HOLY#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "UEFSVA==",
+      "clue": "Piece"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "UElBTk8=",
+      "clue": "Eighty-eight keys"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QU5HRUw=",
+      "clue": "Winged helper"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "UkVMQVk=",
+      "clue": "Team race"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "VFJFSw==",
+      "clue": "Long journey"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "TUlORVI=",
+      "clue": "Underground worker"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "TUVTSA==",
+      "clue": "Net fabric"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "RUFHTEU=",
+      "clue": "Bald national bird"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "U05FQUs=",
+      "clue": "Move quietly"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 4,
+      "answer": "SE9MWQ==",
+      "clue": "Sacred"
+    }
+  ]
+}

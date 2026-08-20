@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "id": "gallery-heart",
+  "kind": "gallery",
+  "title": "Heart",
+  "rows": 7,
+  "cols": 10,
+  "rowClues": [
+    [
+      3,
+      3
+    ],
+    [
+      10
+    ],
+    [
+      10
+    ],
+    [
+      8
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      2
+    ]
+  ],
+  "colClues": [
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      5
+    ],
+    [
+      4
+    ],
+    [
+      2
+    ]
+  ],
+  "solution": "c4D/wP/Af4A/AB4ADAA=",
+  "difficulty": {
+    "passes": 23,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "heart"
+}

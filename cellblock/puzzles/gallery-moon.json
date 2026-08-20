@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "id": "gallery-moon",
+  "kind": "gallery",
+  "title": "Crescent Moon",
+  "rows": 9,
+  "cols": 9,
+  "rowClues": [
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "colClues": [
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [],
+    [],
+    []
+  ],
+  "solution": "HAAwAGAA4ADAAOAAYAAwABwA",
+  "difficulty": {
+    "passes": 23,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "moon"
+}

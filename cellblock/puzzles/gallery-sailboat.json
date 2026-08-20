@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "id": "gallery-sailboat",
+  "kind": "gallery",
+  "title": "Sailboat",
+  "rows": 10,
+  "cols": 10,
+  "rowClues": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      1
+    ],
+    [
+      7
+    ],
+    [
+      9
+    ],
+    []
+  ],
+  "colClues": [
+    [],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      2
+    ],
+    [
+      9
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "solution": "CAAMAA4ADwAPgA/ACAA/gH/AAAA=",
+  "difficulty": {
+    "passes": 22,
+    "grade": "medium"
+  },
+  "seed": null,
+  "generatedAt": "2026-08-20T11:04:55Z",
+  "slug": "sailboat"
+}
