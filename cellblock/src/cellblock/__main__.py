@@ -58,6 +58,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "import-gallery":
         return _run_import_gallery(args)
 
+    if args.command == "build":
+        return _run_build(args)
+
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
 
@@ -81,6 +84,19 @@ def _run_generate(args: argparse.Namespace) -> int:
         print(render_puzzle(puzzle))
         print()
     print(f"Wrote {path}")
+    return 0
+
+
+def _run_build(args: argparse.Namespace) -> int:
+    from .build import BuildError, build_site
+
+    try:
+        daily, gallery = build_site(puzzles_dir=args.puzzles, out_dir=args.out, title=args.title)
+    except BuildError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+
+    print(f"Wrote {args.out} ({len(daily)} daily, {len(gallery)} gallery, index + player)")
     return 0
 
 
