@@ -49,8 +49,54 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "show":
         return _run_show(args)
 
+    if args.command == "validate-gallery":
+        return _run_validate_gallery(args)
+
+    if args.command == "import-gallery":
+        return _run_import_gallery(args)
+
     print(f"{args.command}: not implemented", file=sys.stderr)
     return 1
+
+
+def _run_validate_gallery(args: argparse.Namespace) -> int:
+    from .gallery import state_grid_to_bools, validate_gallery
+    from .render import render_stuck
+
+    results = validate_gallery(args.gallery)
+    if not results:
+        print(f"no gallery files found in {args.gallery}", file=sys.stderr)
+        return 1
+
+    failed = 0
+    for result in results:
+        if result.ok:
+            print(f"OK   {result.slug}")
+        else:
+            failed += 1
+            print(f"FAIL {result.slug}: {result.message}", file=sys.stderr)
+            if result.stuck_grid is not None:
+                bools = state_grid_to_bools(result.stuck_grid)
+                print(
+                    render_stuck(bools, result.row_clues, result.col_clues),
+                    file=sys.stderr,
+                )
+
+    print(f"\n{len(results) - failed}/{len(results)} gallery file(s) OK")
+    return 1 if failed else 0
+
+
+def _run_import_gallery(args: argparse.Namespace) -> int:
+    from .gallery import GalleryError, import_gallery
+
+    try:
+        puzzles = import_gallery(args.gallery, args.out)
+    except GalleryError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+
+    print(f"Wrote {len(puzzles)} gallery puzzle(s) to {args.out}")
+    return 0
 
 
 def _run_show(args: argparse.Namespace) -> int:
