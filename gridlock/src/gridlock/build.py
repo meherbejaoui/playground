@@ -117,15 +117,42 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(site_title)}</title>
 <style>
+:root {{
+  color-scheme: light dark;
+  --bg: #f4f3ee;
+  --surface: #ffffff;
+  --border: #847d6c;
+  --text: #1c1b18;
+  --text-muted: #6b675e;
+  --accent: #2f6f4f;
+  --focus: #1a5c3a;
+}}
+@media (prefers-color-scheme: dark) {{
+  :root {{
+    --bg: #17181a;
+    --surface: #201f22;
+    --border: #777265;
+    --text: #f4f3ef;
+    --text-muted: #b7b3a8;
+    --accent: #7fd4a6;
+    --focus: #8fe0b3;
+  }}
+}}
+* {{ box-sizing: border-box; }}
 body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        max-width: 640px; margin: 2rem auto; padding: 0 1rem; }}
-h1 {{ font-size: 1.4rem; }}
+        line-height: 1.5; max-width: 640px; margin: 2.5rem auto; padding: 0 1.15rem;
+        color: var(--text); background: var(--bg); }}
+:focus-visible {{ outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px; }}
+h1 {{ font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; }}
 ul {{ list-style: none; padding: 0; }}
-li {{ margin-bottom: 0.4rem; }}
-a {{ display: block; padding: 0.6rem 0.8rem; border: 1px solid #ccc; border-radius: 0.4rem;
-     text-decoration: none; color: inherit; }}
-a:hover {{ background: #f4f3ee; }}
-.gl-index-id {{ color: #6b675e; font-size: 0.85rem; }}
+li {{ margin-bottom: 0.5rem; }}
+a {{ display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem;
+     padding: 0.7rem 0.9rem; border: 1px solid var(--border); border-radius: 0.55rem;
+     text-decoration: none; color: inherit; background: var(--surface);
+     transition: border-color 0.15s ease; }}
+a:hover {{ border-color: var(--accent); }}
+@media (prefers-reduced-motion: reduce) {{ a {{ transition: none; }} }}
+.gl-index-id {{ color: var(--text-muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }}
 </style>
 </head>
 <body>

@@ -1,43 +1,66 @@
 /* Cellblock player styles (PLAN.md 6.8): mobile-first, dark-mode aware,
-   system fonts only, no external requests. */
+   system fonts only, no external requests.
+
+   Accessibility notes:
+   - Every color pair below is chosen to clear WCAG AA contrast (4.5:1 for
+     text, 3:1 for the grid lines and other non-text UI boundaries) in both
+     light and dark mode.
+   - The "wrong" state after Check is never color-only: it also draws a
+     diagonal strike across the cell, matching the mark (X) icon already
+     used for "empty" cells, so it reads correctly for color-blind and
+     low-vision players.
+   - A clue that's fully satisfied is dimmed with an opaque muted color
+     plus a strike-through, not CSS opacity — a translucent fade drops
+     contrast below what's readable for low-vision players.
+   - Every interactive element gets a visible, high-contrast focus ring on
+     keyboard focus (":focus-visible"), separate from hover styling.
+   - Animations are disabled under "prefers-reduced-motion". */
 
 :root {
+  color-scheme: light dark;
+
   --cb-bg: #f4f3ee;
   --cb-surface: #ffffff;
-  --cb-border: #c9c5ba;
-  --cb-border-heavy: #726d60;
+  --cb-border: #847d6c;
+  --cb-border-heavy: #5f5a4d;
   --cb-text: #1c1b18;
   --cb-text-muted: #6b675e;
   --cb-cell-bg: #ffffff;
   --cb-cell-selected: #ffe08a;
   --cb-cell-filled: #2a2924;
-  --cb-cell-mark: #a7a39a;
+  --cb-cell-mark: #4f4c43;
   --cb-cell-wrong: #f6b8b0;
+  --cb-cell-wrong-mark: #8c1d17;
   --cb-cell-revealed-fill: #4a3fa0;
-  --cb-clue-dim: #b8b4a8;
+  --cb-cell-revealed-ring: #2f5fa8;
+  --cb-clue-dim: #6b675e;
   --cb-accent: #2f6f4f;
   --cb-accent-contrast: #ffffff;
-  --cb-focus: #2f6f4f;
+  --cb-focus: #1a5c3a;
+  --cb-shadow: 0 1px 2px rgba(28, 27, 24, 0.06), 0 4px 12px rgba(28, 27, 24, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --cb-bg: #17181a;
     --cb-surface: #201f22;
-    --cb-border: #3a3934;
-    --cb-border-heavy: #6b675c;
-    --cb-text: #ecebe6;
-    --cb-text-muted: #a7a39a;
+    --cb-border: #777265;
+    --cb-border-heavy: #938d7d;
+    --cb-text: #f4f3ef;
+    --cb-text-muted: #b7b3a8;
     --cb-cell-bg: #242327;
-    --cb-cell-selected: #7a5c00;
-    --cb-cell-filled: #ecebe6;
-    --cb-cell-mark: #6b675e;
+    --cb-cell-selected: #96731a;
+    --cb-cell-filled: #f4f3ef;
+    --cb-cell-mark: #d6d2c6;
     --cb-cell-wrong: #5c2a24;
-    --cb-cell-revealed-fill: #8f7ff0;
-    --cb-clue-dim: #4a473f;
-    --cb-accent: #6fbf94;
-    --cb-accent-contrast: #0d1f16;
-    --cb-focus: #6fbf94;
+    --cb-cell-wrong-mark: #ffb4a8;
+    --cb-cell-revealed-fill: #a99cff;
+    --cb-cell-revealed-ring: #8ab4ff;
+    --cb-clue-dim: #b7b3a8;
+    --cb-accent: #7fd4a6;
+    --cb-accent-contrast: #08130d;
+    --cb-focus: #8fe0b3;
+    --cb-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -51,12 +74,19 @@ body {
   color: var(--cb-text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
+  line-height: 1.45;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cb-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .cellblock-player {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0.75rem;
+  padding: 1rem 0.85rem 2rem;
 }
 
 .cb-header {
@@ -64,31 +94,34 @@ body {
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
 }
 
 .cb-title {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .cb-timer {
   font-variant-numeric: tabular-nums;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--cb-text-muted);
 }
 
 .cb-help {
   background: var(--cb-surface);
   border: 1px solid var(--cb-border);
-  border-radius: 0.5rem;
+  border-radius: 0.65rem;
   margin-bottom: 0.75rem;
-  padding: 0.6rem 0.9rem;
+  padding: 0.65rem 1rem;
+  box-shadow: var(--cb-shadow);
 }
 
 .cb-help > summary {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--cb-accent);
   list-style: none;
@@ -101,7 +134,7 @@ body {
 .cb-help > summary::before {
   content: "\25B8";
   display: inline-block;
-  margin-right: 0.4em;
+  margin-right: 0.45em;
   transition: transform 0.15s ease;
 }
 
@@ -126,14 +159,14 @@ body {
 }
 
 .cb-help-body li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 .cb-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .cb-grid-scroll {
@@ -146,6 +179,8 @@ body {
   gap: 1px;
   background: var(--cb-border);
   border: 2px solid var(--cb-border-heavy);
+  border-radius: 0.35rem;
+  overflow: hidden;
   touch-action: none;
   width: max-content;
 }
@@ -163,11 +198,11 @@ body {
 .cb-col-clue,
 .cb-row-clue {
   background: var(--cb-surface);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
   color: var(--cb-text);
   user-select: none;
-  transition: opacity 0.2s ease;
 }
 
 .cb-col-clue {
@@ -176,8 +211,8 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 2px 3px;
-  line-height: 1.15;
-  min-width: 1.6em;
+  line-height: 1.2;
+  min-width: 1.7em;
 }
 
 .cb-row-clue {
@@ -185,19 +220,23 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.3em;
+  gap: 0.32em;
   padding: 0 6px;
   white-space: nowrap;
-  min-height: 1.6em;
+  min-height: 1.7em;
 }
 
 .cb-clue--satisfied {
-  opacity: 0.35;
+  color: var(--cb-clue-dim);
+  font-weight: 400;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--cb-clue-dim);
 }
 
 .cb-cell {
-  width: clamp(18px, 6vw, 32px);
-  height: clamp(18px, 6vw, 32px);
+  width: clamp(20px, 6vw, 34px);
+  height: clamp(20px, 6vw, 34px);
   background: var(--cb-cell-bg);
   display: flex;
   align-items: center;
@@ -216,8 +255,8 @@ body {
 }
 
 .cb-cell--selected {
-  outline: 2px solid var(--cb-focus);
-  outline-offset: -2px;
+  outline: 3px solid var(--cb-focus);
+  outline-offset: -3px;
   z-index: 1;
 }
 
@@ -232,12 +271,31 @@ body {
 .cb-cell--mark::before {
   content: "\2715";
   color: var(--cb-cell-mark);
-  font-size: 0.9em;
+  font-weight: 700;
+  font-size: 0.95em;
   line-height: 1;
 }
 
 .cb-cell--wrong {
   background: var(--cb-cell-wrong);
+}
+
+.cb-cell--wrong::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(
+    to top right,
+    transparent calc(50% - 1.25px),
+    var(--cb-cell-wrong-mark) calc(50% - 1.25px),
+    var(--cb-cell-wrong-mark) calc(50% + 1.25px),
+    transparent calc(50% + 1.25px)
+  );
+  pointer-events: none;
+}
+
+.cb-cell--revealed {
+  box-shadow: inset 0 0 0 2px var(--cb-cell-revealed-ring);
 }
 
 .cb-cell--revealed.cb-cell--filled::before {
@@ -255,7 +313,7 @@ body {
 .cb-tool-group {
   display: flex;
   border: 1px solid var(--cb-border);
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -263,9 +321,16 @@ body {
   border: none;
   background: var(--cb-surface);
   color: var(--cb-text);
-  padding: 0.4rem 0.8rem;
+  padding: 0.55rem 1rem;
+  min-height: 44px;
+  min-width: 44px;
   font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
+}
+
+.cb-tool:focus-visible {
+  outline-offset: -3px;
 }
 
 .cb-tool--active {
@@ -280,12 +345,16 @@ body {
 .cb-menu > summary {
   list-style: none;
   cursor: pointer;
-  padding: 0.4rem 0.9rem;
-  border-radius: 0.4rem;
+  padding: 0.55rem 1rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
   border: 1px solid var(--cb-border);
   background: var(--cb-surface);
   color: var(--cb-text);
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .cb-menu > summary::-webkit-details-marker {
@@ -299,15 +368,15 @@ body {
 .cb-menu-body {
   position: absolute;
   z-index: 10;
-  top: calc(100% + 4px);
+  top: calc(100% + 6px);
   left: 0;
   display: flex;
   flex-direction: column;
   min-width: 10rem;
   background: var(--cb-surface);
   border: 1px solid var(--cb-border);
-  border-radius: 0.4rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   overflow: hidden;
 }
 
@@ -316,7 +385,8 @@ body {
   border: none;
   background: none;
   color: var(--cb-text);
-  padding: 0.5rem 0.9rem;
+  padding: 0.6rem 1rem;
+  min-height: 44px;
   text-align: left;
   font-size: 0.9rem;
   cursor: pointer;
@@ -326,21 +396,31 @@ body {
   background: var(--cb-bg);
 }
 
+.cb-menu-body button:focus-visible {
+  outline-offset: -3px;
+}
+
 .cb-btn {
   border: 1px solid var(--cb-border);
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   background: var(--cb-surface);
   text-align: center;
+  font-weight: 600;
+}
+
+.cb-btn:hover {
+  border-color: var(--cb-accent);
 }
 
 .cb-completion {
   margin-top: 1rem;
-  padding: 0.9rem 1rem;
-  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.65rem;
   background: var(--cb-accent);
   color: var(--cb-accent-contrast);
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: var(--cb-shadow);
 }
 
 .cb-completion[hidden] {
@@ -368,9 +448,20 @@ body {
   opacity: 0;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .cellblock-player.cb-solved .cb-grid-area,
+  .cellblock-player.cb-solved .cb-cell {
+    transition: none;
+  }
+
+  .cb-help > summary::before {
+    transition: none;
+  }
+}
+
 @media (min-width: 700px) {
   .cb-cell {
-    width: clamp(24px, 3vw, 34px);
-    height: clamp(24px, 3vw, 34px);
+    width: clamp(26px, 3vw, 36px);
+    height: clamp(26px, 3vw, 36px);
   }
 }
