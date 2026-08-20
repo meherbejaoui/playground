@@ -32,6 +32,27 @@ function shellHtml(puzzle) {
       <h1 class="cb-title" data-el="title"></h1>
       <div class="cb-timer" data-el="timer" aria-live="off">0:00</div>
     </header>
+    <details class="cb-help" open>
+      <summary>How to play</summary>
+      <div class="cb-help-body">
+        <p>This is a nonogram (picross): the numbers beside each row and
+        above each column tell you the length of every filled block in that
+        line, in order, left-to-right or top-to-bottom, with at least one
+        empty cell between blocks. Figure out which cells must be filled
+        and which must be empty &mdash; fill them all in correctly and a
+        picture appears.</p>
+        <ul>
+          <li><strong>Fill</strong> a cell: click it (or tap it on
+          mobile). Click again to clear it.</li>
+          <li><strong>Mark</strong> a cell you're sure is empty: switch to
+          the &#10007; tool and click, or right-click any cell. Marks are
+          just notes to yourself &mdash; they're never checked.</li>
+          <li>Click-and-drag (or swipe) to fill or mark a whole run of
+          cells at once.</li>
+          <li>Keyboard: arrow keys move the cursor, Space fills, X marks.</li>
+        </ul>
+      </div>
+    </details>
     <div class="cb-body">
       <div class="cb-grid-scroll">
         <div class="cb-grid-area" data-el="grid" tabindex="-1"

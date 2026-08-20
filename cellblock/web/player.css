@@ -78,6 +78,57 @@ body {
   color: var(--cb-text-muted);
 }
 
+.cb-help {
+  background: var(--cb-surface);
+  border: 1px solid var(--cb-border);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.cb-help > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--cb-accent);
+  list-style: none;
+}
+
+.cb-help > summary::-webkit-details-marker {
+  display: none;
+}
+
+.cb-help > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  margin-right: 0.4em;
+  transition: transform 0.15s ease;
+}
+
+.cb-help[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.cb-help-body {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--cb-text);
+  max-width: 640px;
+}
+
+.cb-help-body p {
+  margin: 0 0 0.6rem;
+}
+
+.cb-help-body ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.cb-help-body li {
+  margin-bottom: 0.3rem;
+}
+
 .cb-body {
   display: flex;
   flex-direction: column;
