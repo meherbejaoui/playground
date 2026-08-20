@@ -103,12 +103,15 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
     rows = []
     for position, puzzle in enumerate(puzzles):
         label = "Today" if position == 0 else puzzle["seed"]
+        badge = ' class="idx-badge"' if position == 0 else ""
         rows.append(
-            f'<li><a href="p/{escape(puzzle["id"])}.html">'
-            f"<strong>{escape(label)}</strong> "
-            f'<span class="gl-index-id">{escape(puzzle["id"])}</span></a></li>'
+            f'<li><a class="idx-row" href="p/{escape(puzzle["id"])}.html">'
+            f'<span class="idx-row-main"><strong{badge}>{escape(label)}</strong> '
+            f'<span class="idx-row-id">{escape(puzzle["id"])}</span></span>'
+            f'<span class="idx-row-arrow" aria-hidden="true">&rarr;</span>'
+            f"</a></li>"
         )
-    list_html = "\n".join(rows) if rows else "<li>No puzzles yet.</li>"
+    list_html = "\n".join(rows) if rows else "<li class=\"idx-empty\">No puzzles yet.</li>"
 
     return f"""<!doctype html>
 <html lang="en">
@@ -125,7 +128,9 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
   --text: #1c1b18;
   --text-muted: #6b675e;
   --accent: #2f6f4f;
+  --accent-contrast: #ffffff;
   --focus: #1a5c3a;
+  --shadow: 0 1px 2px rgba(28, 27, 24, 0.06), 0 4px 12px rgba(28, 27, 24, 0.07);
 }}
 @media (prefers-color-scheme: dark) {{
   :root {{
@@ -135,28 +140,48 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
     --text: #f4f3ef;
     --text-muted: #b7b3a8;
     --accent: #7fd4a6;
+    --accent-contrast: #08130d;
     --focus: #8fe0b3;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.35);
   }}
 }}
 * {{ box-sizing: border-box; }}
 body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        line-height: 1.5; max-width: 640px; margin: 2.5rem auto; padding: 0 1.15rem;
+        line-height: 1.5; max-width: 640px; margin: 2.5rem auto; padding: 0 1.15rem 3rem;
         color: var(--text); background: var(--bg); }}
 :focus-visible {{ outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px; }}
-h1 {{ font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; }}
-ul {{ list-style: none; padding: 0; }}
-li {{ margin-bottom: 0.5rem; }}
-a {{ display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem;
-     padding: 0.7rem 0.9rem; border: 1px solid var(--border); border-radius: 0.55rem;
-     text-decoration: none; color: inherit; background: var(--surface);
-     transition: border-color 0.15s ease; }}
-a:hover {{ border-color: var(--accent); }}
-@media (prefers-reduced-motion: reduce) {{ a {{ transition: none; }} }}
-.gl-index-id {{ color: var(--text-muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }}
+.idx-breadcrumb {{ font-size: 0.85rem; margin-bottom: 1.1rem; }}
+.idx-breadcrumb a {{ color: var(--text-muted); text-decoration: none; padding: 0.2rem 0.3rem;
+                      margin: -0.2rem -0.3rem; border-radius: 0.3rem; }}
+.idx-breadcrumb a:hover {{ text-decoration: underline; }}
+h1 {{ font-size: 1.65rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.3rem; }}
+p.lede {{ color: var(--text-muted); margin: 0 0 1.75rem; font-size: 0.98rem; }}
+h2 {{ font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--text-muted); margin: 2rem 0 0.6rem; }}
+ul {{ list-style: none; padding: 0; margin: 0; }}
+li {{ margin-bottom: 0.6rem; }}
+.idx-row {{ display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;
+     padding: 0.85rem 1.1rem; border: 1px solid var(--border); border-radius: 0.65rem;
+     text-decoration: none; color: inherit; background: var(--surface); box-shadow: var(--shadow);
+     transition: border-color 0.15s ease, transform 0.15s ease; }}
+.idx-row:hover {{ border-color: var(--accent); transform: translateY(-1px); }}
+.idx-row:hover .idx-row-arrow {{ transform: translateX(3px); }}
+@media (prefers-reduced-motion: reduce) {{
+  .idx-row, .idx-row-arrow {{ transition: none; }}
+  .idx-row:hover {{ transform: none; }}
+}}
+.idx-row-main {{ display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }}
+.idx-row-id {{ color: var(--text-muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }}
+.idx-row-arrow {{ color: var(--accent); font-size: 1.1rem; transition: transform 0.15s ease; flex: 0 0 auto; }}
+.idx-badge {{ background: var(--accent); color: var(--accent-contrast); padding: 0.15rem 0.55rem;
+              border-radius: 999px; font-size: 0.78rem; font-weight: 700; }}
+.idx-empty {{ color: var(--text-muted); padding: 0.85rem 1.1rem; }}
 </style>
 </head>
 <body>
+<nav class="idx-breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Puzzle Factories</a></nav>
 <h1>{escape(site_title)}</h1>
+<p class="lede">A fresh 5&times;5 mini crossword every day, plus the full archive to replay.</p>
 <ul>
 {list_html}
 </ul>

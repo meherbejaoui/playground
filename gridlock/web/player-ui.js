@@ -43,6 +43,11 @@ function shellHtml(puzzle, title) {
     .join("");
 
   return `
+    <nav class="gl-breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Puzzle Factories</a>
+      <span aria-hidden="true">/</span>
+      <a href="../index.html">Gridlock</a>
+    </nav>
     <header class="gl-header">
       <h1 class="gl-title">${escapeHtml(title)}</h1>
       <div class="gl-timer" data-el="timer" aria-live="off">0:00</div>

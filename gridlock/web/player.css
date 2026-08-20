@@ -85,6 +85,32 @@ a {
   padding: 1rem 0.85rem 2rem;
 }
 
+.gl-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--gl-text-muted);
+}
+
+.gl-breadcrumb a {
+  color: var(--gl-text-muted);
+  text-decoration: none;
+  padding: 0.25rem 0.35rem;
+  margin: -0.25rem -0.35rem;
+  border-radius: 0.35rem;
+}
+
+.gl-breadcrumb a:last-child {
+  color: var(--gl-accent);
+  font-weight: 600;
+}
+
+.gl-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 .gl-header {
   display: flex;
   align-items: baseline;

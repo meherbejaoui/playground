@@ -28,6 +28,11 @@ function formatClue(run) {
 
 function shellHtml(puzzle) {
   return `
+    <nav class="cb-breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Puzzle Factories</a>
+      <span aria-hidden="true">/</span>
+      <a href="../index.html">Cellblock</a>
+    </nav>
     <header class="cb-header">
       <h1 class="cb-title" data-el="title"></h1>
       <div class="cb-timer" data-el="timer" aria-live="off">0:00</div>
