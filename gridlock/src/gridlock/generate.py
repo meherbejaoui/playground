@@ -26,6 +26,19 @@ def today_seed() -> str:
     return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
 
 
+def _validate_seed(seed: str) -> None:
+    """Reject a seed that would let ``puzzle_path`` escape ``out_dir``.
+
+    ``seed`` becomes a single filesystem path component via ``puzzle_id``.
+    A seed containing a path separator (e.g. ``--seed ../../etc/evil``)
+    would turn that into multiple components and write outside ``out_dir``.
+    """
+    if not seed or "/" in seed or "\\" in seed or "\x00" in seed:
+        raise GenerationError(
+            f"invalid seed {seed!r}: must be non-empty and contain no path separators"
+        )
+
+
 def puzzle_id(seed: str, size: int) -> str:
     return f"{seed}-{size}"
 
@@ -127,6 +140,7 @@ def generate_and_write(
     Refuses to overwrite an existing file unless ``force`` is set.
     """
     resolved_seed = seed if seed is not None else today_seed()
+    _validate_seed(resolved_seed)
     path = puzzle_path(resolved_seed, size, out_dir)
     if path.exists() and not force:
         raise FileExistsError(f"{path} already exists; pass --force to overwrite")

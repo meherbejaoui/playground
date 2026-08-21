@@ -9,7 +9,7 @@ import pytest
 
 from cellblock.build import BuildError, build_site, load_puzzles
 from cellblock.gallery import import_gallery
-from cellblock.generate import generate_and_write
+from cellblock.generate import generate_and_write, today_seed
 
 
 def make_dailies(tmp_path, seeds_sizes):
@@ -89,7 +89,29 @@ class TestBuildSite:
         apple_pos = index_text.index("Apple")
         zebra_pos = index_text.index("Zebra")
         assert apple_pos < zebra_pos, "gallery entries must be alphabetical by title"
-        assert "Today" in index_text
+
+    def test_today_label_tracks_real_seed_not_sort_position(self, tmp_path):
+        # Regression test: the newest-by-generatedAt daily puzzle isn't
+        # necessarily today's if `build` runs without a fresh `generate`
+        # first. "Today" must attach to whichever puzzle's seed actually
+        # matches today's UTC date, not to whatever sorts first.
+        puzzles_dir = tmp_path / "puzzles"
+        generate_and_write(
+            today_seed(), 5, out_dir=puzzles_dir, generated_at="2020-01-01T00:00:00Z"
+        )
+        generate_and_write(
+            "not-today", 5, out_dir=puzzles_dir, generated_at="2030-01-01T00:00:00Z"
+        )
+        out_dir = tmp_path / "site"
+        build_site(puzzles_dir, out_dir)
+        index_text = (out_dir / "index.html").read_text(encoding="utf-8")
+
+        rows = re.findall(r"<li>.*?</li>", index_text, re.DOTALL)
+        today_row = next(r for r in rows if f"{today_seed()}-5x5" in r)
+        other_row = next(r for r in rows if "not-today-5x5" in r)
+
+        assert "Today" in today_row
+        assert "Today" not in other_row
 
     def test_gallery_title_appears_on_the_index_but_not_the_page(self, tmp_path):
         puzzles_dir = tmp_path / "puzzles"

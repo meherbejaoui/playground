@@ -7,6 +7,7 @@ import time
 import pytest
 
 from cellblock.generate import (
+    GenerationError,
     build_puzzle,
     generate_and_write,
     puzzle_id,
@@ -100,3 +101,21 @@ class TestGenerateAndWrite:
         puzzle, path = generate_and_write("dup2", 5, out_dir=tmp_path, force=True)
         assert path.is_file()
         assert puzzle.seed == "dup2"
+
+    def test_seed_with_path_separator_is_rejected(self, tmp_path):
+        # Regression test: a seed becomes a single filesystem path
+        # component via puzzle_id(); one containing "/" would otherwise
+        # let generate_and_write escape out_dir (e.g.
+        # --seed "../../../etc/evil" writing outside puzzles/).
+        with pytest.raises(GenerationError, match="path separator"):
+            generate_and_write("../escape", 5, out_dir=tmp_path)
+        assert not (tmp_path.parent / "escape-5x5.json").exists()
+        assert list(tmp_path.glob("**/*.json")) == []
+
+    def test_seed_with_backslash_is_rejected(self, tmp_path):
+        with pytest.raises(GenerationError, match="path separator"):
+            generate_and_write("back\\slash", 5, out_dir=tmp_path)
+
+    def test_empty_seed_is_rejected(self, tmp_path):
+        with pytest.raises(GenerationError, match="non-empty"):
+            generate_and_write("", 5, out_dir=tmp_path)

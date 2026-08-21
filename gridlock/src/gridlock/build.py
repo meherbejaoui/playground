@@ -16,6 +16,7 @@ from html import escape
 from pathlib import Path
 from typing import Any
 
+from .generate import today_seed
 from .puzzle import PuzzleError, from_json, strip_solution, to_dict
 
 MARKER_NAME = ".gridlock-site"
@@ -100,10 +101,16 @@ def _render_page(
 
 
 def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
+    today = today_seed()
     rows = []
-    for position, puzzle in enumerate(puzzles):
-        label = "Today" if position == 0 else puzzle["seed"]
-        badge = ' class="idx-badge"' if position == 0 else ""
+    for puzzle in puzzles:
+        # Compare against the real current-UTC-date seed, not sort
+        # position: the newest puzzle by generatedAt isn't necessarily
+        # today's if `build` runs without a fresh `generate` first (a
+        # missed cron, or a manual/local rebuild off a stale puzzles/ dir).
+        is_today = puzzle["seed"] == today
+        label = "Today" if is_today else puzzle["seed"]
+        badge = ' class="idx-badge"' if is_today else ""
         rows.append(
             f'<li><a class="idx-row" href="p/{escape(puzzle["id"])}.html">'
             f'<span class="idx-row-main"><strong{badge}>{escape(label)}</strong> '

@@ -20,6 +20,7 @@ from html import escape
 from pathlib import Path
 from typing import Any
 
+from .generate import today_seed
 from .model import DAILY, GALLERY, PuzzleError, from_json, to_dict
 
 MARKER_NAME = ".cellblock-site"
@@ -116,11 +117,18 @@ def _render_page(template: str, puzzle: dict[str, Any], css: str, core_js: str, 
 
 
 def _index_rows(puzzles: list[dict[str, Any]], daily: bool) -> str:
+    today = today_seed()
     rows = []
-    for position, puzzle in enumerate(puzzles):
+    for puzzle in puzzles:
         if daily:
-            label = "Today" if position == 0 else puzzle["seed"]
-            badge = ' class="idx-badge"' if position == 0 else ""
+            # Compare against the real current-UTC-date seed, not sort
+            # position: the newest puzzle by generatedAt isn't necessarily
+            # today's if `build` runs without a fresh `generate` first (a
+            # missed cron, or a manual/local rebuild off a stale puzzles/
+            # dir).
+            is_today = puzzle["seed"] == today
+            label = "Today" if is_today else puzzle["seed"]
+            badge = ' class="idx-badge"' if is_today else ""
         else:
             label = puzzle["title"] or puzzle["id"]
             badge = ""

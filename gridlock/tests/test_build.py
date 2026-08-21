@@ -8,7 +8,7 @@ import re
 import pytest
 
 from gridlock.build import BuildError, build_site, load_puzzles
-from gridlock.generate import generate_and_write
+from gridlock.generate import generate_and_write, today_seed
 from gridlock.puzzle import decode_answer
 from gridlock.wordlist import load_wordlist
 
@@ -59,7 +59,37 @@ class TestBuildSite:
         beta_pos = index_text.index("beta-5")
         alpha_pos = index_text.index("alpha-5")
         assert beta_pos < alpha_pos, "the newer puzzle (beta) must be listed first"
-        assert "Today" in index_text
+
+    def test_today_label_tracks_real_seed_not_sort_position(self, tmp_path, words):
+        # Regression test: the newest-by-generatedAt puzzle isn't
+        # necessarily today's if `build` runs without a fresh `generate`
+        # first. "Today" must attach to whichever puzzle's seed actually
+        # matches today's UTC date, not to whatever sorts first.
+        puzzles_dir = tmp_path / "puzzles"
+        generate_and_write(
+            today_seed(),
+            5,
+            out_dir=puzzles_dir,
+            words=words,
+            generated_at="2020-01-01T00:00:00Z",
+        )
+        generate_and_write(
+            "not-today",
+            5,
+            out_dir=puzzles_dir,
+            words=words,
+            generated_at="2030-01-01T00:00:00Z",
+        )
+        out_dir = tmp_path / "site"
+        build_site(puzzles_dir, out_dir)
+        index_text = (out_dir / "index.html").read_text(encoding="utf-8")
+
+        rows = re.findall(r"<li>.*?</li>", index_text, re.DOTALL)
+        today_row = next(r for r in rows if f"{today_seed()}-5" in r)
+        other_row = next(r for r in rows if "not-today-5" in r)
+
+        assert "Today" in today_row
+        assert "Today" not in other_row
 
     def test_puzzle_pages_carry_base64_but_never_plaintext_solutions(self, tmp_path, words):
         puzzles_dir = make_puzzles(tmp_path, ["secretcheck"], words)

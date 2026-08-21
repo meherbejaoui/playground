@@ -178,7 +178,14 @@ def validate_words(path: str | Path | None = None, out=None) -> int:
     counts = Counter(len(word) for word in words)
     shape = ", ".join(f"{length}:{counts[length]}" for length in sorted(counts))
     if issues:
-        print(f"\n{len(issues)} problem(s) in {len(words) + len(issues)} entries", file=stream)
+        # A single bad line can produce more than one issue (e.g. both a
+        # bad word and a bad score), so the entry count must be the number
+        # of distinct bad lines, not the number of issues.
+        bad_lines = len({issue.line for issue in issues})
+        print(
+            f"\n{len(issues)} problem(s) in {len(words) + bad_lines} entries",
+            file=stream,
+        )
         return 1
 
     print(f"{source}: {len(words)} entries OK ({shape})", file=stream)

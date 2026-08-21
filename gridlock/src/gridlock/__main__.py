@@ -83,6 +83,12 @@ def _run_generate(args: argparse.Namespace) -> int:
     except GenerationError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
+    except (FileNotFoundError, KeyError, ValueError) as exc:
+        # Covers PatternError/WordlistError (both ValueError subclasses) and
+        # unwrapped KeyError/JSONDecodeError from malformed pattern or
+        # wordlist data files.
+        print(f"error: invalid pattern or wordlist data: {exc}", file=sys.stderr)
+        return 2
 
     if not args.quiet:
         print(render_puzzle(puzzle))
