@@ -117,6 +117,10 @@ def _run_validate_gallery(args: argparse.Namespace) -> int:
             failed += 1
             print(f"FAIL {result.slug}: {result.message}", file=sys.stderr)
             if result.stuck_grid is not None:
+                # ValidationResult always sets row_clues/col_clues together
+                # with stuck_grid (see validate_gallery in gallery.py).
+                assert result.row_clues is not None
+                assert result.col_clues is not None
                 bools = state_grid_to_bools(result.stuck_grid)
                 print(
                     render_stuck(bools, result.row_clues, result.col_clues),

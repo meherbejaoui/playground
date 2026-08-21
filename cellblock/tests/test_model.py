@@ -17,7 +17,6 @@ from cellblock.model import (
     from_json,
     pack_solution,
     parse_bitmap,
-    to_dict,
     to_json,
     unpack_solution,
 )

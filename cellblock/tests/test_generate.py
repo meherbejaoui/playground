@@ -7,7 +7,6 @@ import time
 import pytest
 
 from cellblock.generate import (
-    GenerationError,
     build_puzzle,
     generate_and_write,
     puzzle_id,

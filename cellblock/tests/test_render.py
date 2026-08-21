@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-from cellblock.model import derive_clues, from_json, parse_bitmap
+from cellblock.model import derive_clues, from_json
 from cellblock.render import render_bitmap, render_puzzle, render_stuck
 
 FIXTURES = Path(__file__).parent / "fixtures"
