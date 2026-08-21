@@ -119,7 +119,7 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://storage.ko-fi.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://storage.ko-fi.com https://ko-fi.com; frame-src https://ko-fi.com https://storage.ko-fi.com; connect-src https://ko-fi.com https://storage.ko-fi.com; base-uri 'none'; form-action 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://ko-fi.com https://*.ko-fi.com; style-src 'self' 'unsafe-inline' https://ko-fi.com https://*.ko-fi.com; font-src https://ko-fi.com https://*.ko-fi.com; img-src 'self' data: https://ko-fi.com https://*.ko-fi.com; frame-src https://ko-fi.com https://*.ko-fi.com; connect-src https://ko-fi.com https://*.ko-fi.com; base-uri 'none'; form-action 'none';">
 <title>{escape(site_title)}</title>
 <style>
 :root {{
@@ -263,8 +263,15 @@ li {{ margin-bottom: 0.6rem; }}
             "floating-chat.donateButton.background-color": "#00b9fe",
             "floating-chat.donateButton.text-color": "#fff"
           }});
+          btn.remove();
+        }} else {{
+          // Ko-fi's script loaded but never defined the overlay API (e.g.
+          // an ad/tracker blocker stripped part of the response). Leave
+          // the trigger clickable instead of silently vanishing.
+          loading = false;
+          btn.disabled = false;
+          btn.style.cursor = "pointer";
         }}
-        btn.remove();
       }};
       script.onerror = function () {{
         loading = false;
