@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-21-5",
+  "size": 5,
+  "seed": "2026-08-21",
+  "pattern": "wedge-6-alt",
+  "generatedAt": "2026-08-21T01:51:40Z",
+  "grid": [
+    "ACE##",
+    "LOAF#",
+    "EAGLE",
+    "#TEEN",
+    "##RED"
+  ],
+  "numbers": [
+    [
+      1,
+      2,
+      3,
+      -1,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      5,
+      -1
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      7
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      9,
+      0,
+      0
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 3,
+      "answer": "QUNF",
+      "clue": "Tennis serve winner"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 3,
+      "answer": "QUxF",
+      "clue": "Pub brew"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "Q09BVA==",
+      "clue": "Winter wear"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "RUFHRVI=",
+      "clue": "Keen to start"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "TE9BRg==",
+      "clue": "Bread unit"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 3,
+      "length": 4,
+      "answer": "RkxFRQ==",
+      "clue": "Run away"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "RUFHTEU=",
+      "clue": "Bald national bird"
+    },
+    {
+      "number": 7,
+      "direction": "down",
+      "row": 2,
+      "col": 4,
+      "length": 3,
+      "answer": "RU5E",
+      "clue": "Finish"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 3,
+      "col": 1,
+      "length": 4,
+      "answer": "VEVFTg==",
+      "clue": "Adolescent"
+    },
+    {
+      "number": 9,
+      "direction": "across",
+      "row": 4,
+      "col": 2,
+      "length": 3,
+      "answer": "UkVE",
+      "clue": "Fire truck color"
+    }
+  ]
+}
