@@ -7,6 +7,15 @@ on:
     - cron: "10 0 * * *"
   workflow_dispatch: {}
 
+# Queue runs instead of letting them overlap: the "Commit new puzzles"
+# step pushes straight to the trigger branch, and two runs racing that
+# push (e.g. the schedule firing while a manual workflow_dispatch is
+# still in flight) would non-fast-forward-fail whichever one loses,
+# aborting that run's site deploy entirely.
+concurrency:
+  group: daily-deploy
+  cancel-in-progress: false
+
 # Both Gridlock and Cellblock live in this repo, and GitHub serves exactly
 # one Pages site per repo — so this single workflow builds and commits
 # puzzles for both projects, then assembles ONE combined artifact: the root
