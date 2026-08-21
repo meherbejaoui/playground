@@ -97,7 +97,7 @@ function shellHtml(puzzle, title) {
     <div class="gl-completion" data-el="completion" hidden></div>
     <footer class="gl-footer">
       Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
-      <a href="https://github.com/meherbejaoui/playground">Source on GitHub</a>.
+      <a href="https://github.com/meherbejaoui/puzzlefactory">Source on GitHub</a>.
     </footer>
   `;
 }

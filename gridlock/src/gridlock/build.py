@@ -197,7 +197,7 @@ li {{ margin-bottom: 0.6rem; }}
 </ul>
 <footer class="idx-footer">
   Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
-  <a href="https://github.com/meherbejaoui/playground">Source on GitHub</a>.
+  <a href="https://github.com/meherbejaoui/puzzlefactory">Source on GitHub</a>.
 </footer>
 <script>
 (function () {{
