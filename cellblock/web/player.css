@@ -453,6 +453,23 @@ body {
   display: none;
 }
 
+.cb-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cb-border);
+  font-size: 0.85rem;
+  color: var(--cb-text-muted);
+}
+
+.cb-footer a {
+  color: var(--cb-text-muted);
+  text-decoration: underline;
+}
+
+.cb-footer a:hover {
+  color: var(--cb-accent);
+}
+
 /* Completion: fade marks and gridlines so the picture snaps into view. */
 .cellblock-player.cb-solved .cb-grid-area {
   background: transparent;

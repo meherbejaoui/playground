@@ -29,6 +29,8 @@ function formatClue(run) {
 function shellHtml(puzzle) {
   return `
     <nav class="cb-breadcrumb" aria-label="Breadcrumb">
+      <a href="https://www.meherbejaoui.com/">meherbejaoui.com</a>
+      <span aria-hidden="true">/</span>
       <a href="../../index.html">Puzzle Factories</a>
       <span aria-hidden="true">/</span>
       <a href="../index.html">Cellblock</a>
@@ -97,6 +99,10 @@ function shellHtml(puzzle) {
       </div>
     </div>
     <div class="cb-completion" data-el="completion" hidden></div>
+    <footer class="cb-footer">
+      Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
+      <a href="https://github.com/meherbejaoui/playground">Source on GitHub</a>.
+    </footer>
   `;
 }
 

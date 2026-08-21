@@ -44,6 +44,8 @@ function shellHtml(puzzle, title) {
 
   return `
     <nav class="gl-breadcrumb" aria-label="Breadcrumb">
+      <a href="https://www.meherbejaoui.com/">meherbejaoui.com</a>
+      <span aria-hidden="true">/</span>
       <a href="../../index.html">Puzzle Factories</a>
       <span aria-hidden="true">/</span>
       <a href="../index.html">Gridlock</a>
@@ -93,6 +95,10 @@ function shellHtml(puzzle, title) {
       </div>
     </div>
     <div class="gl-completion" data-el="completion" hidden></div>
+    <footer class="gl-footer">
+      Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
+      <a href="https://github.com/meherbejaoui/playground">Source on GitHub</a>.
+    </footer>
   `;
 }
 

@@ -118,6 +118,8 @@ def _render_index(puzzles: list[dict[str, Any]], site_title: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://storage.ko-fi.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://storage.ko-fi.com https://ko-fi.com; frame-src https://ko-fi.com https://storage.ko-fi.com; connect-src https://ko-fi.com https://storage.ko-fi.com; base-uri 'none'; form-action 'none';">
 <title>{escape(site_title)}</title>
 <style>
 :root {{
@@ -176,15 +178,113 @@ li {{ margin-bottom: 0.6rem; }}
 .idx-badge {{ background: var(--accent); color: var(--accent-contrast); padding: 0.15rem 0.55rem;
               border-radius: 999px; font-size: 0.78rem; font-weight: 700; }}
 .idx-empty {{ color: var(--text-muted); padding: 0.85rem 1.1rem; }}
+.idx-footer {{ margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border);
+               font-size: 0.85rem; color: var(--text-muted); }}
+.idx-footer a {{ color: var(--text-muted); text-decoration: underline; }}
+.idx-footer a:hover {{ color: var(--accent); }}
 </style>
 </head>
 <body>
-<nav class="idx-breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Puzzle Factories</a></nav>
+<nav class="idx-breadcrumb" aria-label="Breadcrumb">
+  <a href="https://www.meherbejaoui.com/">meherbejaoui.com</a>
+  <span aria-hidden="true">/</span>
+  <a href="../index.html">Puzzle Factories</a>
+</nav>
 <h1>{escape(site_title)}</h1>
 <p class="lede">A fresh 5&times;5 mini crossword every day, plus the full archive to replay.</p>
 <ul>
 {list_html}
 </ul>
+<footer class="idx-footer">
+  Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
+  <a href="https://github.com/meherbejaoui/playground">Source on GitHub</a>.
+</footer>
+<script>
+(function () {{
+  // Click-to-load "Tip Me" Ko-fi button, matching the one on meherbejaoui.com
+  // and its other sub-sites. Nothing from Ko-fi loads until this placeholder
+  // is clicked -- it is ours, costs nothing, and sets no cookie. On click it
+  // injects Ko-fi's real overlay-widget.js and calls kofiWidgetOverlay.draw(),
+  // which renders Ko-fi's own floating button in roughly the same spot; this
+  // placeholder then removes itself.
+  var KOFI_RESERVED_HEIGHT = 76;
+
+  function init() {{
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.id = "kofi-float-trigger";
+    btn.setAttribute("aria-label", "Support me on Ko-fi");
+    btn.style.position = "fixed";
+    btn.style.left = "16px";
+    btn.style.bottom = "24px";
+    btn.style.zIndex = "40";
+    btn.style.display = "flex";
+    btn.style.alignItems = "center";
+    btn.style.gap = "8px";
+    btn.style.borderRadius = "999px";
+    btn.style.border = "none";
+    btn.style.padding = "12px 16px";
+    btn.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+    btn.style.fontSize = "14px";
+    btn.style.fontWeight = "500";
+    // Dark navy on the #00b9fe brand blue: ~6.7:1 contrast, passes WCAG AA.
+    btn.style.color = "#0a2a33";
+    btn.style.background = "#00b9fe";
+    btn.style.boxShadow = "0 8px 20px rgba(0,0,0,.25)";
+    btn.style.cursor = "pointer";
+
+    var icon = document.createElement("span");
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = "☕";
+    var label = document.createElement("span");
+    label.textContent = "Tip Me";
+    btn.appendChild(icon);
+    btn.appendChild(label);
+
+    var spacer = document.createElement("div");
+    spacer.setAttribute("aria-hidden", "true");
+    spacer.style.height = KOFI_RESERVED_HEIGHT + "px";
+
+    var loading = false;
+    btn.addEventListener("click", function () {{
+      if (loading) return;
+      loading = true;
+      btn.disabled = true;
+      btn.style.cursor = "wait";
+
+      var script = document.createElement("script");
+      script.src = "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js";
+      script.referrerPolicy = "strict-origin-when-cross-origin";
+      script.onload = function () {{
+        if (window.kofiWidgetOverlay) {{
+          window.kofiWidgetOverlay.draw("meherbejaoui", {{
+            type: "floating-chat",
+            "floating-chat.donateButton.text": "Tip Me",
+            "floating-chat.donateButton.background-color": "#00b9fe",
+            "floating-chat.donateButton.text-color": "#fff"
+          }});
+        }}
+        btn.remove();
+      }};
+      script.onerror = function () {{
+        loading = false;
+        btn.disabled = false;
+        btn.style.cursor = "pointer";
+      }};
+      document.body.appendChild(script);
+    }});
+
+    document.body.appendChild(btn);
+    document.body.appendChild(spacer);
+  }}
+
+  if (document.readyState === "loading") {{
+    document.addEventListener("DOMContentLoaded", init);
+  }} else {{
+    init();
+  }}
+}})();
+</script>
 </body>
 </html>
 """
