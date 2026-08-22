@@ -101,6 +101,8 @@ jobs:
         run: |
           mkdir -p combined
           cp index.html combined/index.html
+          cp LICENSE combined/LICENSE
+          cp LICENSE-CONTENT.md combined/LICENSE-CONTENT.md
           cp -r gridlock/site combined/gridlock
           cp -r cellblock/site combined/cellblock
 

@@ -98,6 +98,7 @@ function shellHtml(puzzle, title) {
     <footer class="gl-footer">
       Built and maintained by <a href="https://www.meherbejaoui.com/">Meher Bejaoui</a>.
       <a href="https://github.com/meherbejaoui/puzzlefactory">Source on GitHub</a>.
+      Code <a href="../../LICENSE">GPLv3</a> &middot; Content <a href="../../LICENSE-CONTENT.md">CC BY-NC-SA 4.0</a>.
     </footer>
   `;
 }
