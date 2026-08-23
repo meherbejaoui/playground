@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-23-5",
+  "size": 5,
+  "seed": "2026-08-23",
+  "pattern": "corners-4",
+  "generatedAt": "2026-08-23T01:55:20Z",
+  "grid": [
+    "#MAP#",
+    "TALON",
+    "UNTIE",
+    "GIANT",
+    "#ART#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 3,
+      "answer": "TUFQ",
+      "clue": "Road guide"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "TUFOSUE=",
+      "clue": "Wild craze"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QUxUQVI=",
+      "clue": "Church front"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "UE9JTlQ=",
+      "clue": "Sharp end"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "VEFMT04=",
+      "clue": "Eagle's claw"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 3,
+      "answer": "VFVH",
+      "clue": "Firm pull"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 4,
+      "length": 3,
+      "answer": "TkVU",
+      "clue": "Clear profit"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "VU5USUU=",
+      "clue": "Loosen a knot"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "R0lBTlQ=",
+      "clue": "Very large"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 1,
+      "length": 3,
+      "answer": "QVJU",
+      "clue": "Museum display"
+    }
+  ]
+}
