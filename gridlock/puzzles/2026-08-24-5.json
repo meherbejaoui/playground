@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-24-5",
+  "size": 5,
+  "seed": "2026-08-24",
+  "pattern": "corners-4",
+  "generatedAt": "2026-08-24T01:52:10Z",
+  "grid": [
+    "#ARM#",
+    "BROOK",
+    "ARGUE",
+    "YOUNG",
+    "#WET#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 3,
+      "answer": "QVJN",
+      "clue": "Shoulder to hand"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "QVJST1c=",
+      "clue": "Bow's partner"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "Uk9HVUU=",
+      "clue": "Scoundrel"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "TU9VTlQ=",
+      "clue": "Climb up"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "QlJPT0s=",
+      "clue": "Small stream"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 3,
+      "answer": "QkFZ",
+      "clue": "Coastal inlet"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 4,
+      "length": 3,
+      "answer": "S0VH",
+      "clue": "Party barrel"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "QVJHVUU=",
+      "clue": "Quarrel"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "WU9VTkc=",
+      "clue": "Not old"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 1,
+      "length": 3,
+      "answer": "V0VU",
+      "clue": "Soaked"
+    }
+  ]
+}
