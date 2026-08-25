@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-25-5",
+  "size": 5,
+  "seed": "2026-08-25",
+  "pattern": "wedge-6",
+  "generatedAt": "2026-08-25T01:46:36Z",
+  "grid": [
+    "##ACE",
+    "#DRAG",
+    "BRING",
+    "EASE#",
+    "EWE##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      -1,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      7,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "QUNF",
+      "clue": "Top pilot"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QVJJU0U=",
+      "clue": "Get up"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "Q0FORQ==",
+      "clue": "Walking stick"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 3,
+      "answer": "RUdH",
+      "clue": "Breakfast staple"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "RFJBRw==",
+      "clue": "Pull along"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "RFJBVw==",
+      "clue": "Sketch"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "QlJJTkc=",
+      "clue": "Carry along"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 2,
+      "col": 0,
+      "length": 3,
+      "answer": "QkVF",
+      "clue": "Honey maker"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 4,
+      "answer": "RUFTRQ==",
+      "clue": "Comfort"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "RVdF",
+      "clue": "Female sheep"
+    }
+  ]
+}
