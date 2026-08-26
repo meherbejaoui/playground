@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "id": "2026-08-26-10x10",
+  "kind": "daily",
+  "title": null,
+  "rows": 10,
+  "cols": 10,
+  "rowClues": [
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      8
+    ],
+    [
+      8
+    ],
+    [
+      6
+    ],
+    [
+      5
+    ],
+    [
+      3
+    ]
+  ],
+  "colClues": [
+    [],
+    [
+      4,
+      1
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ],
+    [
+      10
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    []
+  ],
+  "solution": "GAA4ADgAeAB+gH+Af4A/AHwAHAA=",
+  "difficulty": {
+    "passes": 28,
+    "grade": "medium"
+  },
+  "seed": "2026-08-26",
+  "generatedAt": "2026-08-26T01:52:00Z",
+  "slug": null
+}

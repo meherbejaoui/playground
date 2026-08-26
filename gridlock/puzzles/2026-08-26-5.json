@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-26-5",
+  "size": 5,
+  "seed": "2026-08-26",
+  "pattern": "stairs-4",
+  "generatedAt": "2026-08-26T01:52:00Z",
+  "grid": [
+    "##COW",
+    "GLOVE",
+    "RAVEN",
+    "EVENT",
+    "WAR##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "Q09X",
+      "clue": "Dairy animal"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "Q09WRVI=",
+      "clue": "Put a lid on"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "T1ZFTg==",
+      "clue": "Baking box"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "V0VOVA==",
+      "clue": "Departed"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "R0xPVkU=",
+      "clue": "Hand cover"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "R1JFVw==",
+      "clue": "Got bigger"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "TEFWQQ==",
+      "clue": "Volcano flow"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "UkFWRU4=",
+      "clue": "Black bird of poetry"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "RVZFTlQ=",
+      "clue": "Happening"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "V0FS",
+      "clue": "Armed conflict"
+    }
+  ]
+}
