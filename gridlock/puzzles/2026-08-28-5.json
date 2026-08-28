@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-28-5",
+  "size": 5,
+  "seed": "2026-08-28",
+  "pattern": "corners-4",
+  "generatedAt": "2026-08-28T11:13:16Z",
+  "grid": [
+    "#USE#",
+    "SLANT",
+    "ACUTE",
+    "GENRE",
+    "#RAY#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 3,
+      "answer": "VVNF",
+      "clue": "Put to work"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "VUxDRVI=",
+      "clue": "Stomach sore"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "U0FVTkE=",
+      "clue": "Steam room"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "RU5UUlk=",
+      "clue": "Way in"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "U0xBTlQ=",
+      "clue": "Diagonal lean"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 3,
+      "answer": "U0FH",
+      "clue": "Droop"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 4,
+      "length": 3,
+      "answer": "VEVF",
+      "clue": "Golf peg"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "QUNVVEU=",
+      "clue": "Sharp, as an angle"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "R0VOUkU=",
+      "clue": "Category of art"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 1,
+      "length": 3,
+      "answer": "UkFZ",
+      "clue": "Beam of light"
+    }
+  ]
+}
