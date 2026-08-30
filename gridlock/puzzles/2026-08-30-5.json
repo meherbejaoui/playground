@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-30-5",
+  "size": 5,
+  "seed": "2026-08-30",
+  "pattern": "wedge-6",
+  "generatedAt": "2026-08-30T05:13:03Z",
+  "grid": [
+    "##ACE",
+    "#SCAR",
+    "SAUNA",
+    "ANTE#",
+    "WEE##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      -1,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      7,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "QUNF",
+      "clue": "Top pilot"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QUNVVEU=",
+      "clue": "Sharp, as an angle"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "Q0FORQ==",
+      "clue": "Walking stick"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 3,
+      "answer": "RVJB",
+      "clue": "Historical stretch"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "U0NBUg==",
+      "clue": "Healed wound mark"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "U0FORQ==",
+      "clue": "Of sound mind"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "U0FVTkE=",
+      "clue": "Steam room"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 2,
+      "col": 0,
+      "length": 3,
+      "answer": "U0FX",
+      "clue": "Cutting blade"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 4,
+      "answer": "QU5URQ==",
+      "clue": "Poker starter"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "V0VF",
+      "clue": "Tiny"
+    }
+  ]
+}
