@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-08-31-5",
+  "size": 5,
+  "seed": "2026-08-31",
+  "pattern": "stairs-4",
+  "generatedAt": "2026-08-31T05:21:17Z",
+  "grid": [
+    "##NET",
+    "DROVE",
+    "RAVEN",
+    "AGENT",
+    "GEL##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "TkVU",
+      "clue": "Tennis divider"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "Tk9WRUw=",
+      "clue": "Brand new"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "RVZFTg==",
+      "clue": "Not odd"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "VEVOVA==",
+      "clue": "Camper's shelter"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "RFJPVkU=",
+      "clue": "Took the wheel, in the past"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "RFJBRw==",
+      "clue": "Pull along"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "UkFHRQ==",
+      "clue": "Fury"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "UkFWRU4=",
+      "clue": "Black bird of poetry"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "QUdFTlQ=",
+      "clue": "Spy"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "R0VM",
+      "clue": "Hair styling goo"
+    }
+  ]
+}
