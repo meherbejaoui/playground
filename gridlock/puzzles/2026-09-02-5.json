@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-02-5",
+  "size": 5,
+  "seed": "2026-09-02",
+  "pattern": "pinwheel-4",
+  "generatedAt": "2026-09-02T04:17:57Z",
+  "grid": [
+    "MISS#",
+    "ANTE#",
+    "PLANT",
+    "#ELSE",
+    "#TEEN"
+  ],
+  "numbers": [
+    [
+      1,
+      2,
+      3,
+      4,
+      -1
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      7
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      9,
+      0,
+      0,
+      0
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 4,
+      "answer": "TUlTUw==",
+      "clue": "Fail to hit"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 3,
+      "answer": "TUFQ",
+      "clue": "Road guide"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "SU5MRVQ=",
+      "clue": "Narrow bay"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "U1RBTEU=",
+      "clue": "No longer fresh"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "U0VOU0U=",
+      "clue": "Sight or smell"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "QU5URQ==",
+      "clue": "Poker starter"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "UExBTlQ=",
+      "clue": "Green grower"
+    },
+    {
+      "number": 7,
+      "direction": "down",
+      "row": 2,
+      "col": 4,
+      "length": 3,
+      "answer": "VEVO",
+      "clue": "Digits on two hands"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 3,
+      "col": 1,
+      "length": 4,
+      "answer": "RUxTRQ==",
+      "clue": "Otherwise"
+    },
+    {
+      "number": 9,
+      "direction": "across",
+      "row": 4,
+      "col": 1,
+      "length": 4,
+      "answer": "VEVFTg==",
+      "clue": "Adolescent"
+    }
+  ]
+}
