@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-04-5",
+  "size": 5,
+  "seed": "2026-09-04",
+  "pattern": "wedge-6-alt",
+  "generatedAt": "2026-09-04T04:19:37Z",
+  "grid": [
+    "ACE##",
+    "CLAP#",
+    "TIGER",
+    "#PLEA",
+    "##ELM"
+  ],
+  "numbers": [
+    [
+      1,
+      2,
+      3,
+      -1,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      5,
+      -1
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      7
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      9,
+      0,
+      0
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 3,
+      "answer": "QUNF",
+      "clue": "Top pilot"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 3,
+      "answer": "QUNU",
+      "clue": "Part of a play"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "Q0xJUA==",
+      "clue": "Paper fastener"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "RUFHTEU=",
+      "clue": "Bald national bird"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "Q0xBUA==",
+      "clue": "Applaud"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 3,
+      "length": 4,
+      "answer": "UEVFTA==",
+      "clue": "Banana skin"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "VElHRVI=",
+      "clue": "Striped big cat"
+    },
+    {
+      "number": 7,
+      "direction": "down",
+      "row": 2,
+      "col": 4,
+      "length": 3,
+      "answer": "UkFN",
+      "clue": "Butt heads"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 3,
+      "col": 1,
+      "length": 4,
+      "answer": "UExFQQ==",
+      "clue": "Earnest request"
+    },
+    {
+      "number": 9,
+      "direction": "across",
+      "row": 4,
+      "col": 2,
+      "length": 3,
+      "answer": "RUxN",
+      "clue": "Shade tree"
+    }
+  ]
+}
