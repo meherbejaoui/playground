@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-06-5",
+  "size": 5,
+  "seed": "2026-09-06",
+  "pattern": "stairs-4",
+  "generatedAt": "2026-09-06T04:24:47Z",
+  "grid": [
+    "##ARM",
+    "VALUE",
+    "ARISE",
+    "SIGHT",
+    "TAN##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "QVJN",
+      "clue": "Shoulder to hand"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QUxJR04=",
+      "clue": "Line up"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "UlVTSA==",
+      "clue": "Hurry"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "TUVFVA==",
+      "clue": "Get together"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "VkFMVUU=",
+      "clue": "Worth"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "VkFTVA==",
+      "clue": "Huge in extent"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "QVJJQQ==",
+      "clue": "Opera solo"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "QVJJU0U=",
+      "clue": "Get up"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "U0lHSFQ=",
+      "clue": "Vision"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "VEFO",
+      "clue": "Beach color"
+    }
+  ]
+}
