@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-07-5",
+  "size": 5,
+  "seed": "2026-09-07",
+  "pattern": "stairs-4",
+  "generatedAt": "2026-09-07T04:23:36Z",
+  "grid": [
+    "##AND",
+    "COCOA",
+    "ROTOR",
+    "OZONE",
+    "PER##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "QU5E",
+      "clue": "Plus"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QUNUT1I=",
+      "clue": "Stage performer"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "Tk9PTg==",
+      "clue": "Midday"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "REFSRQ==",
+      "clue": "Challenge"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "Q09DT0E=",
+      "clue": "Hot chocolate"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "Q1JPUA==",
+      "clue": "Farm harvest"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "T09aRQ==",
+      "clue": "Seep slowly"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "Uk9UT1I=",
+      "clue": "Helicopter blade"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "T1pPTkU=",
+      "clue": "Protective layer"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "UEVS",
+      "clue": "For each"
+    }
+  ]
+}
