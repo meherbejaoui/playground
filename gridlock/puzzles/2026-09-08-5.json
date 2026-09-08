@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-08-5",
+  "size": 5,
+  "seed": "2026-09-08",
+  "pattern": "stairs-4",
+  "generatedAt": "2026-09-08T04:23:48Z",
+  "grid": [
+    "##FEW",
+    "SHAVE",
+    "LOVER",
+    "ALONE",
+    "PER##"
+  ],
+  "numbers": [
+    [
+      -1,
+      -1,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      -1,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 2,
+      "length": 3,
+      "answer": "RkVX",
+      "clue": "Not many"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "RkFWT1I=",
+      "clue": "Kind act"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 4,
+      "answer": "RVZFTg==",
+      "clue": "Not odd"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "V0VSRQ==",
+      "clue": "Existed, plurally"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "U0hBVkU=",
+      "clue": "Use a razor"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "U0xBUA==",
+      "clue": "Open-handed hit"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 1,
+      "length": 4,
+      "answer": "SE9MRQ==",
+      "clue": "Doughnut center"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "TE9WRVI=",
+      "clue": "Sweetheart"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "QUxPTkU=",
+      "clue": "By oneself"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 3,
+      "answer": "UEVS",
+      "clue": "For each"
+    }
+  ]
+}
