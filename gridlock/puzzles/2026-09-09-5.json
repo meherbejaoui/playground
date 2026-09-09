@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-09-5",
+  "size": 5,
+  "seed": "2026-09-09",
+  "pattern": "diagonal-2",
+  "generatedAt": "2026-09-09T04:28:55Z",
+  "grid": [
+    "#FAST",
+    "HONOR",
+    "ARGUE",
+    "SCENE",
+    "HERD#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "RkFTVA==",
+      "clue": "Speedy"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "Rk9SQ0U=",
+      "clue": "Push hard"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QU5HRVI=",
+      "clue": "Rage"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "U09VTkQ=",
+      "clue": "What we hear"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "VFJFRQ==",
+      "clue": "Trunk and branches"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "SE9OT1I=",
+      "clue": "Great respect"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "SEFTSA==",
+      "clue": "Diner potatoes"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "QVJHVUU=",
+      "clue": "Quarrel"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "U0NFTkU=",
+      "clue": "Movie segment"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 4,
+      "answer": "SEVSRA==",
+      "clue": "Cattle group"
+    }
+  ]
+}
