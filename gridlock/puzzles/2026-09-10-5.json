@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-10-5",
+  "size": 5,
+  "seed": "2026-09-10",
+  "pattern": "corners-4",
+  "generatedAt": "2026-09-10T04:27:19Z",
+  "grid": [
+    "#BED#",
+    "SOBER",
+    "IRONY",
+    "TENSE",
+    "#DYE#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      8,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 3,
+      "answer": "QkVE",
+      "clue": "Place to sleep"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "Qk9SRUQ=",
+      "clue": "Restless from dullness"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "RUJPTlk=",
+      "clue": "Dark wood"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "REVOU0U=",
+      "clue": "Packed tight"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "U09CRVI=",
+      "clue": "Not tipsy"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 3,
+      "answer": "U0lU",
+      "clue": "Take a seat"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 4,
+      "length": 3,
+      "answer": "UllF",
+      "clue": "Deli bread"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "SVJPTlk=",
+      "clue": "Opposite of what is meant"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "VEVOU0U=",
+      "clue": "Strung tight"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 1,
+      "length": 3,
+      "answer": "RFlF",
+      "clue": "Fabric color changer"
+    }
+  ]
+}
