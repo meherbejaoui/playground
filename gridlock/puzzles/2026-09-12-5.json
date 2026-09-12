@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "id": "2026-09-12-5",
+  "size": 5,
+  "seed": "2026-09-12",
+  "pattern": "diagonal-2",
+  "generatedAt": "2026-09-12T04:24:21Z",
+  "grid": [
+    "#SALT",
+    "MOLAR",
+    "ELOPE",
+    "RINSE",
+    "EDGE#"
+  ],
+  "numbers": [
+    [
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "U0FMVA==",
+      "clue": "Pepper's partner"
+    },
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 5,
+      "answer": "U09MSUQ=",
+      "clue": "Not liquid"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "answer": "QUxPTkc=",
+      "clue": "Beside"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 5,
+      "answer": "TEFQU0U=",
+      "clue": "Slip in attention"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "answer": "VFJFRQ==",
+      "clue": "Trunk and branches"
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "answer": "TU9MQVI=",
+      "clue": "Back tooth"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "answer": "TUVSRQ==",
+      "clue": "Nothing more than"
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "answer": "RUxPUEU=",
+      "clue": "Run off to marry"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "UklOU0U=",
+      "clue": "Wash out"
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 4,
+      "answer": "RURHRQ==",
+      "clue": "Border"
+    }
+  ]
+}
